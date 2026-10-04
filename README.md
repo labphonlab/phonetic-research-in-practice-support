@@ -21,7 +21,7 @@ Every data file is generated numerically by the scripts in `companion/scripts/`.
 
 ## Requirements and validation
 
-Python 3.11 or later with the packages in `companion/requirements-python.txt`, and R 4.6 with the packages in `companion/requirements-r.txt`. The exercises in the book also use Praat, Parselmouth, the tidyverse, `lme4`, `lmerTest`, `glmmTMB`, `emmeans`, `mgcv`, `itsadug`, `brms`, `irr`, and the Montreal Forced Aligner; install those as each exercise requires.
+Python 3.12 or later with the packages in `companion/requirements-python.txt`, and R 4.6 with the packages in `companion/requirements-r.txt`. The exercises in the book also use Praat, Parselmouth, the tidyverse, `lme4`, `lmerTest`, `glmmTMB`, `emmeans`, `mgcv`, `itsadug`, `brms`, `irr`, and the Montreal Forced Aligner; install those as each exercise requires.
 
 To regenerate the fixtures, run every test, and execute every notebook in a clean process:
 
