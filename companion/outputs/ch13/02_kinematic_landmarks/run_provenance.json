@@ -1,0 +1,43 @@
+{
+  "tool": "phonetic_research_companion.ch13.run_kinematic_landmarks",
+  "tool_version": "0.1.0",
+  "python_version": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy_version": "2.4.4",
+  "run_at_utc": "2026-10-04T20:04:49.369887+00:00",
+  "input_hashes": {
+    "companion/data/ch13/synthetic_multimodal/validated_trajectories.tsv": "7f4a43a2220edd2455658139e76b136efeb5717c1f0ea7d5a4cddaf23152b189",
+    "companion/data/ch13/synthetic_multimodal/landmark_profiles.yaml": "c1fe94d47acb7270eeb5a65d010389cedf45875f7daf653ea2db589eb19051e4",
+    "companion/outputs/ch13/01_coordinate_and_sync_audit/stream_quality.tsv": "254efcaafa88802295184223b8aa9ae99b6ad7e4cdd3e72f17c37748f077586c"
+  },
+  "decisions": {
+    "raw_unchanged": true,
+    "gate": {
+      "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+      "stream_decisions": [
+        {
+          "stream_id": "SYN_EMA_coordinates",
+          "decision": "restrict",
+          "reason": "exclude the recorded reference-drift interval and preserve dropped-frame gaps"
+        },
+        {
+          "stream_id": "SYN_EMA_kinematics",
+          "decision": "restrict",
+          "reason": "eligibility depends on trajectory shape and prespecified landmark profile"
+        },
+        {
+          "stream_id": "SYN_AUDIO_CLOCK+SYN_EMA",
+          "decision": "accept_fixture_only",
+          "reason": "linear-drift residuals meet the synthetic tolerance for observed anchors"
+        }
+      ],
+      "combined_decision": "restrict",
+      "claim_restrictions": [
+        "synthetic fixtures do not validate a physical instrument",
+        "exclude reference-drift and dropped-frame intervals",
+        "do not coerce nonidentifiable landmarks into numeric values",
+        "report profile-dependent eligible populations"
+      ],
+      "one_global_reliability_label_permitted": false
+    }
+  }
+}

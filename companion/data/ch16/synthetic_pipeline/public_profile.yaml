@@ -1,0 +1,5 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+route: public
+input_root: bundled synthetic fixture
+publishable: true
+contains_protected_data: false

@@ -1,0 +1,7 @@
+domain_type	dimension	domain_value	reason	data_status
+target_category	region	central	unsupported	SYNTHETIC_TEACHING_FIXTURE
+target_category	style	read	unsupported	SYNTHETIC_TEACHING_FIXTURE
+cross_corpus	population	restricted	generated adults only	SYNTHETIC_TEACHING_FIXTURE
+cross_corpus	era	incompatible	no common era	SYNTHETIC_TEACHING_FIXTURE
+cross_corpus	recording	incompatible	no equipment equivalence	SYNTHETIC_TEACHING_FIXTURE
+cross_corpus	annotation	restricted	independent boundary validation required	SYNTHETIC_TEACHING_FIXTURE

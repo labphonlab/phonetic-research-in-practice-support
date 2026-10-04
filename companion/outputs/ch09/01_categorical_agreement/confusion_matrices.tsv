@@ -1,0 +1,10 @@
+label_a	label_b	count
+breathy	breathy	19
+creaky	breathy	6
+modal	breathy	9
+breathy	creaky	3
+creaky	creaky	18
+modal	creaky	7
+breathy	modal	7
+creaky	modal	5
+modal	modal	46

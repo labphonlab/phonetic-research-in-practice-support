@@ -1,0 +1,11 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "run_id": "SYN_RUN_CLEAN_001",
+  "public_route": true,
+  "empty_derived_directory": true,
+  "cache_policy": "not used",
+  "artifacts_verified": 2,
+  "tests_passed": 4,
+  "warnings": [],
+  "decision": "pass_public_fixture"
+}

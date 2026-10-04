@@ -1,0 +1,17 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+naive_model: condition-specific smooth only
+structured_model: condition smooth plus speaker/item random effects and speaker factor
+  smooth
+residual_rho: 0.6
+series_start: first requested frame per token
+prediction_grid:
+  proportional_start: 0
+  proportional_end: 1
+  step: 0.02
+rhythm_metrics:
+- percent_v
+- varco_v
+- npvi_v
+claim_limit: sample descriptions and synthetic comparisons only; no language rhythm
+  classification

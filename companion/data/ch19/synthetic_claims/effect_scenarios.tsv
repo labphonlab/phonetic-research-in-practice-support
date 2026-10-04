@@ -1,0 +1,7 @@
+scenario_id	contrast_id	true_effect_scenario	scenario_source	source_status	simulation_replicates	selection_rule	seed	data_status
+SHIFT_A_minus_BASE_S1	SHIFT_A_minus_BASE	0.5	prospective synthetic design scenario	SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH	20000	two-sided |z| > 1.96	19042027	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_minus_BASE_S2	SHIFT_A_minus_BASE	2.0	prospective synthetic design scenario	SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH	20000	two-sided |z| > 1.96	19042028	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_minus_BASE_S3	SHIFT_A_minus_BASE	5.0	prospective synthetic design scenario	SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH	20000	two-sided |z| > 1.96	19042029	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_minus_BASE_S1	SHIFT_B_minus_BASE	-0.5	prospective synthetic design scenario	SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH	20000	two-sided |z| > 1.96	19042027	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_minus_BASE_S2	SHIFT_B_minus_BASE	-2.0	prospective synthetic design scenario	SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH	20000	two-sided |z| > 1.96	19042028	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_minus_BASE_S3	SHIFT_B_minus_BASE	-3.5	prospective synthetic design scenario	SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH	20000	two-sided |z| > 1.96	19042029	SYNTHETIC_TEACHING_FIXTURE

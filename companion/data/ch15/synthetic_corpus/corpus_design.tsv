@@ -1,0 +1,3 @@
+corpus_id	population	era	styles	task	recording	annotation	lexical_coverage	measurement	data_status
+SYN_CORPUS_A	synthetic speakers 01-18	2010s	casual|interview	conversation|interview	headset_48k	manual_words	20 generated items	common synthetic pipeline	SYNTHETIC_TEACHING_FIXTURE
+SYN_CORPUS_B	synthetic speakers 19-30	2020s	casual|interview	conversation|interview	tabletop_44k1	automatic_words	20 generated items	common synthetic pipeline	SYNTHETIC_TEACHING_FIXTURE

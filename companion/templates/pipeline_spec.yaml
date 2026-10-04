@@ -1,0 +1,120 @@
+schema_version: "1.0"
+
+project:
+  project_id: "replace-with-stable-project-id"
+  title: "Replace with project title"
+  code_revision: "replace-with-version-control-revision"
+  run_id: "replace-with-deterministic-or-registered-run-id"
+
+inputs:
+  - input_id: "source_audio"
+    resource_id: "replace-with-canonical-resource-reference"
+    version: "replace-with-version"
+    manifest: "path/to/source_manifest.tsv"
+    immutable: true
+    access_profile: "protected"
+    expected_hash_algorithm: "sha256"
+
+identifiers:
+  namespace_fields:
+    - corpus_id
+    - recording_id
+  observation_key:
+    - token_id
+  declared_relations:
+    - left: "candidate_manifest.token_id"
+      right: "measurement_table.token_id"
+      cardinality: "one-to-one"
+      unmatched_policy: "retain-and-report"
+
+configs:
+  query: "config/query.yaml"
+  measurement: "config/measurement.yaml"
+  analysis: "config/analysis.yaml"
+  schemas: "schemas/"
+  reject_unknown_fields: true
+  materialize_resolved_defaults: true
+
+environment:
+  primary_language: "python"
+  lockfile: "environment/lockfile"
+  system_tools:
+    - name: "praat"
+      version: "replace-with-version-or-not-used"
+  locale: "C.UTF-8"
+  timezone: "UTC"
+
+steps:
+  - step_id: "build_candidates"
+    depends_on:
+      - "source_audio"
+    command: "replace-with-tested-entry-point"
+    outputs:
+      - "derived/candidate_manifest.tsv"
+    allow_partial_success: false
+  - step_id: "measure"
+    depends_on:
+      - "build_candidates"
+    command: "replace-with-tested-entry-point"
+    outputs:
+      - "derived/raw_measurements.tsv"
+      - "derived/measurement_failures.tsv"
+    allow_partial_success: true
+  - step_id: "analyze"
+    depends_on:
+      - "measure"
+    command: "replace-with-tested-entry-point"
+    outputs:
+      - "results/model_results.tsv"
+      - "results/claim_map.yaml"
+    allow_partial_success: false
+
+outputs:
+  expected_manifest: "verification/expected_artifacts.tsv"
+  hash_algorithm: "sha256"
+  exact_artifacts: []
+  numerical_artifacts:
+    - path: "results/model_results.tsv"
+      absolute_tolerance: 0.000001
+      relative_tolerance: 0.000001
+  substantive_assessment: "results/claim_map.yaml"
+
+randomness:
+  master_seed: 20261002
+  stream_policy: "derive-one-stream-per-task"
+  parallel_reproducibility: "required"
+
+logging:
+  structured_log: "logs/run.jsonl"
+  record_row_counts: true
+  record_failure_counts: true
+  record_warnings: true
+  prohibit_silent_drop: true
+
+tests:
+  schema: true
+  unit: true
+  integration: true
+  regression: true
+  scientific_invariants:
+    - "all durations are nonnegative"
+    - "all analysis tokens occur in the candidate manifest"
+    - "reported exclusions reconcile with candidate flow"
+
+routes:
+  protected:
+    profile: "config/protected.local.yaml"
+    publishable: false
+  public:
+    profile: "config/public.yaml"
+    fixture_manifest: "fixtures/public_manifest.tsv"
+    publishable: true
+  shared_code_required: true
+
+clean_run:
+  empty_derived_directory: true
+  disable_or_verify_caches: true
+  clean_notebook_kernel: true
+  verify_expected_artifacts: true
+  privacy_allowlist: "verification/public_allowlist.txt"
+  pass_record: "verification/clean_run_summary.json"

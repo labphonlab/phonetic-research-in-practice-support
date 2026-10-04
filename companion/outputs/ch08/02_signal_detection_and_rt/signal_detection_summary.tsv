@@ -1,0 +1,3 @@
+condition_id	hits	misses	false_alarms	correct_rejections	hit_rate_corrected	false_alarm_rate_corrected	d_prime	criterion_c	accuracy	median_correct_rt_ms	q10_correct_rt_ms	q90_correct_rt_ms	included_events
+SYN_CONSERVATIVE	312	168	24	456	0.64968814968815	0.0509355509355509	2.02032811187114	0.625685383840988	0.8	726.5	619	837.3	960
+SYN_NEUTRAL	408	72	72	408	0.849272349272349	0.150727650727651	2.06663516600218	0	0.85	654.5	538.5	763	960

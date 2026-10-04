@@ -1,0 +1,34 @@
+{
+  "tool": "ch20.clean_verify",
+  "tool_version": "0.1.0",
+  "python_version": "3.14.0",
+  "run_at_utc": "2026-10-04T20:04:49.734410+00:00",
+  "input_hashes": {
+    "companion/data/ch20/release_candidate/release_spec.yaml": "ddd1cec738ed855566bda35d5da6f3c199b51adbd067236475b34a2d62ff9f33",
+    "companion/data/ch20/release_candidate/release_manifest.tsv": "d756fd5944f683479a6ebf552976aaaca112ef548395f6f2694435d8738520bf",
+    "companion/outputs/ch20/01_release_manifest_and_privacy_audit/release_candidate_manifest.tsv": "39d5617b37d65fa820fc1bffa0a2fc96771d3293f5730534c9585a2d96e8a5ec",
+    "companion/data/ch20/release_candidate/availability_statement_template.md": "4c314ed34567cba52199be823f63594e341d962ab65128d7f6605d3748938674",
+    "companion/data/ch20/release_candidate/maintenance_policy.md": "3507c2818cd156fbd962dd4da779679da2a508109578b48040b5e4ad8a3aec5a",
+    "companion/data/ch20/release_candidate/citation_metadata.yaml": "4be5bc8fdd8b3814a9e2c75b842288384e5663968240cd84c682302d6169e6dc"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "decision": "postpone_deposit_pending_author_and_publisher",
+    "technical_clean_rebuild_pass": true,
+    "scientific_package_status": "first substantive draft; final copy-edit and production gates remain",
+    "privacy_scan_status": "passed automated candidate scan in notebook 1",
+    "license_authorization_pass": false,
+    "human_governance_approval_pass": false,
+    "deposit_authorized": false,
+    "publish_authorized": false,
+    "doi_registered": false,
+    "protected_route_executed": false,
+    "candidate_is_public_release": false,
+    "required_actions": [
+      "author identity and authority review",
+      "publisher repository and license approval",
+      "final citation and style audit",
+      "authorized archive deposit and identifier creation"
+    ]
+  }
+}

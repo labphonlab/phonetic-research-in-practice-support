@@ -1,0 +1,7 @@
+error_id	stage	affected_variable	error_type	dependency_level	direction	validation_source	plausible_range	data_status	observed_or_declared_scale	scale_unit	evidence_status
+E_OUTCOME_RANDOM	extraction	outcome_primary	random	observation	mean_zero	validation_pairs	paired SD	SYNTHETIC_TEACHING_FIXTURE	3.7859212731381	outcome units	observed_validation
+E_PREDICTOR_RANDOM	extraction	predictor_primary	random	observation	attenuation risk	validation_pairs	paired SD	SYNTHETIC_TEACHING_FIXTURE	0.355596512692168	predictor units	observed_validation
+E_LANDMARK_SHARED	annotation	onset+offset	correlated	observation	alignment shift with limited duration change	repeated_measurements	paired landmark differences	SYNTHETIC_TEACHING_FIXTURE	4.33908768984383	ms paired onset difference	observed_repeatability
+E_REFERENCE_SHARED	normalization	outcome_primary	correlated	speaker	shared shift	generator-known teaching range	SD 2.2	SYNTHETIC_TEACHING_FIXTURE	2.2	outcome units per speaker	generator_known_hypothetical
+E_DIFFERENTIAL	extraction	outcome_primary	differential	group	+4 in SYN_B	generator-known teaching range	0 to 4	SYNTHETIC_TEACHING_FIXTURE	4	outcome units in SYN_B	generator_known_hypothetical
+E_MISSINGNESS	missingness	outcome_primary	differential	group+outcome	greater loss in SYN_B and high outcomes	availability code	observed fixture	SYNTHETIC_TEACHING_FIXTURE	0.147916666666667	failure proportion	observed_fixture

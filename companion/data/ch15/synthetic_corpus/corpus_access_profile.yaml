@@ -1,0 +1,7 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+profile_id: PUBLIC_SYNTHETIC
+access_mode: bundled generated fixture
+canonical_protected_paths: []
+redistribution: fixture only
+warning: No licensed recordings, transcripts, or participant identifiers are included.

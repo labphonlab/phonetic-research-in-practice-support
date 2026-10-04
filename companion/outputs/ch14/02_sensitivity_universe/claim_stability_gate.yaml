@@ -1,0 +1,8 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: stable
+direction_stable: yes
+magnitude_stable: yes
+scope_stable: yes
+diagnostics_stable: yes
+failed_specifications_retained: 1
+significance_vote_permitted: no

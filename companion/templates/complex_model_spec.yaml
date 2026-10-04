@@ -1,0 +1,96 @@
+schema_version: "1.0"
+
+model_purpose:
+  primary_goal: "replace-with-description-association-explanation-or-prediction"
+  scientific_quantity: "replace-with-target-quantity"
+  simple_benchmark: "replace-with-benchmark-model-id"
+  justification_for_complexity: "replace-with-data-generating-requirement"
+
+dynamic_structure:
+  enabled: false
+  series_id: "token_id"
+  raw_time: "time_ms"
+  analysis_time: "time_normalized"
+  population_functions: []
+  unit_functions: []
+  basis_dimension: "replace-if-enabled"
+  smoothing_penalty: "estimated"
+  residual_dependence: "replace-if-enabled"
+  series_start_indicator: "series_start"
+
+multivariate_structure:
+  enabled: false
+  outcomes: []
+  scaling_parameters: "derived/multivariate_scaling.tsv"
+  covariance_target: "replace-if-enabled"
+  dimension_reduction:
+    enabled: false
+    learned_inside_training_folds: true
+    retained_dimensions: "replace-if-enabled"
+
+measurement_error:
+  enabled: false
+  affected_variables: []
+  evidence_source: "replace-with-validation-or-repeatability-record"
+  model_or_perturbation: "replace-if-enabled"
+  hypothetical_ranges_are_sensitivity_only: true
+
+missingness:
+  reason_codes:
+    - "structural_absence"
+    - "participant_nonresponse"
+    - "technical_loss"
+    - "algorithmic_failure"
+    - "quality_rejection"
+    - "metadata_missing"
+    - "censored"
+  target_estimand_under_observation_process: "replace-with-statement"
+  imputation:
+    enabled: false
+    model: "replace-if-enabled"
+    imputations: "replace-if-enabled"
+    multilevel_structure: []
+    prohibit_structural_absence_imputation: true
+    seed: 20261002
+
+bayesian_workflow:
+  enabled: false
+  priors: "config/priors.yaml"
+  prior_predictive_checks: []
+  chains: "replace-if-enabled"
+  convergence_thresholds: "config/computation_thresholds.yaml"
+  posterior_predictive_checks: []
+  prior_sensitivity: []
+
+diagnostics:
+  residual_distribution: true
+  heteroskedasticity: true
+  autocorrelation: true
+  subgroup_fit: true
+  influential_clusters: []
+  observed_support: true
+
+predictive_validation:
+  enabled: false
+  deployment_unit: "replace-with-token-speaker-item-session-or-corpus"
+  fold_assignment: "derived/fold_assignments.tsv"
+  preprocessing_inside_folds: true
+  tuning_scheme: "nested-resampling"
+  metrics: []
+  calibration: true
+  domain_strata: []
+
+model_comparison:
+  candidate_registry: "results/candidate_models.tsv"
+  primary_scientific_quantity: "replace-with-comparison-quantity"
+  criteria: []
+  bounded_before_outcome_review: true
+  retain_failures: true
+
+scope_gate:
+  population_scope: "replace-with-supported-units-and-populations"
+  measurement_scope: "replace-with-recording-and-estimation-domain"
+  predictor_scope: "replace-with-interpolation-and-extrapolation-domain"
+  goal_scope: "replace-with-description-association-explanation-or-prediction"
+  gate_record: "results/model_scope_gate.yaml"
+  provenance: "results/run_provenance.json"

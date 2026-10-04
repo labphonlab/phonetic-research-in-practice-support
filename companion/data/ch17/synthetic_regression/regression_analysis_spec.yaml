@@ -1,0 +1,53 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+seed: 17042026
+estimand:
+  outcome: synthetic continuous acoustic response
+  observation_unit: speaker-item-condition token
+  target_population: the generated speaker population and the 18 observed synthetic
+    items
+  focal_contrast: marginal mean SHIFT_A minus BASE, averaged equally over observed
+    items at speaking_rate_z = 0
+  averaging_distribution: equal weight over the 18 observed items
+  purpose: explanatory teaching example
+  new_unit_scope:
+    speakers: supported only if a speaker random-effects model passes diagnostics
+    items: not supported; items are fixed blocking factors in the available nlme implementation
+outcome_family:
+  family: Gaussian
+  link: identity
+predictors:
+  condition:
+    levels:
+    - BASE
+    - SHIFT_A
+    - SHIFT_B
+    reference: BASE
+  speaking_rate_z:
+    center: 4.6142249452160495
+    scale: 0.5026910817467659
+grouping:
+  conceptual_design: speakers crossed with items
+  implemented_structure: speaker random effects plus item fixed blocking effects
+  engine: nlme::lme
+candidate_models:
+- model_id: fixed_only
+  random: none
+- model_id: speaker_intercept
+  random: 1 | speaker_id
+- model_id: speaker_slope
+  random: condition | speaker_id
+prespecified_simplification:
+- speaker_slope
+- speaker_intercept
+- fixed_only
+diagnostics:
+- residual distribution
+- condition-wise residual spread
+- leave-one-speaker-out influence
+- predictor support and extrapolation
+interpretive_constraints:
+- no significance voting
+- retain failed fits and warnings
+- do not generalize to new items
+- synthetic results are not empirical evidence

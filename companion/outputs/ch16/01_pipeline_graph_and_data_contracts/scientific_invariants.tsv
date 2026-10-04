@@ -1,0 +1,6 @@
+invariant	canonical_status	adverse_status	data_status
+token identifiers are unique	pass	fail_as_designed	SYNTHETIC_TEACHING_FIXTURE
+durations are nonnegative	pass	fail_as_designed	SYNTHETIC_TEACHING_FIXTURE
+correction keys match source keys	pass	not_applicable	SYNTHETIC_TEACHING_FIXTURE
+failed measurements do not enter analysis	deferred_to_clean_run	not_applicable	SYNTHETIC_TEACHING_FIXTURE
+raw values remain immutable	pass	not_applicable	SYNTHETIC_TEACHING_FIXTURE

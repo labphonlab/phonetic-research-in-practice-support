@@ -1,0 +1,3 @@
+model	token_count	mean_lag1	median_lag1
+naive_aggregate_smooth	95	0.565466472130846	0.58228977076301
+structured_ar1	95	0.556717300953615	0.573210871722583

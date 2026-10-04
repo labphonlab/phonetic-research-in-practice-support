@@ -1,0 +1,19 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+stream_decisions:
+- stream_id: SYN_EMA_coordinates
+  decision: restrict
+  reason: exclude the recorded reference-drift interval and preserve dropped-frame
+    gaps
+- stream_id: SYN_EMA_kinematics
+  decision: restrict
+  reason: eligibility depends on trajectory shape and prespecified landmark profile
+- stream_id: SYN_AUDIO_CLOCK+SYN_EMA
+  decision: accept_fixture_only
+  reason: linear-drift residuals meet the synthetic tolerance for observed anchors
+combined_decision: restrict
+claim_restrictions:
+- synthetic fixtures do not validate a physical instrument
+- exclude reference-drift and dropped-frame intervals
+- do not coerce nonidentifiable landmarks into numeric values
+- report profile-dependent eligible populations
+one_global_reliability_label_permitted: false

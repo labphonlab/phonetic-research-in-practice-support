@@ -1,0 +1,24 @@
+{
+  "tool": "run_diagnostics_predictions_and_gate",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:59 UTC",
+  "input_hashes": {
+    "companion/data/ch17/synthetic_regression/analysis_data.tsv": "978b4d53f3c8e8fe41be493c69fb0f7c6f7156c2e9d8dff7449f0da16b57d879",
+    "companion/data/ch17/synthetic_regression/regression_analysis_spec.yaml": "80fe38f7e77b70a14adc72b6536626e715f616fd866b2206eb10d64af1fd68e2",
+    "companion/data/ch17/synthetic_regression/prediction_grid.tsv": "119de360df793bc6a39ee2ccbfa5b3ddbe6c177211cb3889af17eed6cb607a19",
+    "companion/data/ch17/synthetic_regression/focal_contrasts.tsv": "41af523685700a080609404464115f8efd07eef43796c49655bd82500cc8a3ad",
+    "companion/outputs/ch17/01_estimand_design_matrix_and_mixed_model/speaker_slope.rds": "844a7bf979bfe5c4fa5a1ffcdc04e3fe0afc2026623f8a576fe4025e70b6aa13",
+    "companion/outputs/ch14/02_sensitivity_universe/claim_stability.tsv": "35b4be9d399db6fa70f4570fb4b5672bebd14a6bd4e31b6189c3e75b7ba0803b"
+  },
+  "decisions": {
+    "decision": "restrict",
+    "selected_model": "speaker_slope",
+    "extrapolated_grid_rows": 6,
+    "weak_support_grid_rows": 6,
+    "leave_one_speaker_fits": 24,
+    "item_scope": "observed_items_only",
+    "chapter14_link_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "significance_vote_permitted": false
+  }
+}

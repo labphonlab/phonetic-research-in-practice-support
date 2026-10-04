@@ -1,0 +1,93 @@
+schema_version: "1.0"
+
+release:
+  project_id: "replace-with-stable-project-id"
+  release_version: "replace-with-semantic-or-edition-version"
+  release_date: "replace-at-authorized-release"
+  supported_manuscript_or_edition: "replace-with-identifier"
+  status: "candidate"
+  manifest: "companion/templates/release_manifest.tsv"
+  allowlist_only: true
+
+routes:
+  protected:
+    profile: "config/protected.local.yaml"
+    authority: "replace-with-institution-corpus-or-community-authority"
+    public: false
+  authorized:
+    profile: "config/authorized.yaml"
+    access_procedure: "replace-with-real-procedure-or-not-applicable"
+    public: false
+  public:
+    profile: "config/public.yaml"
+    fixture_manifest: "fixtures/public_manifest.tsv"
+    public: true
+  shared_transformation_code: true
+
+governance:
+  participant_consent_record: "governance/consent_scope.yaml"
+  ethics_record: "governance/ethics_scope.yaml"
+  corpus_and_data_use_terms: "governance/license_matrix.tsv"
+  community_authority_record: "governance/community_authority.yaml"
+  care_review_required: "replace-with-true-or-false-after-governance-review"
+  unresolved_permission_defaults_to_restricted: true
+
+fair:
+  findable_metadata: true
+  persistent_identifier: "author-input-required-until-deposit"
+  access_protocol_documented: true
+  schemas_and_vocabularies: []
+  provenance_complete: true
+
+citations:
+  data: []
+  software: []
+  corpora: []
+  package_preferred_citation: "CITATION.cff"
+  exact_version_required_for_reproduction: true
+
+build:
+  source_allowlist: "release/allowlist.tsv"
+  clean_candidate_directory: true
+  unexpected_file_policy: "fail"
+  render_notebooks_cleanly: true
+  verify_expected_artifacts: true
+  checksum_algorithm: "sha256"
+
+audits:
+  identifiers: true
+  secrets: true
+  private_paths: true
+  unapproved_media: true
+  notebook_outputs: true
+  license_compatibility: true
+  human_governance_review: true
+
+archive:
+  provider: "replace-after-publisher-policy-confirmation"
+  version_specific_identifier: "author-input-required-until-deposit"
+  concept_identifier: "author-input-required-until-deposit"
+  deposit_authorized: false
+  publish_authorized: false
+
+availability_statement:
+  generated_path: "release/availability_statement.md"
+  verify_against_manifest: true
+  distinguish_data_code_models_materials: true
+  describe_each_user_route: true
+
+maintenance:
+  policy: "release/maintenance_and_withdrawal.md"
+  issue_contact: "author-input-required"
+  correction_creates_new_version: true
+  scientific_output_change_requires_claim_regeneration: true
+  deprecation_process_documented: true
+  withdrawal_process_documented: true
+
+gate:
+  clean_run_record: "verification/public_clean_run.json"
+  artifact_verification: "verification/artifact_verification.tsv"
+  privacy_scan: "verification/privacy_scan.tsv"
+  license_audit: "verification/license_audit.tsv"
+  human_review: "verification/human_review.tsv"
+  final_record: "verification/reproducible_release_gate.yaml"

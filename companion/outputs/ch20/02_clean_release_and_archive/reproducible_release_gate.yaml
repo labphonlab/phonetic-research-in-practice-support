@@ -1,0 +1,18 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: postpone_deposit_pending_author_and_publisher
+technical_clean_rebuild_pass: true
+scientific_package_status: first substantive draft; final copy-edit and production
+  gates remain
+privacy_scan_status: passed automated candidate scan in notebook 1
+license_authorization_pass: false
+human_governance_approval_pass: false
+deposit_authorized: false
+publish_authorized: false
+doi_registered: false
+protected_route_executed: false
+candidate_is_public_release: false
+required_actions:
+- author identity and authority review
+- publisher repository and license approval
+- final citation and style audit
+- authorized archive deposit and identifier creation

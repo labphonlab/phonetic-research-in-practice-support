@@ -1,0 +1,85 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+project:
+  project_id: SYN_PIPELINE
+  title: Synthetic phonetic pipeline teaching fixture
+  code_revision: fixture-generator-v0.1
+  run_id: SYN_RUN_CLEAN_001
+inputs:
+- input_id: source_measurements
+  manifest: source_measurements.tsv
+  immutable: true
+  access_profile: public
+  expected_hash_algorithm: sha256
+- input_id: correction_table
+  manifest: correction_table.tsv
+  immutable: true
+  access_profile: public
+  expected_hash_algorithm: sha256
+identifiers:
+  observation_key:
+  - token_id
+  declared_relations:
+  - left: source_measurements.token_id
+    right: correction_table.token_id
+    cardinality: many-to-one
+    unmatched_policy: correction keys must match source
+configs:
+  schemas: data_contracts.yaml
+  reject_unknown_fields: true
+  materialize_resolved_defaults: true
+  defaults:
+    failed_measurement_policy: retain_reason_then_exclude_from_analysis
+    correction_policy: new_derived_layer
+environment:
+  primary_language: python
+  lockfile: companion/requirements-python.txt
+  locale: C.UTF-8
+  timezone: UTC
+steps:
+- step_id: validate
+  depends_on:
+  - source_measurements
+  - correction_table
+  outputs:
+  - contract_validation.tsv
+  - join_audit.tsv
+- step_id: derive
+  depends_on:
+  - validate
+  outputs:
+  - analysis_table.tsv
+- step_id: summarize
+  depends_on:
+  - derive
+  outputs:
+  - summary.json
+- step_id: assess
+  depends_on:
+  - summarize
+  outputs:
+  - reproduction_assessment.yaml
+tests:
+  scientific_invariants:
+  - token identifiers are unique
+  - durations are nonnegative
+  - correction keys match source keys
+  - failed measurements do not enter analysis
+  - raw values remain immutable
+routes:
+  protected:
+    profile: protected_profile.yaml
+    publishable: false
+  public:
+    profile: public_profile.yaml
+    publishable: true
+  shared_code_required: true
+clean_run:
+  empty_derived_directory: true
+  disable_or_verify_caches: true
+  clean_notebook_kernel: true
+  verify_expected_artifacts: true
+  privacy_allowlist: public_allowlist.txt
+randomness:
+  master_seed: 16042026
+  stream_policy: one deterministic public fixture

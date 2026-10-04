@@ -1,0 +1,5 @@
+annotation_mode	difficulty	n	default_match_rate	mean_boundary_shift_ms	median_annotation_time_s	mean_confidence
+correct_default	difficult	40	0.75	1.302775	10.09	2.575
+from_scratch	difficult	40	0.45	1.308825	14.8025	2.9
+correct_default	easy	80	0.9625	1.3485375	6.5165	3.9
+from_scratch	easy	80	0.5	0.299737499999998	10.271	3.8375

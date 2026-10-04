@@ -1,0 +1,10 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+exact:
+- analysis_table.tsv
+numerical:
+  summary.json:
+    absolute_tolerance: 1.0e-09
+    relative_tolerance: 1.0e-09
+substantive:
+  required_analysis_rows: 11
+  failed_token_absent: SYN_PIPE_009

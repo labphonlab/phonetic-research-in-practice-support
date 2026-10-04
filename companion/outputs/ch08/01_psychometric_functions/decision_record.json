@@ -1,0 +1,7 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "decision_status": "undecided",
+  "classification_function_claim": "Learner response required before assessment.",
+  "categorical_perception_claim": "not supported by this synthetic classification task",
+  "warning": "This record is an instructional prompt, not an empirical conclusion."
+}

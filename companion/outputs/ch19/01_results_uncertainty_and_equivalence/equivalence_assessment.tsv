@@ -1,0 +1,3 @@
+contrast_id	estimate	ci_low	ci_high	lower_bound	upper_bound	unit	justification_source	source_status	assessment	nonsignificance_implies_equivalence	data_status
+SHIFT_A_minus_BASE	5.37596608309687	4.80924880021986	5.94268336597389	-1	1	identity-link outcome units	synthetic design tolerance fixed before generated outcome review	GENERATOR_SPECIFICATION_NOT_EMPIRICAL_BOUND	meaningfully_positive_beyond_bound	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_minus_BASE	-2.90326783638011	-3.37313727703314	-2.43339839572708	-3	3	identity-link outcome units	synthetic design tolerance fixed before generated outcome review	GENERATOR_SPECIFICATION_NOT_EMPIRICAL_BOUND	inconclusive	FALSE	SYNTHETIC_TEACHING_FIXTURE

@@ -1,0 +1,13 @@
+check_id	scope	passed	expected_adverse_failure	detail	data_status
+spec_required_sections	pipeline_spec	True	False	required top-level sections	SYNTHETIC_TEACHING_FIXTURE
+unique_node_ids	pipeline_spec	True	False	input and step identifiers	SYNTHETIC_TEACHING_FIXTURE
+dependencies_validate	pipeline_spec	True	False	dependencies precede their consumer	SYNTHETIC_TEACHING_FIXTURE
+dependencies_derive	pipeline_spec	True	False	dependencies precede their consumer	SYNTHETIC_TEACHING_FIXTURE
+dependencies_summarize	pipeline_spec	True	False	dependencies precede their consumer	SYNTHETIC_TEACHING_FIXTURE
+dependencies_assess	pipeline_spec	True	False	dependencies precede their consumer	SYNTHETIC_TEACHING_FIXTURE
+source_schema	source_measurements	True	False	required fields present	SYNTHETIC_TEACHING_FIXTURE
+source_unique_keys	source_measurements	True	False	canonical source identifiers unique	SYNTHETIC_TEACHING_FIXTURE
+adverse_duplicate_detected	adverse_cases	False	True	deliberate duplicate key must fail	SYNTHETIC_TEACHING_FIXTURE
+adverse_nonnegative_duration	adverse_cases	False	True	negative=['SYN_ADVERSE_NEG']	SYNTHETIC_TEACHING_FIXTURE
+adverse_required_value	adverse_cases	False	True	missing=['SYN_ADVERSE_MISSING']	SYNTHETIC_TEACHING_FIXTURE
+correction_keys_match	join	True	False	unmatched=[]	SYNTHETIC_TEACHING_FIXTURE

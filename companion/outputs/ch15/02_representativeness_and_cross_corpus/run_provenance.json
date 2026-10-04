@@ -1,0 +1,26 @@
+{
+  "tool": "phonetic_research_companion.ch15.run_representativeness_and_cross_corpus",
+  "tool_version": "0.1.0",
+  "run_at_utc": "2026-10-04T20:04:49.538211+00:00",
+  "input_hashes": {
+    "companion/outputs/ch15/01_query_and_denominator_audit/candidate_manifest.tsv": "7843b09c30b08465d5299fcc18c25da325fe03ba5eac1ba8eed75a0408e95c61",
+    "companion/data/ch15/synthetic_corpus/target_population.yaml": "be033073e1331654e12c04e749b9ee53062969db6224c250997f1c5232b20a28",
+    "companion/data/ch15/synthetic_corpus/corpus_design.tsv": "436833d15ca4499df45f52ac94854cf7bd44f37a6a080370bfb0b56de455c1eb",
+    "companion/data/ch15/synthetic_corpus/cross_corpus_map.tsv": "2a5ee0efc32bab967ee7c84e38ac0c2928ade01e1e6199cd07aeef5cf42c685e"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "decision": "restrict",
+    "supported_claim": "description of generated measurable tokens in observed north/south, casual/interview, 2010s/2020s cells",
+    "unsupported_claims": [
+      "central region",
+      "read speech",
+      "abstract corpus representativeness",
+      "causal corpus comparison",
+      "era or equipment effect"
+    ],
+    "weighting_permitted": false,
+    "reason": "target margins are illustrative rather than authorized population margins; incompatible era and recording domains remain",
+    "synthetic_fixture_is_population_evidence": false
+  }
+}

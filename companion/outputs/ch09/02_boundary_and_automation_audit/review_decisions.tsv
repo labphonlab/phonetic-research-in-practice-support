@@ -1,0 +1,5 @@
+decision_id	diagnostic	status	rationale
+category_anchor	0.408333333333333	review_required	Compare default-match rates under correction and from-scratch modes.
+boundary_interchangeability_15ms	21.4513	not_interchangeable	Boundary error is large relative to a 15 ms contrast.
+boundary_interchangeability_100ms	21.4513	potentially_interchangeable	Boundary error is evaluated relative to a 100 ms contrast.
+automation_review_design	0.408333333333333	counterbalanced_review_recommended	Retain default, correction, final judgment, time, confidence, and difficulty.

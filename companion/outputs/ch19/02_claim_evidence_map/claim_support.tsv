@@ -1,0 +1,6 @@
+claim_id	result_available	evidence_ids	regression_gate	corpus_gate	model_scope_gate	sensitivity_outcome	human_approval_required	data_status
+C19_001	TRUE	E_RESULT_CH17|E_MODEL_CH17|E_SENS_CH14	restrict	restrict	restrict	stable	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_002	TRUE	E_RESULT_CH17|E_MODEL_CH17|E_SENS_CH14	restrict	restrict	restrict	stable	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_003	TRUE	E_RESULT_CH17	restrict	restrict	restrict	stable	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_004	TRUE	E_SCOPE_CH18	restrict	restrict	restrict	stable	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_005	TRUE	E_SCOPE_CH18	restrict	restrict	restrict	stable	TRUE	SYNTHETIC_TEACHING_FIXTURE

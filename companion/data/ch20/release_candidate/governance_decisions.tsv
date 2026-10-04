@@ -1,0 +1,4 @@
+review_id	review_domain	reviewer_or_authority	decision	decision_date	record_status	public_release_authorized	data_status
+GOV_AUTHOR	author identity and authority	AUTHOR_INPUT_REQUIRED	pending		UNSIGNED_PLACEHOLDER	false	SYNTHETIC_TEACHING_FIXTURE
+GOV_PUBLISHER	external repository and license policy	PUBLISHER_INPUT_REQUIRED	pending		UNSIGNED_PLACEHOLDER	false	SYNTHETIC_TEACHING_FIXTURE
+GOV_PRIVACY	automated candidate privacy scan	workflow	run_not_human_approval		AUTOMATED_ONLY	false	SYNTHETIC_TEACHING_FIXTURE

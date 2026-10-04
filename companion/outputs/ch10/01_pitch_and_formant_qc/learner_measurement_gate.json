@@ -1,0 +1,8 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "decision_status": "undecided",
+  "f0_gate": "Learner response required.",
+  "formant_gate": "Learner response required.",
+  "scope": "synthetic teaching signals only",
+  "warning": "Generated-signal performance is not validation on human speech."
+}

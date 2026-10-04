@@ -1,0 +1,16 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+trial_type_definition:
+  signal: signal_present=1
+  noise: signal_present=0
+response_definition:
+  'yes': yes_response=1
+  'no': yes_response=0
+correction: loglinear_0.5
+reaction_time:
+  origin: stimulus_onset
+  minimum_ms: 150
+  maximum_ms: 2000
+interpretive_limit: synthetic event counts demonstrate decomposition; they do not
+  estimate human sensitivity
+seed: 8042026

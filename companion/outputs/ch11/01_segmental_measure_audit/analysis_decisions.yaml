@@ -1,0 +1,5 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+event_dictionary_version: '0.1'
+output_policy: one row per requested observation including failures
+raw_gate: learner decision required
+interpretive_limit: generated landmarks do not validate a segmental measurement protocol

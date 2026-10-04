@@ -1,0 +1,6 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+population: new speakers are primary; new items, sessions, and corpora are sensitivity
+  domains
+measurement: synthetic generated cues only
+predictor: observed training-fold ranges
+goal: prediction, not causal or mechanistic explanation

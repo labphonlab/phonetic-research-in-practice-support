@@ -1,0 +1,27 @@
+{
+  "tool": "run_prediction_validation_scope",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:05:04 UTC",
+  "input_hashes": {
+    "companion/data/ch18/synthetic_complex/prediction_features.tsv": "eb84485d6542841e3e2ec1250ff1b9d51c546e3fc421e6e62c24e5464155772b",
+    "companion/data/ch18/synthetic_complex/candidate_models.tsv": "b2cf48e4d11a9ccf355371fa52a72a59e5a799f2614a3dc6899ad48858227460",
+    "companion/data/ch18/synthetic_complex/fold_policy.yaml": "a24103c9f4cb2baf68c3b1b3539f46f37041c5e3988e851eaadce8199a67de48",
+    "companion/data/ch18/synthetic_complex/deployment_domain.yaml": "5907e8e0b5d787eb03dc37db7a9598b70b25af72846f1203a223ba583a710014",
+    "companion/data/ch18/synthetic_complex/preprocessing_recipe.yaml": "4d0d3726473a91a35d744ec7a290dc08ee87e97184a6348e03bb325ecc224532",
+    "companion/data/ch18/synthetic_complex/outcome_schema.yaml": "da6ffd3ce16e42b5013a6c6f7ebf092c55b67de151803d07e2b31fb9177d9aee",
+    "companion/data/ch18/synthetic_complex/claim_map.yaml": "be4c19b56ce945243de2812322d63850dc7c94b1421018158e39225b9320d0e4",
+    "companion/outputs/ch18/01_dynamic_error_and_missingness/residual_dependence.tsv": "06437e227f0b025a49c5ca97d03558d6858cd3d833eac48f3d1abef95f2f33ea",
+    "companion/outputs/ch18/01_dynamic_error_and_missingness/measurement_error_results.tsv": "5c8e16063644d9032556f326e62a400b4f75c8d99941259dfc431ccf5b791cb3",
+    "companion/outputs/ch18/01_dynamic_error_and_missingness/missingness_map.tsv": "7e436b6b65cb767d6ab12484baa473e4d20359967d32f1d5effdcf47968a3e7a"
+  },
+  "decisions": {
+    "primary_validation": "speaker_heldout",
+    "selected_model": "cue_only",
+    "fold_rows": 720,
+    "validation_rows": 36,
+    "all_preprocessing_inside_folds": true,
+    "target_unit_leakage_detected": false,
+    "decision": "restrict"
+  }
+}

@@ -1,0 +1,3 @@
+artifact_path	sha256	comparison	verified	data_status
+analysis_table.tsv	31bacd00cb2a1d9feb84e11686176bb49e8cb39479ab9e30267a25ca27059b5c	exact	True	SYNTHETIC_TEACHING_FIXTURE
+summary.json	871103279d5c33a015f53b7886be4fe943d4da0744ab6366fa0524339239a0b2	numerical	True	SYNTHETIC_TEACHING_FIXTURE

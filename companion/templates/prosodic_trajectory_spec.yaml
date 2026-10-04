@@ -1,0 +1,73 @@
+schema_version: "0.1"
+trajectory:
+  trajectory_id: ""
+  construct: ""
+  acoustic_measure: ""
+  raw_unit: ""
+  analysis_unit: ""
+domain:
+  annotation_tier: ""
+  included_labels: []
+  start_landmark: ""
+  end_landmark: ""
+  alignment_landmark: ""
+frame_grid:
+  source_step_ms: ""
+  requested_grid_rule: ""
+  retain_absolute_time: true
+  retain_landmark_relative_time: true
+  retain_proportional_time: true
+estimation:
+  software: ""
+  software_version: ""
+  algorithm: ""
+  settings_profile_id: ""
+  settings: {}
+missingness:
+  required_codes:
+    - structural_unvoiced
+    - estimator_failure
+    - quality_rejection
+    - source_failure
+  preserve_requested_frames: true
+preprocessing:
+  correction_policy: ""
+  interpolation_permitted: false
+  interpolation_max_gap_ms: ""
+  interpolation_eligible_codes: []
+  smoothing_method: ""
+  smoothing_parameters: {}
+scaling:
+  transformation: ""
+  reference_sample_id: ""
+  reference_definition: ""
+  reference_unit: ""
+time_representation:
+  primary: "real|proportional|landmark_relative"
+  sensitivity_representations: []
+  resampling_method: ""
+  target_grid: ""
+dependence:
+  speaker_id: "speaker_id"
+  item_id: "item_id"
+  token_id: "token_id"
+  series_start_variable: "series_start"
+  frame_order_variable: "frame_index"
+  residual_structure: ""
+quality_control:
+  track_flags: []
+  risk_strata: []
+  review_sample_rule: ""
+  contribution_count_required: true
+gate:
+  coverage_rule: ""
+  stability_rule: ""
+  permitted_decisions:
+    - accept
+    - restrict
+    - amend_and_rerun
+    - reject
+provenance:
+  source_hash_required: true
+  retain_raw_frames: true
+  overwrite_permitted: false

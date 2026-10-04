@@ -1,0 +1,13 @@
+availability_code	condition	observation_process	imputation_permitted	frames	proportion	structural_absence_imputed	data_status
+algorithmic_failure	A	estimation_process	conditional	46	0.00608465608465609	FALSE	SYNTHETIC_TEACHING_FIXTURE
+algorithmic_failure	B	estimation_process	conditional	41	0.00542328042328042	FALSE	SYNTHETIC_TEACHING_FIXTURE
+technical_loss	A	recording_process	conditional	56	0.00740740740740741	FALSE	SYNTHETIC_TEACHING_FIXTURE
+technical_loss	B	recording_process	conditional	42	0.00555555555555556	FALSE	SYNTHETIC_TEACHING_FIXTURE
+quality_rejection	A	selection_process	conditional	51	0.00674603174603175	FALSE	SYNTHETIC_TEACHING_FIXTURE
+quality_rejection	B	selection_process	conditional	44	0.00582010582010582	FALSE	SYNTHETIC_TEACHING_FIXTURE
+structural_absence	A	event_not_defined	false	2	0.000264550264550265	FALSE	SYNTHETIC_TEACHING_FIXTURE
+structural_absence	B	event_not_defined	false	1	0.000132275132275132	FALSE	SYNTHETIC_TEACHING_FIXTURE
+observed	A	observed	false	3583	0.473941798941799	FALSE	SYNTHETIC_TEACHING_FIXTURE
+observed	B	observed	false	3612	0.477777777777778	FALSE	SYNTHETIC_TEACHING_FIXTURE
+censored	A	thresholded_observation	false	42	0.00555555555555556	FALSE	SYNTHETIC_TEACHING_FIXTURE
+censored	B	thresholded_observation	false	40	0.00529100529100529	FALSE	SYNTHETIC_TEACHING_FIXTURE

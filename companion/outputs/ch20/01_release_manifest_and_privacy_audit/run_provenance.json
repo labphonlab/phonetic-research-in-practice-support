@@ -1,0 +1,25 @@
+{
+  "tool": "ch20.build_candidate",
+  "tool_version": "0.1.0",
+  "python_version": "3.14.0",
+  "run_at_utc": "2026-10-04T20:04:49.684829+00:00",
+  "input_hashes": {
+    "companion/data/ch20/release_candidate/release_spec.yaml": "ddd1cec738ed855566bda35d5da6f3c199b51adbd067236475b34a2d62ff9f33",
+    "companion/data/ch20/release_candidate/release_manifest.tsv": "d756fd5944f683479a6ebf552976aaaca112ef548395f6f2694435d8738520bf",
+    "companion/data/ch20/release_candidate/license_matrix.tsv": "5c49121c95a0dfd4659759c367e01f33d3c428946de56a40590feb95eae2d731",
+    "companion/data/ch20/release_candidate/governance_decisions.tsv": "880442b8eb870f4834a88d7b2ed47df8e6fdc247446bd7abe3c1f3a92adcd7f4",
+    "companion/data/ch20/release_candidate/citation_metadata.yaml": "4be5bc8fdd8b3814a9e2c75b842288384e5663968240cd84c682302d6169e6dc",
+    "companion/data/ch20/release_candidate/public_profile.yaml": "0ca8ec7cafceefd9db104149971415f38d191995ffce22c170a14d00527039d6",
+    "companion/data/ch20/release_candidate/protected_profile.yaml": "5f85c7bc5eaf2170d2119c878f09dab98d1376b75848c923c5c5c942f3e965cf"
+  },
+  "decisions": {
+    "allowlist_only": true,
+    "files_copied": 9,
+    "privacy_scan_pass": true,
+    "license_public_release_pass": false,
+    "human_public_release_approval": false,
+    "protected_route_accessed": false,
+    "deposit_status": "NOT_DEPOSITED",
+    "public_release_authorized": false
+  }
+}

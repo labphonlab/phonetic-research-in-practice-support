@@ -1,0 +1,65 @@
+schema_version: "0.1"
+session:
+  session_id: ""
+  participant_code: ""
+  date_local: ""
+  timezone: ""
+  site_code: ""
+  room_code: ""
+  operator_code: ""
+  protocol_version: ""
+  consent_scope_code: ""
+claim_requirements:
+  primary_measures: []
+  required_bandwidth_hz: ""
+  required_timing_precision_ms: ""
+  amplitude_basis: "relative|calibrated|not_used"
+  synchronization_required: false
+signal_chain:
+  microphone_manufacturer: ""
+  microphone_model: ""
+  microphone_unit_id: ""
+  polar_pattern: ""
+  mouth_distance_cm: ""
+  microphone_angle_degrees: ""
+  mounting_method: ""
+  preamplifier_or_interface: ""
+  interface_unit_id: ""
+  input_channel: ""
+  gain_setting: ""
+  recorder_or_device: ""
+  operating_system: ""
+  recording_software: ""
+  recording_software_version: ""
+  processing_disabled: []
+  processing_unavoidable_or_unknown: []
+file_configuration:
+  container: "wav"
+  encoding: "linear_pcm"
+  sample_rate_hz: ""
+  bit_depth: ""
+  channel_count: ""
+  channel_map: []
+checks:
+  ambient_recording_file_id: ""
+  setup_test_file_id: ""
+  level_calibration_file_id: ""
+  timing_check_file_id: ""
+  synchronization_event_file_id: ""
+  headphones_monitoring_completed: false
+events_and_deviations: []
+post_session:
+  expected_file_count: ""
+  observed_file_count: ""
+  headers_verified: false
+  channel_content_verified: false
+  first_verified_copy: ""
+  second_verified_copy: ""
+  checksums_manifest: ""
+measure_specific_decisions: []
+pre_departure_decision:
+  status: "accept|targeted_rerecord|restricted_use|stop|undecided"
+  rationale: ""
+  decided_by: ""
+  decided_at: ""
+

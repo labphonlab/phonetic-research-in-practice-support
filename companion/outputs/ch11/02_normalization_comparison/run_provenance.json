@@ -1,0 +1,24 @@
+{
+  "tool": "run_normalization_comparison",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:54 UTC",
+  "input_hashes": {
+    "companion/outputs/ch11/01_segmental_measure_audit/segmental_raw_measures.tsv": "693175e2cb0ee58498c8c0e8be5a7c9fa52a43afe58945da58aaec1ef06c6e4c",
+    "companion/data/ch11/synthetic_segmental/annotation_manifest.tsv": "541c695446273f804bb2e8aa222af49afe71b13516c790b04385ab83cc42732c",
+    "companion/data/ch11/synthetic_segmental/split_manifest.tsv": "0c06813e4806e105205e05f66f9864894b2a396adf71d8bc630c36965c484840",
+    "companion/data/ch11/synthetic_segmental/segmental_measure_manifest.tsv": "bf8d6bb1e0060f0900665ec63a8a998a02e2cdcea9ca8fa89c9e76bfc31fff86"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "estimand": "vowel-category separation within the eligible training-speaker population",
+    "preservation_target": "retain within-speaker vowel ordering and raw values",
+    "reduction_target": "reduce between-speaker reference-frequency dispersion",
+    "reference_sample": "training split only",
+    "transformations": ["raw_hz", "log_hz", "within_speaker_z", "f3_reference_scaling"],
+    "exact_rebuild": true,
+    "interpretive_limit": "synthetic normalization comparison does not establish a universally preferred procedure",
+    "raw_sha256_before": "693175e2cb0ee58498c8c0e8be5a7c9fa52a43afe58945da58aaec1ef06c6e4c",
+    "raw_sha256_after": "693175e2cb0ee58498c8c0e8be5a7c9fa52a43afe58945da58aaec1ef06c6e4c"
+  }
+}

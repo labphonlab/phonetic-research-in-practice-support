@@ -1,0 +1,16 @@
+prediction_id	condition	speaking_rate_z	population_prediction	conditional_prediction_first_speaker	prediction_scale	averaging_distribution	extrapolated	weak_support	data_status
+BASE_-4.0	BASE	-4	98.7757910445055	98.0976977553906	identity-link response scale	equal weight over 18 observed items	TRUE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+BASE_-1.5	BASE	-1.5	100.802341124881	100.124247835766	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+BASE_+0.0	BASE	0	102.018271173106	101.340177883991	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+BASE_+1.5	BASE	1.5	103.234201221331	102.556107932216	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+BASE_+4.0	BASE	4	105.260751301706	104.582658012591	identity-link response scale	equal weight over 18 observed items	TRUE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_-4.0	SHIFT_A	-4	104.151757127602	102.811331801394	identity-link response scale	equal weight over 18 observed items	TRUE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_-1.5	SHIFT_A	-1.5	106.178307207978	104.837881881769	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_+0.0	SHIFT_A	0	107.394237256203	106.053811929994	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_+1.5	SHIFT_A	1.5	108.610167304428	107.269741978219	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_+4.0	SHIFT_A	4	110.636717384803	109.296292058595	identity-link response scale	equal weight over 18 observed items	TRUE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_-4.0	SHIFT_B	-4	95.8725232081254	95.45173925659	identity-link response scale	equal weight over 18 observed items	TRUE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_-1.5	SHIFT_B	-1.5	97.8990732885006	97.4782893369653	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_+0.0	SHIFT_B	0	99.1150033367258	98.6942193851904	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_+1.5	SHIFT_B	1.5	100.330933384951	99.9101494334156	identity-link response scale	equal weight over 18 observed items	FALSE	FALSE	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_+4.0	SHIFT_B	4	102.357483465326	101.936699513791	identity-link response scale	equal weight over 18 observed items	TRUE	TRUE	SYNTHETIC_TEACHING_FIXTURE

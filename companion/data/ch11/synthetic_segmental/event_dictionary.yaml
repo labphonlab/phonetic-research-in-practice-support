@@ -1,0 +1,16 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+events:
+  closure_start_s: first sustained reduction in oral airflow proxy before stop release
+  release_s: selected primary release when multiple release candidates exist
+  voicing_onset_s: first sustained periodic cycle after release
+  vowel_onset_s: first interval meeting the synthetic vowel-onset rule
+  vowel_offset_s: last interval meeting the synthetic vowel-offset rule
+  fricative_start_s: first sustained aperiodic interval
+  fricative_end_s: end of sustained aperiodic interval
+difficult_cases:
+- multiple_release
+- incomplete_closure
+- absent_periodicity
+- no_steady_state
+interpretive_limit: generated event times are not annotations of speech

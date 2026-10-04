@@ -1,0 +1,26 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+project:
+  project_id: SYN_PIPELINE
+  title: Synthetic phonetic pipeline teaching fixture
+  code_revision: fixture-generator-v0.1
+  run_id: SYN_RUN_CLEAN_001
+defaults:
+  failed_measurement_policy: retain_reason_then_exclude_from_analysis
+  correction_policy: new_derived_layer
+environment:
+  primary_language: python
+  lockfile: companion/requirements-python.txt
+  locale: C.UTF-8
+  timezone: UTC
+routes:
+  protected:
+    profile: protected_profile.yaml
+    publishable: false
+  public:
+    profile: public_profile.yaml
+    publishable: true
+  shared_code_required: true
+randomness:
+  master_seed: 16042026
+  stream_policy: one deterministic public fixture
+resolution_note: defaults materialized; no silent runtime defaults

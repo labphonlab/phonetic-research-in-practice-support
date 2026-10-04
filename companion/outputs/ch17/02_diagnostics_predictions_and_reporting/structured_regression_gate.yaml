@@ -1,0 +1,31 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: restrict
+selected_model: speaker_slope
+permitted_claim: In this generated sample, the model estimates condition contrasts
+  averaged over the 18 observed items; new-speaker extension is conditional on the
+  fitted speaker random-effects structure.
+prohibited_claims:
+- generalization to new items
+- empirical phonetic conclusion
+- claim selection by significance voting
+new_unit_scope:
+  speakers: yes
+  items: no
+support:
+  extrapolated_grid_rows: 6
+  weak_support_grid_rows: 6
+  maximum_leave_one_speaker_change: 0.1499013
+chapter14_stability_link:
+  path: companion/outputs/ch14/02_sensitivity_universe/claim_stability.tsv
+  data_status: SYNTHETIC_TEACHING_FIXTURE
+  stable_dimensions:
+  - direction
+  - magnitude
+  - scope
+  - diagnostics
+  role: synthetic teaching linkage only; not empirical validation
+significance_vote_permitted: no
+rationale:
+- item is a fixed blocking factor rather than a sampled random effect
+- all data and Chapter 14 stability results are synthetic teaching fixtures
+- prediction support is reported separately from model computation

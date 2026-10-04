@@ -1,0 +1,10 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+signed_difference: annotator B minus annotator A
+tolerances_ms:
+- 5.0
+- 10.0
+- 20.0
+continuous_distribution_retained: yes
+automation_comparison: counterbalanced mode summaries
+interpretive_limit: synthetic judgments do not estimate a field annotation workforce

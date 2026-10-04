@@ -1,0 +1,89 @@
+schema_version: "1.0"
+
+analysis:
+  analysis_id: "replace-with-stable-analysis-id"
+  status: "confirmatory"
+  data_manifest: "path/to/frozen_analysis_manifest.tsv"
+  data_schema: "path/to/analysis_schema.yaml"
+  primary_language: "R"
+
+estimand:
+  quantity: "replace-with-estimated-quantity"
+  outcome: "replace-with-outcome"
+  observation_unit: "replace-with-unit"
+  target_population: "replace-with-population"
+  focal_contrast: "replace-with-contrast"
+  averaging_distribution: "replace-with-reference-or-target-distribution"
+  purpose: "association"
+  new_unit_scope:
+    speakers: true
+    items: true
+    sessions: false
+
+outcome_model:
+  family: "gaussian"
+  link: "identity"
+  transformation: "none"
+  censoring: "none"
+  rationale: "replace-with-observation-process-rationale"
+
+predictors:
+  focal:
+    - name: "condition"
+      type: "factor"
+      levels: []
+      contrast_matrix: "config/condition_contrasts.tsv"
+  adjustment: []
+  interactions: []
+  scaling_parameters: "derived/scaling_parameters.tsv"
+
+grouping_structure:
+  units:
+    - name: "speaker_id"
+      relation: "crossed"
+      sampled_population: true
+    - name: "item_id"
+      relation: "crossed"
+      sampled_population: true
+  nesting: []
+  repeated_within: []
+
+candidate_models:
+  starting_fixed_effects: "replace-with-formula"
+  starting_random_effects: "replace-with-design-justified-structure"
+  random_slope_priority: []
+  simplification_order:
+    - "remove unsupported correlation parameters"
+    - "apply prespecified slope rule"
+  prohibit_result_based_selection: true
+
+fitting:
+  engine: "replace-with-package-and-function"
+  engine_version: "replace-with-version"
+  optimizer: "replace-with-optimizer"
+  convergence_policy: "retain-attempt-and-diagnose"
+  singularity_policy: "retain-attempt-and-apply-prespecified-rule"
+  seed: 20261002
+
+diagnostics:
+  residual_distribution: true
+  heteroskedasticity: true
+  cluster_influence:
+    - "speaker_id"
+    - "item_id"
+  predictor_support: true
+  extrapolation: true
+
+predictions:
+  grid: "config/prediction_grid.tsv"
+  response_scale: true
+  include_population_predictions: true
+  include_observed_unit_predictions: false
+  focal_contrasts: "config/focal_contrasts.tsv"
+
+reporting:
+  preserve_failed_models: true
+  model_registry: "results/model_attempts.tsv"
+  gate_record: "results/structured_regression_gate.yaml"
+  result_table: "results/focal_contrasts.tsv"
+  provenance: "results/run_provenance.json"

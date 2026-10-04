@@ -1,0 +1,3 @@
+model_id	formula	purpose	prespecified	data_status
+cue_only	outcome ~ cue_1 + cue_2	prediction	true	SYNTHETIC_TEACHING_FIXTURE
+expanded_signatures	outcome ~ cue_1 + cue_2 + speaker_signature + device_signature	prediction	true	SYNTHETIC_TEACHING_FIXTURE

@@ -1,0 +1,6 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+route: public_candidate
+public_execution_permitted: true
+public_deposit_authorized: false
+inputs: allowlisted repository files only
+protected_data: false

@@ -1,0 +1,53 @@
+schema_version: "1.0"
+
+study:
+  study_id: "replace-with-stable-study-id"
+  primary_estimand: "replace-with-estimand-id"
+  analysis_status: "confirmatory"
+
+meaningful_bounds:
+  quantity: "replace-with-research-scale-quantity"
+  lower: "replace-with-lower-bound"
+  upper: "replace-with-upper-bound"
+  unit: "replace-with-unit"
+  justification_source: "replace-with-theory-perception-measurement-clinical-or-decision-source"
+  specified_before_outcome_review: true
+
+evidence_inputs:
+  result_table: "results/focal_contrasts.tsv"
+  measurement_gate: "results/measurement_gate.yaml"
+  sampling_gate: "results/corpus_or_experiment_inference_gate.yaml"
+  diagnostics_gate: "results/structured_regression_gate.yaml"
+  model_scope_gate: "results/model_scope_gate.yaml"
+  sensitivity_map: "results/conclusion_map.yaml"
+
+claims:
+  - claim_id: "C-001"
+    proposed_text: "Replace with proposed claim"
+    evidence_level: "association"
+    force: "replace-with-strength-description"
+    reach:
+      populations: []
+      items_or_events: []
+      tasks_and_styles: []
+      recording_and_measurement_domain: []
+      time_period: ""
+      predictor_region: ""
+    support:
+      result_ids: []
+      diagnostic_ids: []
+      sensitivity_ids: []
+      source_ids: []
+    contradictory_evidence: []
+    untested_alternatives: []
+    unsupported_clauses: []
+    calibrated_wording: ""
+    gate_status: "pending"
+
+reporting:
+  retain_negative_results: true
+  retain_failed_predictions: true
+  label_exploratory_findings: true
+  prohibit_threshold_generated_claims: true
+  gate_record: "results/calibrated_claim_gate.yaml"
+  provenance: "results/run_provenance.json"

@@ -1,0 +1,69 @@
+schema_version: "0.1"
+session:
+  session_id: ""
+  participant_id: ""
+  date: ""
+  operator: ""
+construct:
+  primary_question: ""
+  required_structures: []
+  required_relations: []
+streams: []
+stream_schema:
+  stream_id: ""
+  modality: "audio|ema|ultrasound|epg|rtmri|airflow|pressure|egg|video|other"
+  role: "primary|complementary|quality_monitoring"
+  device: ""
+  software_version: ""
+  native_unit: ""
+  nominal_rate_hz: ""
+  observed_rate_hz: ""
+  native_time_variable: ""
+  quality_variables: []
+placement:
+  sensors_or_channels: []
+  anatomical_rules: []
+  reference_channels: []
+calibration:
+  files: []
+  procedure: ""
+  acceptance_rule: ""
+  pre_session_result: ""
+  post_session_result: ""
+coordinates:
+  native_frame: ""
+  transforms: []
+  transform_order: []
+  output_frame: ""
+  axis_definitions: {}
+synchronization:
+  reference_stream_id: ""
+  events: []
+  offset_model: ""
+  drift_model: ""
+  dropped_frame_policy: ""
+  residual_error_ms: ""
+  acceptance_rule: ""
+kinematics:
+  filtering_profiles: []
+  derivative_method: ""
+  landmark_profiles: []
+missingness:
+  required_codes:
+    - planned_absence
+    - participant_choice
+    - setup_failure
+    - stream_failure
+    - sensor_failure
+    - tracking_failure
+    - synchronization_failure
+    - phonetic_nonidentifiability
+gate:
+  stream_decisions: []
+  combined_decision: "accept|restrict|amend_and_rerun|reject"
+  claim_restrictions: []
+provenance:
+  source_hash_required: true
+  retain_native_coordinates: true
+  retain_native_timestamps: true
+  overwrite_permitted: false

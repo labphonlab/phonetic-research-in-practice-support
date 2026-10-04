@@ -1,0 +1,2 @@
+relation	left_rows	right_rows	matched_right_keys	unmatched_right_keys	cardinality	status	data_status
+source_measurements_to_corrections	12	1	1	0	many-to-one	pass	SYNTHETIC_TEACHING_FIXTURE

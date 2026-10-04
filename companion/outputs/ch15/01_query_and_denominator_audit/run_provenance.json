@@ -1,0 +1,17 @@
+{
+  "tool": "phonetic_research_companion.ch15.run_query_and_denominator_audit",
+  "tool_version": "0.1.0",
+  "run_at_utc": "2026-10-04T20:04:49.489048+00:00",
+  "input_hashes": {
+    "companion/data/ch15/synthetic_corpus/searchable_hits.tsv": "4ce31a063556f2730ed8c02204147cdf38d4cb4d2143aae8f8497da24ccd653e",
+    "companion/data/ch15/synthetic_corpus/linkage_table.tsv": "22ab8cdf904758cc4d9618ab211feee21e9f89b19ce34cce6701c35a2abac960",
+    "companion/data/ch15/synthetic_corpus/query_config.yaml": "bc53460d2d9f35b1b64379cca56b3711b49f6cbf445d231d780eb4a0b23bd14a",
+    "companion/data/ch15/synthetic_corpus/corpus_access_profile.yaml": "9b411618a5ee9eae9825665259d533dee7f806628211ea419606a034f263a023"
+  },
+  "decisions": {
+    "raw_unchanged": true,
+    "duplicates_retained": 40,
+    "final_inclusions": 440,
+    "interpretive_limit": "synthetic selection flow only"
+  }
+}

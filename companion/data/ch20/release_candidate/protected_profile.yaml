@@ -1,0 +1,5 @@
+data_status: CONFIGURATION_ONLY_NO_DATA
+route: protected
+canonical_input: AUTHORIZED_LOCAL_PATH_REQUIRED
+public: false
+execute_in_public_notebook: false

@@ -1,0 +1,12 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+primary_time: proportional
+sensitivity_time:
+- onset_relative_ms
+- landmark_relative_ms
+scaling: 12*log2(f0/speaker_observed_median)
+interpolation:
+  maximum_gap_ms: 20
+  eligible_codes: estimator_failure
+observed_and_reconstructed_distinguished: yes
+condition_outcome_not_used_for_profile_selection: yes
+interpretive_limit: generated contours do not provide empirical prosodic evidence

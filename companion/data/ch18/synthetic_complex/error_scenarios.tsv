@@ -1,0 +1,3 @@
+scenario_id	mechanism	range_or_scale	evidence_status	replicates	seed	data_status
+validation_random	independent Gaussian outcome error	estimated SD from measurement_validation.tsv	validation_derived_fixture	30	18042026	SYNTHETIC_TEACHING_FIXTURE
+hypothetical_differential	condition-B additive bias	uniform 0 to 2 outcome units	HYPOTHETICAL_SENSITIVITY_ONLY	30	18042027	SYNTHETIC_TEACHING_FIXTURE

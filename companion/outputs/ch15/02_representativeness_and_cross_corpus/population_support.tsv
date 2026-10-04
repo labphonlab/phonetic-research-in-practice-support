@@ -1,0 +1,11 @@
+dimension	category	target_required	raw_hits	final_inclusions	minimum_required	support_status	data_status
+region	north	True	420	294	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+region	south	True	220	146	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+region	central	True	0	0	10	unsupported	SYNTHETIC_TEACHING_FIXTURE
+style	casual	True	320	215	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+style	interview	True	320	225	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+style	read	True	0	0	10	unsupported	SYNTHETIC_TEACHING_FIXTURE
+era	2010s	True	384	281	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+era	2020s	True	256	159	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+condition_id	SYN_C1	True	320	186	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE
+condition_id	SYN_C2	True	320	254	10	adequate_fixture_support	SYNTHETIC_TEACHING_FIXTURE

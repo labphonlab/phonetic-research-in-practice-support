@@ -1,0 +1,12 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: require_revision_and_human_approval
+claims_total: 5
+claims_failed: 3
+claims_qualified: 2
+automatic_claim_generation: no
+threshold_generated_claims: no
+causal_claim_approved: no
+new_item_generalization_approved: no
+external_corpus_generalization_approved: no
+negative_and_unsupported_evidence_retained: yes
+final_wording_approved: no

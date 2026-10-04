@@ -1,0 +1,20 @@
+{
+  "tool": "phonetic_research_companion.ch10.run_pitch_and_formant_qc",
+  "tool_version": "0.1.0",
+  "numpy_version": "2.4.4",
+  "run_at_utc": "2026-10-04T20:04:47.943514+00:00",
+  "input_hashes": {
+    "companion/data/ch10/synthetic_acoustics/source_manifest.tsv": "84de46adbceea87b1c106262554529c206f20ec37393ec6b99661262b97d2e15",
+    "companion/data/ch10/synthetic_acoustics/interval_manifest.tsv": "0b02fb0e22b865b85aebbeb821f4c4dd719b65eed6ae3a98888c56481244e16b",
+    "companion/data/ch10/synthetic_acoustics/acoustic_measurement_spec.yaml": "59bad8da021126e31635651269ff1e7def81e94b4cd7ed2165e94b12d8484120"
+  },
+  "source_hashes": {
+    "SYN_VOWEL_01": "f63755f102416074a94889e577e35cfdc03883b40053d8fce084011ee46256cc",
+    "SYN_VOWEL_02": "e070bb186d5e560c99237b704e1cb3d9c1bf1c42a5ca288b7262975f9afbf88e",
+    "SYN_VOWEL_03": "4b2cb922b2c2b94c327e14f6b2179bf81e143c3a8b07dcbe66396e4367792bb2",
+    "SYN_VOWEL_04": "8d88df4efb0b329da8d9eab765bba03314c44271bae72adf6c3a7caa18cc25e5",
+    "SYN_VOWEL_05": "99ec82c4fd9a2009a28fed6d56f20489f5975dbf144c9e5c86f069875f5794da",
+    "SYN_VOWEL_06": "e04f97ec48675283c9985a1bd9bfd800f93f2337f5cdf7fd8f8f51ad1a5af5f4",
+    "SYN_VOWEL_07": "476e8b59e0e8ac3cd25a9079614188944feffc85a4942a1fd5009e6f052966d9"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "decision_status": "undecided",
+  "contrast_15ms": "Learner response required.",
+  "contrast_100ms": "Learner response required.",
+  "automation_review": "Learner response required.",
+  "warning": "Tolerance indicators do not replace the continuous difference distribution."
+}

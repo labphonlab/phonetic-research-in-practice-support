@@ -1,0 +1,28 @@
+{
+  "tool": "run_pitch_trajectory_preparation",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:55 UTC",
+  "input_hashes": {
+    "companion/data/ch12/synthetic_prosody/source_manifest.tsv": "95d4b86b675e6147b2f7dcba27d7d2dda4393731befc518b349eabd7972b12fe",
+    "companion/data/ch12/synthetic_prosody/interval_manifest.tsv": "10ce388ff81e9e7ff316f71b027bffe60517ac828d3943d146f8e9ec7303875c",
+    "companion/data/ch12/synthetic_prosody/landmarks.tsv": "84baf80efd6f290d370aca309956bce86279e3fd2b001f26f5b190bbe33012ef",
+    "companion/data/ch12/synthetic_prosody/raw_frame_estimates.tsv": "4858bb76441beefb84fdc8cff6f05e401a09e015f5006b1f44afd17aa8e61c77",
+    "companion/data/ch12/synthetic_prosody/prosodic_trajectory_spec.yaml": "bb24c3c539c1979063967f3c118b9f0e3d8d9738a5473a3e977197cda1dabc91"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "primary_time": "proportional",
+    "sensitivity_time": ["onset_relative_ms", "landmark_relative_ms"],
+    "scaling": "12*log2(f0/speaker_observed_median)",
+    "interpolation": {
+      "maximum_gap_ms": 20,
+      "eligible_codes": "estimator_failure"
+    },
+    "observed_and_reconstructed_distinguished": true,
+    "condition_outcome_not_used_for_profile_selection": true,
+    "interpretive_limit": "generated contours do not provide empirical prosodic evidence",
+    "raw_sha256_before": "4858bb76441beefb84fdc8cff6f05e401a09e015f5006b1f44afd17aa8e61c77",
+    "raw_sha256_after": "4858bb76441beefb84fdc8cff6f05e401a09e015f5006b1f44afd17aa8e61c77"
+  }
+}

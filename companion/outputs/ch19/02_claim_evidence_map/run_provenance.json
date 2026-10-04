@@ -1,0 +1,35 @@
+{
+  "tool": "run_claim_evidence_map",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:05:04 UTC",
+  "input_hashes": {
+    "companion/data/ch19/synthetic_claims/claim_evidence_map.yaml": "3ec99ae20bc0fc86c7184d3660db4f029983e7db0f4330b85377f2572ee7cacf",
+    "companion/data/ch19/synthetic_claims/draft_claim_registry.tsv": "9f7869c4ba221c616fd169cb8da199e7475455cb07e95b49a2381d1cec3e4352",
+    "companion/data/ch19/synthetic_claims/evidence_inventory.tsv": "c927e9242b4d47957885b629479ed11061c230a06f86d6dedfa18b80f2d4c7d8",
+    "companion/outputs/ch17/02_diagnostics_predictions_and_reporting/focal_contrasts.tsv": "94af7e66d8254586d7019a792fc8e9cc4c976eedda0d20a028b14ff12c102622",
+    "companion/outputs/ch17/02_diagnostics_predictions_and_reporting/structured_regression_gate.yaml": "5a0a4c05a0b8393c8310c86f14d2b3ebd5de311fe9368693323ceef8f33846e4",
+    "companion/outputs/ch15/02_representativeness_and_cross_corpus/corpus_inference_gate.yaml": "434a8aba040083d255e974ae2c4248ae385d89ca11f11ba3299457b6e7ad2d5b",
+    "companion/outputs/ch18/02_prediction_validation_and_scope/model_scope_gate.yaml": "60b04b06289d76aaf43cf47a6fd91835789fc8539d5d22d254a600cd53ccb04d",
+    "companion/outputs/ch14/02_sensitivity_universe/conclusion_map.yaml": "bb001837d00c7e57acd56760a2f62e6fb36d43bf15ac7bf8b26481af73a931f7"
+  },
+  "decisions": {
+    "gate": {
+      "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+      "decision": "require_revision_and_human_approval",
+      "claims_total": 5,
+      "claims_failed": 3,
+      "claims_qualified": 2,
+      "automatic_claim_generation": false,
+      "threshold_generated_claims": false,
+      "causal_claim_approved": false,
+      "new_item_generalization_approved": false,
+      "external_corpus_generalization_approved": false,
+      "negative_and_unsupported_evidence_retained": true,
+      "final_wording_approved": false
+    },
+    "claim_order": ["C19_001", "C19_002", "C19_003", "C19_004", "C19_005"],
+    "evidence_inventory": ["E_RESULT_CH17", "E_MODEL_CH17", "E_SCOPE_CH18", "E_SENS_CH14", "E_CORPUS_CH15", "E_CAUSAL"],
+    "human_scientific_judgment_required": true
+  }
+}

@@ -1,0 +1,30 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+profiles:
+- profile_id: RAW_15
+  filter: none
+  filter_sigma_samples: 0
+  peak_fraction: 0.15
+  minimum_excursion_mm: 2.0
+- profile_id: RAW_25
+  filter: none
+  filter_sigma_samples: 0
+  peak_fraction: 0.25
+  minimum_excursion_mm: 2.0
+- profile_id: GAUSS_15
+  filter: gaussian
+  filter_sigma_samples: 1.5
+  peak_fraction: 0.15
+  minimum_excursion_mm: 2.0
+- profile_id: GAUSS_25
+  filter: gaussian
+  filter_sigma_samples: 1.5
+  peak_fraction: 0.25
+  minimum_excursion_mm: 2.0
+selection_rule: earliest positive velocity peak above the profile threshold; retain
+  every candidate
+nonidentifiable_rules:
+  maximum_missing_fraction: 0.15
+  maximum_target_plateau_ms: 80
+  multiple_candidates: retain and flag
+  software_failure: separate from phonetic nonidentifiability

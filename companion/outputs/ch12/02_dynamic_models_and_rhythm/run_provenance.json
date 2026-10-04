@@ -1,0 +1,33 @@
+{
+  "tool": "run_dynamic_models_and_rhythm",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:56 UTC",
+  "input_hashes": {
+    "companion/outputs/ch12/01_pitch_trajectory_preparation/trajectory_preprocessing.tsv": "5b35b360cd376bb3ec4951ddec888a6161cf579cf75d9810c0319f0f79606383",
+    "companion/data/ch12/synthetic_prosody/segmented_intervals.tsv": "7372e03df3d5de29c9af7dd721a7f03fbf13a3c166752be7bf41b9fca6f104c7",
+    "companion/data/ch12/synthetic_prosody/model_comparison.yaml": "ef8e4e58dfe9bf68f2a8c038d9885aa4e58cbe029de4195c10242b5e49a986ff"
+  },
+  "decisions": {
+    "schema_version": "0.1",
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "naive_model": "condition-specific smooth only",
+    "structured_model": "condition smooth plus speaker/item random effects and speaker factor smooth",
+    "residual_rho": 0.6,
+    "series_start": "first requested frame per token",
+    "prediction_grid": {
+      "proportional_start": 0,
+      "proportional_end": 1,
+      "step": 0.02
+    },
+    "rhythm_metrics": ["percent_v", "varco_v", "npvi_v"],
+    "claim_limit": "sample descriptions and synthetic comparisons only; no language rhythm classification",
+    "data_status.1": "SYNTHETIC_TEACHING_FIXTURE",
+    "decision": "restrict",
+    "reason": "structured model reduces but does not erase serial dependence; conclusions remain synthetic and sample-scoped",
+    "independent_units": ["speaker_id", "item_id", "token_id"],
+    "frame_count_is_replication_count": false,
+    "rhythm_claim": "sample description only",
+    "typological_classification_permitted": false
+  }
+}

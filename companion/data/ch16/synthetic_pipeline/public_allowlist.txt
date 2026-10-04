@@ -1,0 +1,8 @@
+token_id
+speaker_id
+item_id
+analysis_value
+duration_ms
+measurement_status
+unicode_label
+data_status

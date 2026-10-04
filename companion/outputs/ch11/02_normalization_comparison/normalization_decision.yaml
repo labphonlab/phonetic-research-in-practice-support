@@ -1,0 +1,13 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+estimand: vowel-category separation within the eligible training-speaker population
+preservation_target: retain within-speaker vowel ordering and raw values
+reduction_target: reduce between-speaker reference-frequency dispersion
+reference_sample: training split only
+transformations:
+- raw_hz
+- log_hz
+- within_speaker_z
+- f3_reference_scaling
+exact_rebuild: yes
+interpretive_limit: synthetic normalization comparison does not establish a universally
+  preferred procedure

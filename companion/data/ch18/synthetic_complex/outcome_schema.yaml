@@ -1,0 +1,11 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+outcome: binary synthetic category
+levels:
+- 0
+- 1
+positive_class: 1
+metrics:
+- accuracy
+- Brier score
+- calibration intercept
+- calibration slope

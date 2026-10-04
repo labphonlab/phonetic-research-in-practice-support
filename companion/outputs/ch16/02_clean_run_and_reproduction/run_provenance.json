@@ -1,0 +1,26 @@
+{
+  "tool": "phonetic_research_companion.ch16.run_clean_reproduction",
+  "tool_version": "0.1.0",
+  "python": "3.14.0",
+  "run_at_utc": "2026-10-04T20:04:49.635055+00:00",
+  "input_hashes": {
+    "companion/data/ch16/synthetic_pipeline/pipeline_spec.yaml": "1c73239419885642962e2b73035fb154e29b3da9b51e81898146f041befa9dac",
+    "companion/outputs/ch16/01_pipeline_graph_and_data_contracts/configuration_resolved.yaml": "c8c022316729aee9398051373f7d3ef2e7e883dae86f7d96ce5c822b5670ebb2",
+    "companion/data/ch16/synthetic_pipeline/source_measurements.tsv": "61faea1139911ee2da23bec3158c0209144aa82d345a8798b84653dd9ea77323",
+    "companion/data/ch16/synthetic_pipeline/correction_table.tsv": "c1b9a00110681184780407a7641e8b35de06883755827e496c352cd3689fa7fa",
+    "companion/data/ch16/synthetic_pipeline/expected_artifacts.tsv": "c86cfe4a08b69087f430424c34180e0c0a311bc5d2f98882c89f41dc30510be1",
+    "companion/data/ch16/synthetic_pipeline/tolerance_policy.yaml": "66733fcce274107e5609d9dfdf3c86f9dcb91b9ceec112a767e1e6ca0528b77e",
+    "companion/data/ch16/synthetic_pipeline/public_allowlist.txt": "1e7421243da777d1fe04388721b1ad804ebda3af965c8a9fdb05415db657c603"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "exact_reproduction": true,
+    "numerical_reproduction": true,
+    "substantive_reproduction": true,
+    "privacy_allowlist_pass": true,
+    "protected_route_executed": false,
+    "public_route_executed": true,
+    "decision": "pass_public_fixture",
+    "scientific_interpretation_warranted_by_run": false
+  }
+}

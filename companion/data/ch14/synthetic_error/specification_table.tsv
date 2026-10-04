@@ -1,0 +1,9 @@
+configuration_id	priority	measurement_layer	eligibility_rule	model	changes_estimand	exploratory
+primary	primary	primary	observed	additive	false	false
+reference_layer	high	reference	all	additive	false	false
+differential_corrected	high	bias_corrected	observed	additive	false	false
+quality_050	high	primary	quality_ge_050	additive	false	false
+quality_075	secondary	primary	quality_ge_075	additive	false	false
+interaction	high	primary	observed	interaction	true	false
+invalid_combo	high	unknown	all	additive	false	false
+post_result_branch	exploratory	reference	quality_ge_075	interaction	true	true

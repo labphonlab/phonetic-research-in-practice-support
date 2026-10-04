@@ -1,0 +1,11 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: restrict
+reason: structured model reduces but does not erase serial dependence; conclusions
+  remain synthetic and sample-scoped
+independent_units:
+- speaker_id
+- item_id
+- token_id
+frame_count_is_replication_count: no
+rhythm_claim: sample description only
+typological_classification_permitted: no

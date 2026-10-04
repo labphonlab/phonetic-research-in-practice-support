@@ -1,0 +1,25 @@
+{
+  "tool": "run_dynamic_error_missingness",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:05:03 UTC",
+  "input_hashes": {
+    "companion/data/ch18/synthetic_complex/trajectory_frames.tsv": "ae0b426e1eea820e0567790eb34cd7e59c8799fb4553a1321bc726b72215aaf2",
+    "companion/data/ch18/synthetic_complex/series_boundaries.tsv": "b22fdd258b897d02c79942162c67c7e1ae522e64b74b612f8c0d2975f6addf8c",
+    "companion/data/ch18/synthetic_complex/measurement_validation.tsv": "77bbbb5a46bd3b402b00c6d08522e6ffadb67b6f0264981b65eedef0b1df739c",
+    "companion/data/ch18/synthetic_complex/missingness_codes.tsv": "51a4ba9717b398b334a2137b0e61ff6829d7bd8e127777620d948ea0cc7c758f",
+    "companion/data/ch18/synthetic_complex/error_scenarios.tsv": "c5c2599cd4a0b476c95077aa4cd6a214de3360102e7a95693bc565af474bbace",
+    "companion/data/ch18/synthetic_complex/complex_model_spec.yaml": "cba5d5e4a7a0ef1c29e100cfb2d07a92a725fc7170b6454d885238ca5009ff8d",
+    "companion/templates/sensitivity_analysis_spec.yaml": "ed80c923bf530a5b35ba4e48ec0dcef03b85d65dea8a72d26a38c4e31cacd4d6"
+  },
+  "decisions": {
+    "dynamic_required_for_generated_shape": true,
+    "frame_count_is_replication_count": false,
+    "measurement_validation_sd": 0.7645,
+    "hypothetical_scenario_labeled": true,
+    "imputation_performed": false,
+    "structural_absence_imputed": false,
+    "chapter14_schema_version": "0.1",
+    "interpretive_limit": "workflow and estimator test only"
+  }
+}

@@ -1,0 +1,25 @@
+event_id	shape_class	eligible_profiles	onset_range_ms	target_range_ms	duration_range_ms	claim_scope	data_status
+SYN_KIN_001	smooth	4	25.0	0.0	25.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_002	plateaued	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_003	multi_peaked	4	25.0	0.0	25.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_004	noisy	4	45.0	2.5	47.5	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_005	missing	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_006	low_excursion	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_007	smooth	4	20.0	2.5	22.5	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_008	plateaued	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_009	multi_peaked	4	15.0	0.0	15.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_010	noisy	4	5.0	30.0	35.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_011	missing	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_012	low_excursion	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_013	smooth	4	20.0	2.5	22.5	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_014	plateaued	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_015	multi_peaked	4	40.0	2.5	40.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_016	noisy	4	10.0	0.0	10.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_017	missing	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_018	low_excursion	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_019	smooth	4	15.0	2.5	17.5	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_020	plateaued	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_021	multi_peaked	4	40.0	2.5	40.0	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_022	noisy	4	5.0	2.5	7.5	synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_023	missing	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_024	low_excursion	0				synthetic profile sensitivity only	SYNTHETIC_TEACHING_FIXTURE

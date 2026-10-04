@@ -1,0 +1,54 @@
+schema_version: "0.1"
+measure:
+  measure_id: ""
+  construct: ""
+  measurand: ""
+  unit: ""
+  representation: "point|summary|distribution|trajectory"
+source_requirements:
+  channel: ""
+  minimum_sample_rate_hz: ""
+  recording_constraints: []
+annotation_requirements:
+  tier: ""
+  included_labels: []
+  excluded_labels: []
+window:
+  alignment_event: ""
+  start_rule: ""
+  end_rule: ""
+  window_length_ms: ""
+  frame_step_ms: ""
+preprocessing:
+  operations: []
+estimator:
+  software: ""
+  software_version: ""
+  algorithm: ""
+  settings_profile_id: ""
+  settings: {}
+output:
+  raw_variable: ""
+  analysis_variable: ""
+  confidence_variable: ""
+  missingness_codes: []
+quality_control:
+  admissible_range: ""
+  flags: []
+  risk_strata: []
+  review_sample_rule: ""
+  correction_policy: ""
+validation:
+  target_domain: ""
+  reference_method: ""
+  sampling_design: ""
+  primary_error_summaries: []
+  differential_error_checks: []
+  acceptance_rule: ""
+sensitivity:
+  prespecified_profiles: []
+  claim_stability_rule: ""
+provenance:
+  source_hash_required: true
+  retain_raw_output: true
+  overwrite_permitted: false

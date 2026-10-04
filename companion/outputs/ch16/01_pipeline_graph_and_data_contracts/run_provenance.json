@@ -1,0 +1,19 @@
+{
+  "tool": "phonetic_research_companion.ch16.run_pipeline_graph_and_contracts",
+  "tool_version": "0.1.0",
+  "python": "3.14.0",
+  "run_at_utc": "2026-10-04T20:04:49.586330+00:00",
+  "input_hashes": {
+    "companion/data/ch16/synthetic_pipeline/pipeline_spec.yaml": "1c73239419885642962e2b73035fb154e29b3da9b51e81898146f041befa9dac",
+    "companion/data/ch16/synthetic_pipeline/data_contracts.yaml": "8bb67fc8ff1cc284d5fc47507846c38e012c8ad986bcb27c0218963b0d9ab804",
+    "companion/data/ch16/synthetic_pipeline/source_measurements.tsv": "61faea1139911ee2da23bec3158c0209144aa82d345a8798b84653dd9ea77323",
+    "companion/data/ch16/synthetic_pipeline/correction_table.tsv": "c1b9a00110681184780407a7641e8b35de06883755827e496c352cd3689fa7fa",
+    "companion/data/ch16/synthetic_pipeline/adverse_cases.tsv": "1a0ecd9889ea694e2fdc32a068ec2a19b4c42a57696e1bd14a2779225c5087dc"
+  },
+  "decisions": {
+    "canonical_contracts_pass": true,
+    "adverse_failures_detected": 3,
+    "source_unchanged": true,
+    "protected_data_accessed": false
+  }
+}

@@ -1,0 +1,37 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+seed: 14042026
+claim:
+  claim_id: SYN_CLAIM
+  text: predictor has a positive association with the outcome in the generated sample
+  estimand: additive predictor slope
+  target_population: 24 synthetic speakers and 20 generated items
+primary_analysis:
+  configuration_id: primary
+  measurement_layer: primary
+  eligibility_rule: observed
+  model: outcome ~ predictor + group
+  uncertainty_method: ordinary model SE for instruction only
+propagation:
+  replicates: 40
+  preserve_dependency_levels:
+  - observation
+  - speaker
+  - group
+stability:
+  direction_rule: positive in every successful high-priority same-estimand configuration
+  magnitude_region:
+  - 5.0
+  - 10.0
+  scope_rule: both synthetic groups and at least 18 speakers retained
+  diagnostic_rule: finite estimate and SE; failed specifications retained
+  permitted_outcomes:
+  - stable
+  - stable_with_restricted_scope
+  - measurement_dependent
+  - analysis_dependent
+  - unsupported
+execution:
+  primary_runs_first: true
+  retain_failures: true
+  post_result_branches_label: exploratory

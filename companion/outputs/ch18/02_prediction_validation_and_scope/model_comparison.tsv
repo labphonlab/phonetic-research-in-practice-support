@@ -1,0 +1,11 @@
+scheme	model_id	accuracy_mean	accuracy_fold_sd	brier_mean	brier_fold_sd	selection_rule	data_status
+corpus_heldout	cue_only	0.628125	0.0132582521472477	0.222735512448877	0.00440679289842909	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+item_heldout	cue_only	0.629166666666667	0.0165893267288601	0.223548450744595	0.00540968137335763	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+row_random	cue_only	0.630555555555556	0.0315953143502148	0.225206597909662	0.00852005046733892	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+session_heldout	cue_only	0.630555555555556	0.0117851130197758	0.224242882054668	0.00521591114229297	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	cue_only	0.622222222222222	0.0504608392349582	0.225180700119575	0.0152664794426795	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+corpus_heldout	expanded_signatures	0.59375	0.0795495128834866	0.263629440539622	0.0602044485565461	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+item_heldout	expanded_signatures	0.626388888888889	0.0189079424598723	0.223358310954035	0.00543495534692966	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+row_random	expanded_signatures	0.620833333333333	0.03279366375866	0.22551286388005	0.00835080884458784	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+session_heldout	expanded_signatures	0.626388888888889	0.00982092751647979	0.224035032757064	0.00531224560472727	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	expanded_signatures	0.622222222222222	0.0432566986177707	0.225846816501373	0.0157198606420949	new-speaker performance is primary; no significance voting	SYNTHETIC_TEACHING_FIXTURE

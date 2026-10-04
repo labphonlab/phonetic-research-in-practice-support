@@ -1,0 +1,19 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: restrict
+selected_predictive_model: cue_only
+population_scope: new synthetic speakers within represented items, sessions, corpora,
+  and generator
+measurement_scope: generated cues and declared complete token-level feature process
+  only
+predictor_scope: training-fold scaling and observed feature ranges; no extrapolated
+  corpus
+goal_scope: prediction only; not causal or mechanistic explanation
+row_random_is_new_speaker_evidence: no
+preprocessing_inside_folds: yes
+target_unit_leakage_detected: no
+external_corpus_validation: no
+predictive_success_implies_causation: no
+linked_dynamic_evidence:
+- residual_dependence.tsv
+- measurement_error_results.tsv
+- missingness_map.tsv

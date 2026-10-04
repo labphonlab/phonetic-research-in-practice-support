@@ -1,0 +1,31 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+query_id: SYN_QUERY_001
+query_expression: query_term == 'SYN_TARGET'
+corpus_versions:
+  SYN_CORPUS_A: SYN_1.0
+  SYN_CORPUS_B: SYN_1.0
+annotation_version: SYN_ANN_1.0
+normalization: none
+duplicate_key:
+- corpus_id
+- source_token_id
+stage_order:
+- raw_hit
+- deduplicated
+- context_eligible
+- signal_available
+- measurement_success
+- quality_approved
+- metadata_complete
+- linkage_matched
+- final_inclusion
+exclusion_priority:
+- duplicate
+- context_ineligible
+- signal_unavailable
+- measurement_failure
+- quality_rejected
+- metadata_missing
+- linkage_ambiguous
+- linkage_unmatched

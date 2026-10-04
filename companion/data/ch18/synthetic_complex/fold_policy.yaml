@@ -1,0 +1,21 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+seed: 18042026
+schemes:
+  row_random:
+    folds: 5
+    target: new rows from represented units
+  speaker_heldout:
+    folds: 5
+    target: new speakers
+  item_heldout:
+    folds: 4
+    target: new items
+  session_heldout:
+    folds: 2
+    target: new sessions
+  corpus_heldout:
+    folds: 2
+    target: new corpora
+preprocessing_inside_folds: true
+tuning: none; bounded candidate set

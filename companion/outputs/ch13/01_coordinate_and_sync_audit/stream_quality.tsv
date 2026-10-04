@@ -1,0 +1,5 @@
+stream_id	quality_domain	requested_units	failed_units	metric	observed_value	acceptance_limit	decision	reason	data_status
+SYN_EMA	reference_geometry	240	27	absolute_reference_distance_error_mm	4.872856858623756	0.75	restrict	localized reference-sensor drift	SYNTHETIC_TEACHING_FIXTURE
+SYN_EMA	frame_continuity	240	2	missing_frame_count	2	0	restrict	dropped frames retained as gaps	SYNTHETIC_TEACHING_FIXTURE
+SYN_EMA	stationary_target	238	23	p95_head_corrected_error_mm	2.2142260627794843	1.0	restrict	known-fixture validation detects correction error during reference drift	SYNTHETIC_TEACHING_FIXTURE
+SYN_AUDIO_CLOCK+SYN_EMA	synchronization	12	1	linear_model_max_absolute_residual_ms	0.9816089172076659	2.0	accept_fixture_only	linear drift model meets the declared residual tolerance for observed anchors; one anchor is missing	SYNTHETIC_TEACHING_FIXTURE

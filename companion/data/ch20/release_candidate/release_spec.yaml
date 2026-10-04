@@ -1,0 +1,39 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+release:
+  project_id: PHONETIC_RESEARCH_IN_PRACTICE
+  release_version: candidate-0.1.0
+  release_date: AUTHOR_INPUT_REQUIRED
+  supported_manuscript_or_edition: first substantive English draft
+  status: internal_candidate
+  allowlist_only: true
+routes:
+  protected:
+    profile: protected_profile.yaml
+    public: false
+  public:
+    profile: public_profile.yaml
+    public: false
+    reason: authorization and license gates remain open
+  shared_transformation_code: true
+governance:
+  human_review_required: true
+  unresolved_permission_defaults_to_restricted: true
+build:
+  clean_candidate_directory: true
+  unexpected_file_policy: fail
+  checksum_algorithm: sha256
+audits:
+  identifiers: true
+  secrets: true
+  private_paths: true
+  unapproved_media: true
+  notebook_outputs: true
+  license_compatibility: true
+  human_governance_review: true
+archive:
+  provider: AUTHOR_AND_PUBLISHER_INPUT_REQUIRED
+  version_specific_identifier: AUTHOR_INPUT_REQUIRED_UNTIL_AUTHORIZED_DEPOSIT
+  concept_identifier: AUTHOR_INPUT_REQUIRED_UNTIL_AUTHORIZED_DEPOSIT
+  deposit_authorized: false
+  publish_authorized: false

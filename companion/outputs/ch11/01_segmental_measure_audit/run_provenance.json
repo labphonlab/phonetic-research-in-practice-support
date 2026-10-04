@@ -1,0 +1,19 @@
+{
+  "tool": "run_segmental_measure_audit",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:53 UTC",
+  "input_hashes": {
+    "companion/data/ch11/synthetic_segmental/event_dictionary.yaml": "1c8e5e18d74536fbe035d2bad0b8b70e6dba33d05da8c5ee55063a194f784ab1",
+    "companion/data/ch11/synthetic_segmental/annotation_manifest.tsv": "541c695446273f804bb2e8aa222af49afe71b13516c790b04385ab83cc42732c",
+    "companion/data/ch11/synthetic_segmental/acoustic_estimates.tsv": "db3d9cc6ec0240b314e773f4cfa3f162d6c9b37b6ae787865e9402d91da1e0ac",
+    "companion/data/ch11/synthetic_segmental/segmental_measure_manifest.tsv": "bf8d6bb1e0060f0900665ec63a8a998a02e2cdcea9ca8fa89c9e76bfc31fff86"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "event_dictionary_version": "0.1",
+    "output_policy": "one row per requested observation including failures",
+    "raw_gate": "learner decision required",
+    "interpretive_limit": "generated landmarks do not validate a segmental measurement protocol"
+  }
+}

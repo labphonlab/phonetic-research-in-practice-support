@@ -1,0 +1,9 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "decision_status": "undecided",
+  "duration_use": "Learner response required.",
+  "synchronization_use": "Learner response required.",
+  "correction_audit": "Learner response required.",
+  "raw_unchanged": true,
+  "warning": "Synthetic error does not estimate a real aligner."
+}

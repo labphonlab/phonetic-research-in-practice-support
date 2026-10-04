@@ -1,0 +1,1 @@
+schema_version	participant_code	session_id	list_id	block_index	trial_index	stimulus_id	condition_id	item_id	talker_id	continuum_id	continuum_step	response_mapping_id	correctness_definition	rt_origin	timeout_ms	practice	feedback	randomization_seed

@@ -1,0 +1,5 @@
+data_status: CONFIGURATION_ONLY_NO_DATA
+route: protected
+input_root: '[AUTHORIZED LOCAL PATH REQUIRED]'
+publishable: false
+contains_protected_data: true

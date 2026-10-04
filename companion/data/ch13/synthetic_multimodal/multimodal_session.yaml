@@ -1,0 +1,36 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+session:
+  session_id: SYN_MM_SESSION_01
+  participant_id: SYNTHETIC_ONLY
+  operator: fixture_generator
+coordinates:
+  native_frame: generated_device_xy
+  transforms:
+  - native_to_head
+  - head_to_anatomical
+  transform_order:
+  - native_to_head
+  - head_to_anatomical
+  output_frame: synthetic_occlusal_xy
+  reference_distance_mm: 40.0
+  reference_distance_tolerance_mm: 0.75
+synchronization:
+  reference_stream_id: SYN_AUDIO_CLOCK
+  offset_model: single median offset
+  drift_model: linear least squares
+  dropped_frame_policy: retain gaps and reason codes
+  acceptance_rule_ms: 2.0
+gate:
+  permitted_decisions:
+  - accept
+  - restrict
+  - amend_and_rerun
+  - reject
+  combined_rule: every claimed relation requires valid component streams and residual
+    synchronization error below its temporal scale
+provenance:
+  source_hash_required: true
+  retain_native_coordinates: true
+  retain_native_timestamps: true
+  overwrite_permitted: false

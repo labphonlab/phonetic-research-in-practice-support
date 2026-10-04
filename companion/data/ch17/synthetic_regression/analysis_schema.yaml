@@ -1,0 +1,25 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+primary_key:
+- observation_id
+required_fields:
+- observation_id
+- speaker_id
+- item_id
+- condition
+- speaking_rate
+- speaking_rate_z
+- outcome
+- recording_order
+- data_status
+types:
+  outcome: finite_number
+  speaking_rate_z: finite_number
+  condition: factor
+factor_levels:
+  condition:
+  - BASE
+  - SHIFT_A
+  - SHIFT_B
+support_rules:
+  minimum_observations_per_speaker_condition_for_random_slope: 2

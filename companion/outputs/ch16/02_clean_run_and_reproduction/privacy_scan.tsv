@@ -1,0 +1,3 @@
+artifact_path	scanned_fields	disallowed_fields	protected_pattern_hits	passed	data_status
+analysis_table.tsv	token_id|speaker_id|item_id|analysis_value|duration_ms|measurement_status|unicode_label|data_status		0	True	SYNTHETIC_TEACHING_FIXTURE
+summary.json			0	True	SYNTHETIC_TEACHING_FIXTURE

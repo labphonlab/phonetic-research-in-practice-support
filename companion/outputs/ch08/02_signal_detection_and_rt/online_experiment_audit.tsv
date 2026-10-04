@@ -1,0 +1,3 @@
+configuration_id	event_count_expected	event_count_observed	median_onset_error_ms	p95_onset_error_ms	rt_origin	asset_hashes_verified	data_status
+SYN_DESKTOP_CONFIG	100	100	3.2	8.5	stimulus_onset	true	SYNTHETIC_TEACHING_FIXTURE
+SYN_MOBILE_CONFIG	100	100	18.4	43.7	stimulus_onset	true	SYNTHETIC_TEACHING_FIXTURE

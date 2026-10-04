@@ -1,0 +1,11 @@
+args <- commandArgs(trailingOnly = FALSE); file_arg <- grep("^--file=", args, value = TRUE); test_path <- normalizePath(sub("^--file=", "", file_arg[[1]])); repository_root <- normalizePath(file.path(dirname(test_path), "..", "..")); source(file.path(repository_root, "companion", "r", "ch14.R"))
+data_root <- file.path(repository_root, "companion", "data", "ch14", "synthetic_error")
+manifest <- read_tsv_ch14(file.path(repository_root, "companion", "data", "MANIFEST.tsv")); rows <- manifest[grepl("^CH14_", manifest$artifact_id), ]; stopifnot(nrow(rows)==6,all(rows$data_status=="SYNTHETIC_TEACHING_FIXTURE"),all(rows$contains_human_data=="false"))
+for(i in seq_len(nrow(rows))) stopifnot(sha256_ch14(file.path(repository_root,"companion","data",rows$relative_path[[i]]))==rows$sha256[[i]])
+o1<-tempfile(); a<-run_error_propagation(file.path(data_root,"sensitivity_analysis_spec.yaml"),file.path(data_root,"error_map.tsv"),file.path(data_root,"validation_pairs.tsv"),file.path(data_root,"repeated_measurements.tsv"),file.path(data_root,"raw_analysis_data.tsv"),o1)
+stopifnot(nrow(a$components)==6,nrow(a$manifest)==240,nrow(a$effects)==240,a$raw_unchanged,length(unique(a$manifest$dependency_level))>=3)
+o2<-tempfile(); b<-run_sensitivity_universe(file.path(data_root,"raw_analysis_data.tsv"),file.path(data_root,"specification_table.tsv"),file.path(data_root,"sensitivity_analysis_spec.yaml"),o2)
+stopifnot(b$results$configuration_id[[1]]=="primary",nrow(b$results)==7,nrow(b$failures)==1,b$failures$retained_in_denominator[[1]],!b$gate$significance_vote_permitted)
+notebooks<-list.files(file.path(repository_root,"companion","notebooks","ch14"),pattern="\\.ipynb$",full.names=TRUE); stopifnot(length(notebooks)==2)
+for(path in notebooks){p<-jsonlite::read_json(path,simplifyVector=FALSE); stopifnot(p$nbformat==4,p$metadata$kernelspec$language=="R",grepl("SYNTHETIC_TEACHING_FIXTURE",paste(readLines(path,warn=FALSE),collapse="\n"),fixed=TRUE))}
+unlink(c(o1,o2),recursive=TRUE,force=TRUE); cat("PASS companion/tests/test_ch14.R\n")

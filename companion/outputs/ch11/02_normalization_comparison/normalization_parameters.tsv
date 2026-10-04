@@ -1,0 +1,91 @@
+speaker_id	split	measure_id	eligible	eligibility_reason	n_reference	reference_center	reference_scale	speaker_median_f3	grand_training_median_f3	reference_categories
+SYN_SEG_SPK_01	training	f1	TRUE	eligible_complete_training_inventory	12	412.944916666667	183.278233055874	2231.7905	2584.324	a,i,u
+SYN_SEG_SPK_01	training	f2	TRUE	eligible_complete_training_inventory	12	1306.618	556.876875935948	2231.7905	2584.324	a,i,u
+SYN_SEG_SPK_01	training	f3	TRUE	eligible_complete_training_inventory	12	2296.4645	308.308935288351	2231.7905	2584.324	a,i,u
+SYN_SEG_SPK_02	training	f1	TRUE	eligible_complete_training_inventory	12	519.017583333333	231.989132961579	2672.188	2584.324	a,i,u
+SYN_SEG_SPK_02	training	f2	TRUE	eligible_complete_training_inventory	12	1618.66875	694.315831888829	2672.188	2584.324	a,i,u
+SYN_SEG_SPK_02	training	f3	TRUE	eligible_complete_training_inventory	12	2822.89241666667	403.277429715452	2672.188	2584.324	a,i,u
+SYN_SEG_SPK_03	training	f1	TRUE	eligible_complete_training_inventory	12	407.047416666667	182.038104488373	2162.14	2584.324	a,i,u
+SYN_SEG_SPK_03	training	f2	TRUE	eligible_complete_training_inventory	12	1280.09133333333	582.943238463907	2162.14	2584.324	a,i,u
+SYN_SEG_SPK_03	training	f3	TRUE	eligible_complete_training_inventory	12	2242.46816666667	303.955716201565	2162.14	2584.324	a,i,u
+SYN_SEG_SPK_04	training	f1	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_04	training	f2	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_04	training	f3	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_05	training	f1	TRUE	eligible_complete_training_inventory	12	479.308166666667	211.377935181958	2551.4505	2584.324	a,i,u
+SYN_SEG_SPK_05	training	f2	TRUE	eligible_complete_training_inventory	12	1502.93133333333	633.258023695689	2551.4505	2584.324	a,i,u
+SYN_SEG_SPK_05	training	f3	TRUE	eligible_complete_training_inventory	12	2644.79283333333	362.033976754778	2551.4505	2584.324	a,i,u
+SYN_SEG_SPK_06	training	f1	TRUE	eligible_complete_training_inventory	12	489.740583333333	228.44389794332	2637.4985	2584.324	a,i,u
+SYN_SEG_SPK_06	training	f2	TRUE	eligible_complete_training_inventory	12	1559.5815	660.656303124607	2637.4985	2584.324	a,i,u
+SYN_SEG_SPK_06	training	f3	TRUE	eligible_complete_training_inventory	12	2696.66291666667	373.674576420436	2637.4985	2584.324	a,i,u
+SYN_SEG_SPK_07	training	f1	TRUE	eligible_complete_training_inventory	12	514.135416666667	241.363794474218	2729.729	2584.324	a,i,u
+SYN_SEG_SPK_07	training	f2	TRUE	eligible_complete_training_inventory	12	1600.8165	682.524171056301	2729.729	2584.324	a,i,u
+SYN_SEG_SPK_07	training	f3	TRUE	eligible_complete_training_inventory	12	2813.68108333333	402.443591581921	2729.729	2584.324	a,i,u
+SYN_SEG_SPK_08	training	f1	TRUE	eligible_complete_training_inventory	12	473.605166666667	212.078141865781	2525.5705	2584.324	a,i,u
+SYN_SEG_SPK_08	training	f2	TRUE	eligible_complete_training_inventory	12	1467.75608333333	648.439174822471	2525.5705	2584.324	a,i,u
+SYN_SEG_SPK_08	training	f3	TRUE	eligible_complete_training_inventory	12	2580.71666666667	322.023458906994	2525.5705	2584.324	a,i,u
+SYN_SEG_SPK_09	training	f1	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_09	training	f2	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_09	training	f3	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_10	training	f1	TRUE	eligible_complete_training_inventory	11	412.582545454545	192.199839449654	2138.268	2584.324	a,i,u
+SYN_SEG_SPK_10	training	f2	TRUE	eligible_complete_training_inventory	11	1322.68281818182	535.699391627211	2138.268	2584.324	a,i,u
+SYN_SEG_SPK_10	training	f3	TRUE	eligible_complete_training_inventory	11	2247.54972727273	287.023141108201	2138.268	2584.324	a,i,u
+SYN_SEG_SPK_11	training	f1	TRUE	eligible_complete_training_inventory	12	539.0405	237.334855636695	2825.2835	2584.324	a,i,u
+SYN_SEG_SPK_11	training	f2	TRUE	eligible_complete_training_inventory	12	1657.08725	702.705208380911	2825.2835	2584.324	a,i,u
+SYN_SEG_SPK_11	training	f3	TRUE	eligible_complete_training_inventory	12	2904.86633333333	385.440378287753	2825.2835	2584.324	a,i,u
+SYN_SEG_SPK_12	training	f1	TRUE	eligible_complete_training_inventory	12	428.15275	193.879210168752	2261.25	2584.324	a,i,u
+SYN_SEG_SPK_12	training	f2	TRUE	eligible_complete_training_inventory	12	1333.365	568.858426354045	2261.25	2584.324	a,i,u
+SYN_SEG_SPK_12	training	f3	TRUE	eligible_complete_training_inventory	12	2323.55866666667	323.813017124314	2261.25	2584.324	a,i,u
+SYN_SEG_SPK_13	training	f1	TRUE	eligible_complete_training_inventory	11	469.464636363636	220.036687889667	2621.099	2584.324	a,i,u
+SYN_SEG_SPK_13	training	f2	TRUE	eligible_complete_training_inventory	11	1550.92827272727	707.617307830877	2621.099	2584.324	a,i,u
+SYN_SEG_SPK_13	training	f3	TRUE	eligible_complete_training_inventory	11	2696.15218181818	358.438177878088	2621.099	2584.324	a,i,u
+SYN_SEG_SPK_14	training	f1	TRUE	eligible_complete_training_inventory	12	512.399083333333	212.913299492992	2624.9135	2584.324	a,i,u
+SYN_SEG_SPK_14	training	f2	TRUE	eligible_complete_training_inventory	12	1544.117	673.604049144195	2624.9135	2584.324	a,i,u
+SYN_SEG_SPK_14	training	f3	TRUE	eligible_complete_training_inventory	12	2734.92691666667	329.230656636031	2624.9135	2584.324	a,i,u
+SYN_SEG_SPK_15	training	f1	TRUE	eligible_complete_training_inventory	12	481.84775	224.261983282185	2540.479	2584.324	a,i,u
+SYN_SEG_SPK_15	training	f2	TRUE	eligible_complete_training_inventory	12	1538.12758333333	664.279998296783	2540.479	2584.324	a,i,u
+SYN_SEG_SPK_15	training	f3	TRUE	eligible_complete_training_inventory	12	2641.66583333333	397.490529777373	2540.479	2584.324	a,i,u
+SYN_SEG_SPK_16	training	f1	TRUE	eligible_complete_training_inventory	12	422.077166666667	200.343088038237	2319.0905	2584.324	a,i,u
+SYN_SEG_SPK_16	training	f2	TRUE	eligible_complete_training_inventory	12	1343.12116666667	577.215816278741	2319.0905	2584.324	a,i,u
+SYN_SEG_SPK_16	training	f3	TRUE	eligible_complete_training_inventory	12	2369.24333333333	320.51396300412	2319.0905	2584.324	a,i,u
+SYN_SEG_SPK_17	training	f1	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_17	training	f2	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_17	training	f3	FALSE	incomplete_reference_inventory	12				2584.324	a,i
+SYN_SEG_SPK_18	training	f1	TRUE	eligible_complete_training_inventory	12	419.770666666667	195.295717984214	2190.4595	2584.324	a,i,u
+SYN_SEG_SPK_18	training	f2	TRUE	eligible_complete_training_inventory	12	1304.63491666667	540.229268066549	2190.4595	2584.324	a,i,u
+SYN_SEG_SPK_18	training	f3	TRUE	eligible_complete_training_inventory	12	2288.45825	322.733529995124	2190.4595	2584.324	a,i,u
+SYN_SEG_SPK_19	training	f1	TRUE	eligible_complete_training_inventory	12	532.477083333333	238.346222841883	2865.5615	2584.324	a,i,u
+SYN_SEG_SPK_19	training	f2	TRUE	eligible_complete_training_inventory	12	1673.5115	719.888868426169	2865.5615	2584.324	a,i,u
+SYN_SEG_SPK_19	training	f3	TRUE	eligible_complete_training_inventory	12	2925.00666666667	387.333234741994	2865.5615	2584.324	a,i,u
+SYN_SEG_SPK_20	training	f1	TRUE	eligible_complete_training_inventory	12	457.791833333333	201.77602315251	2441.756	2584.324	a,i,u
+SYN_SEG_SPK_20	training	f2	TRUE	eligible_complete_training_inventory	12	1428.26883333333	636.098637754016	2441.756	2584.324	a,i,u
+SYN_SEG_SPK_20	training	f3	TRUE	eligible_complete_training_inventory	12	2545.81333333333	303.337569249578	2441.756	2584.324	a,i,u
+SYN_SEG_SPK_21	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_21	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_21	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_22	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_22	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_22	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_23	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_23	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_23	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_24	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_24	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_24	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_25	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_25	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_25	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_26	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_26	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_26	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_27	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_27	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_27	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_28	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_28	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_28	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_29	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_29	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_29	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_30	evaluation	f1	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_30	evaluation	f2	FALSE	evaluation_split_no_training_parameters	0				2584.324	
+SYN_SEG_SPK_30	evaluation	f3	FALSE	evaluation_split_no_training_parameters	0				2584.324	

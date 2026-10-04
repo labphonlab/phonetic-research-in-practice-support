@@ -1,0 +1,5 @@
+scope	category	n_items	percent_agreement	expected_agreement	kappa	ci_low	ci_high	positive_agreement
+overall	all	120	0.691666666666667	0.374583333333333	0.506995336442372	0.392672834678959	0.616407218625155	
+category	breathy	120						0.603174603174603
+category	creaky	120						0.631578947368421
+category	modal	120						0.766666666666667

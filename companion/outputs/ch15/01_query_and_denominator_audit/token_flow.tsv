@@ -1,0 +1,10 @@
+stage_order	stage	count	lost_from_previous	data_status
+1	raw_hit	640	0	SYNTHETIC_TEACHING_FIXTURE
+2	deduplicated	600	40	SYNTHETIC_TEACHING_FIXTURE
+3	context_eligible	570	30	SYNTHETIC_TEACHING_FIXTURE
+4	signal_available	516	54	SYNTHETIC_TEACHING_FIXTURE
+5	measurement_success	486	30	SYNTHETIC_TEACHING_FIXTURE
+6	quality_approved	476	10	SYNTHETIC_TEACHING_FIXTURE
+7	metadata_complete	467	9	SYNTHETIC_TEACHING_FIXTURE
+8	linkage_matched	440	27	SYNTHETIC_TEACHING_FIXTURE
+9	final_inclusion	440	0	SYNTHETIC_TEACHING_FIXTURE

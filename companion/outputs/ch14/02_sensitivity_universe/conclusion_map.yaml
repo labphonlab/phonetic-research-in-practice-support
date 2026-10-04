@@ -1,0 +1,8 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+primary_configuration: primary
+permitted_claim: positive association in the generated sample under successful high-priority
+  same-estimand configurations
+limitations:
+- synthetic results do not quantify empirical measurement uncertainty
+- exploratory and changed-estimand branches do not replace the primary result
+result_universe_outcome: stable

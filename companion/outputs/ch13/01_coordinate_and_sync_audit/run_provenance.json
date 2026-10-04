@@ -1,0 +1,54 @@
+{
+  "tool": "phonetic_research_companion.ch13.run_coordinate_and_sync_audit",
+  "tool_version": "0.1.0",
+  "python_version": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy_version": "2.4.4",
+  "run_at_utc": "2026-10-04T20:04:48.883954+00:00",
+  "input_hashes": {
+    "companion/data/ch13/synthetic_multimodal/multimodal_session.yaml": "9d8d18965026eef625f393429070d203634903a31eb9c5d4344cde3a8fc70734",
+    "companion/data/ch13/synthetic_multimodal/stream_manifest.tsv": "ac521192cd2e6f8a3cd58f5a2c5079f47cffa6efe2cfd022b597648eb2f491f4",
+    "companion/data/ch13/synthetic_multimodal/native_coordinates.tsv": "06ee14da8b3105c497d864c1b11930ac83d4daf5b29bcbf3e9fb90d6b3ed8638",
+    "companion/data/ch13/synthetic_multimodal/transformation_matrices.tsv": "412d739824d83306d757b66211396dd5b708550e8e5433980c979176249587b7",
+    "companion/data/ch13/synthetic_multimodal/calibration_sync_events.tsv": "e66aea4d60815057d534c2464f72cf1532dd7effb5cfaa2daf5bf19ccdaa1972"
+  },
+  "decisions": {
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "native_unchanged": true,
+    "drift_frames": [
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170
+    ],
+    "missing_frames": [
+      80,
+      81
+    ],
+    "coordinate_decision": "restrict",
+    "sync_decision": "accept_fixture_only",
+    "interpretive_limit": "synthetic geometry and clocks do not validate a physical system"
+  }
+}

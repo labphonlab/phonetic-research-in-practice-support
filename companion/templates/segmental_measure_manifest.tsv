@@ -1,0 +1,1 @@
+observation_id	source_id	speaker_id	session_id	token_id	measure_id	context_id	landmark_start_s	landmark_end_s	raw_value	raw_unit	quality_status	missingness_code	reference_sample_id	transformation_id	reference_center	reference_scale	transformed_value	transformed_unit	provenance_id

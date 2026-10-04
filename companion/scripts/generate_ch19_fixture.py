@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+"""Generate explicitly synthetic Chapter 19 interpretation fixtures."""
+from __future__ import annotations
+import csv,hashlib
+from pathlib import Path
+import yaml
+ROOT=Path(__file__).resolve().parents[2];DATA_ROOT=ROOT/"companion"/"data";CHAPTER_ROOT=DATA_ROOT/"ch19"/"synthetic_claims";STATUS="SYNTHETIC_TEACHING_FIXTURE"
+def write_tsv(path,rows,fields):
+ path.parent.mkdir(parents=True,exist_ok=True)
+ with path.open("w",encoding="utf-8",newline="") as target:w=csv.DictWriter(target,fieldnames=fields,delimiter="\t",extrasaction="ignore");w.writeheader();w.writerows(rows)
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def main():
+ CHAPTER_ROOT.mkdir(parents=True,exist_ok=True)
+ bounds=[{"contrast_id":"SHIFT_A_minus_BASE","lower_bound":-1,"upper_bound":1,"unit":"identity-link outcome units","justification_source":"synthetic design tolerance fixed before generated outcome review","source_status":"GENERATOR_SPECIFICATION_NOT_EMPIRICAL_BOUND","specified_before_outcome_review":"true","data_status":STATUS},{"contrast_id":"SHIFT_B_minus_BASE","lower_bound":-3,"upper_bound":3,"unit":"identity-link outcome units","justification_source":"synthetic design tolerance fixed before generated outcome review","source_status":"GENERATOR_SPECIFICATION_NOT_EMPIRICAL_BOUND","specified_before_outcome_review":"true","data_status":STATUS}]
+ write_tsv(CHAPTER_ROOT/"meaningful_bounds.tsv",bounds,list(bounds[0]))
+ scenarios=[]
+ for contrast,effects in {"SHIFT_A_minus_BASE":[0.5,2.0,5.0],"SHIFT_B_minus_BASE":[-0.5,-2.0,-3.5]}.items():
+  for i,effect in enumerate(effects,1):scenarios.append({"scenario_id":f"{contrast}_S{i}","contrast_id":contrast,"true_effect_scenario":effect,"scenario_source":"prospective synthetic design scenario","source_status":"SYNTHETIC_DESIGN_SCENARIO_NOT_OBSERVED_TRUTH","simulation_replicates":20000,"selection_rule":"two-sided |z| > 1.96","seed":19042026+i,"data_status":STATUS})
+ write_tsv(CHAPTER_ROOT/"effect_scenarios.tsv",scenarios,list(scenarios[0]))
+ claims=[
+  {"claim_id":"C19_001","proposed_text":"SHIFT_A is associated with a higher generated response than BASE in the analyzed sample.","evidence_level":"association","force":"direct_sample_association","population_reach":"generated analyzed speakers","item_reach":"18 observed synthetic items","goal_reach":"association","result_id":"SHIFT_A_minus_BASE","requires_new_items":"false","requires_causal_identification":"false","requires_external_corpus":"false","data_status":STATUS},
+  {"claim_id":"C19_002","proposed_text":"The SHIFT_A contrast generalizes to unseen lexical items.","evidence_level":"association","force":"generalization","population_reach":"generated speakers","item_reach":"new items","goal_reach":"association","result_id":"SHIFT_A_minus_BASE","requires_new_items":"true","requires_causal_identification":"false","requires_external_corpus":"false","data_status":STATUS},
+  {"claim_id":"C19_003","proposed_text":"The manipulation causes the phonetic mechanism represented by SHIFT_A.","evidence_level":"causal_explanation","force":"causal_mechanism","population_reach":"all speakers","item_reach":"all items","goal_reach":"causal explanation","result_id":"SHIFT_A_minus_BASE","requires_new_items":"true","requires_causal_identification":"true","requires_external_corpus":"false","data_status":STATUS},
+  {"claim_id":"C19_004","proposed_text":"The selected classifier predicts the generated category for new speakers from the represented domains.","evidence_level":"prediction","force":"domain_bounded_prediction","population_reach":"new synthetic speakers in represented domains","item_reach":"represented items","goal_reach":"prediction","result_id":"CH18_SELECTED_MODEL","requires_new_items":"false","requires_causal_identification":"false","requires_external_corpus":"false","data_status":STATUS},
+  {"claim_id":"C19_005","proposed_text":"The classifier is validated for external corpora and recording chains.","evidence_level":"prediction","force":"external_generalization","population_reach":"new corpora","item_reach":"unbounded","goal_reach":"prediction","result_id":"CH18_SELECTED_MODEL","requires_new_items":"true","requires_causal_identification":"false","requires_external_corpus":"true","data_status":STATUS}]
+ write_tsv(CHAPTER_ROOT/"draft_claim_registry.tsv",claims,list(claims[0]))
+ evidence=[{"evidence_id":"E_RESULT_CH17","domain":"result","status":"available","artifact":"companion/outputs/ch17/02_diagnostics_predictions_and_reporting/focal_contrasts.tsv","data_status":STATUS},{"evidence_id":"E_MODEL_CH17","domain":"model_diagnostics","status":"restrict","artifact":"companion/outputs/ch17/02_diagnostics_predictions_and_reporting/structured_regression_gate.yaml","data_status":STATUS},{"evidence_id":"E_SCOPE_CH18","domain":"prediction_scope","status":"restrict","artifact":"companion/outputs/ch18/02_prediction_validation_and_scope/model_scope_gate.yaml","data_status":STATUS},{"evidence_id":"E_SENS_CH14","domain":"sensitivity","status":"stable_synthetic_only","artifact":"companion/outputs/ch14/02_sensitivity_universe/conclusion_map.yaml","data_status":STATUS},{"evidence_id":"E_CORPUS_CH15","domain":"corpus_inference","status":"restrict","artifact":"companion/outputs/ch15/02_representativeness_and_cross_corpus/corpus_inference_gate.yaml","data_status":STATUS},{"evidence_id":"E_CAUSAL","domain":"causal_identification","status":"absent","artifact":"none","data_status":STATUS}]
+ write_tsv(CHAPTER_ROOT/"evidence_inventory.tsv",evidence,list(evidence[0]))
+ spec={"schema_version":"1.0","data_status":STATUS,"study":{"study_id":"SYN_CH19","primary_estimand":"SHIFT_A_minus_BASE","analysis_status":"teaching_fixture"},"meaningful_bounds":{"record":"meaningful_bounds.tsv","specified_before_outcome_review":True,"empirical_bound_claim_permitted":False},"evidence_inputs":{"result_table":"chapter17 focal_contrasts.tsv","sampling_gate":"chapter15 corpus_inference_gate.yaml","diagnostics_gate":"chapter17 structured_regression_gate.yaml","model_scope_gate":"chapter18 model_scope_gate.yaml","sensitivity_map":"chapter14 conclusion_map.yaml"},"reporting":{"retain_negative_results":True,"retain_failed_predictions":True,"prohibit_threshold_generated_claims":True,"human_scientific_judgment_required":True,"automatic_claim_prose_permitted":False}}
+ (CHAPTER_ROOT/"claim_evidence_map.yaml").write_text(yaml.safe_dump(spec,sort_keys=False),encoding="utf-8")
+ files=sorted(p for p in CHAPTER_ROOT.iterdir() if p.is_file());rows=[{"artifact_id":f"CH19_SYN_{i+1:02d}","relative_path":str(p.relative_to(DATA_ROOT)),"data_status":STATUS,"source":"generated locally by companion/scripts/generate_ch19_fixture.py","license":"CC-BY-4.0","sha256":sha(p),"contains_human_data":"false"} for i,p in enumerate(files)]
+ manifest=DATA_ROOT/"MANIFEST.tsv";preserved=[]
+ if manifest.exists():
+  with manifest.open(encoding="utf-8",newline="") as source:preserved=[r for r in csv.DictReader(source,delimiter="\t") if not r["artifact_id"].startswith("CH19_")]
+ write_tsv(manifest,sorted(preserved+rows,key=lambda x:x["artifact_id"]),["artifact_id","relative_path","data_status","source","license","sha256","contains_human_data"])
+if __name__=="__main__":main()

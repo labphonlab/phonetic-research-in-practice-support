@@ -1,0 +1,7 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+steps:
+- training-fold mean centering
+- training-fold standard deviation scaling
+feature_selection: none
+imputation: none; fixture is complete
+test_information_permitted: false

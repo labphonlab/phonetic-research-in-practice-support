@@ -1,0 +1,21 @@
+outcome: synthetic continuous acoustic response
+observation_unit: speaker-item-condition token
+target_population: the generated speaker population and the 18 observed synthetic
+  items
+focal_contrast: marginal mean SHIFT_A minus BASE, averaged equally over observed items
+  at speaking_rate_z = 0
+averaging_distribution: equal weight over the 18 observed items
+purpose: explanatory teaching example
+new_unit_scope:
+  speakers: supported only if a speaker random-effects model passes diagnostics
+  items: not supported; items are fixed blocking factors in the available nlme implementation
+data_status: SYNTHETIC_TEACHING_FIXTURE
+outcome_family:
+  family: Gaussian
+  link: identity
+selected_model: speaker_slope
+implementation_limit: Items are fixed blocking effects; the fitted model does not
+  support generalization to new items.
+adverse_validation:
+  duplicate_key_detected: yes
+  under_supported_random_slope_detected: yes

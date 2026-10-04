@@ -1,0 +1,16 @@
+prediction_id	condition	speaking_rate_z	averaging_distribution	data_status
+BASE_-4.0	BASE	-4.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+BASE_-1.5	BASE	-1.5	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+BASE_+0.0	BASE	0.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+BASE_+1.5	BASE	1.5	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+BASE_+4.0	BASE	4.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_-4.0	SHIFT_A	-4.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_-1.5	SHIFT_A	-1.5	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_+0.0	SHIFT_A	0.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_+1.5	SHIFT_A	1.5	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_A_+4.0	SHIFT_A	4.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_-4.0	SHIFT_B	-4.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_-1.5	SHIFT_B	-1.5	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_+0.0	SHIFT_B	0.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_+1.5	SHIFT_B	1.5	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE
+SHIFT_B_+4.0	SHIFT_B	4.0	equal_observed_items	SYNTHETIC_TEACHING_FIXTURE

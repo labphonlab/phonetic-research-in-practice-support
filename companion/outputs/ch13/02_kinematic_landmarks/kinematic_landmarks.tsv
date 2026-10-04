@@ -1,0 +1,97 @@
+event_id	speaker_id	shape_class	profile_id	missing_fraction	excursion_mm	candidate_count	onset_time_ms	target_time_ms	movement_duration_ms	target_plateau_span_ms	landmark_status	reason_code	data_status
+SYN_KIN_001	SYN_ART_SPK_01	smooth	RAW_15	0.0	12.21546	8	0.0	250.0	250.0	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_001	SYN_ART_SPK_01	smooth	RAW_25	0.0	12.21546	8	25.0	250.0	225.0	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_001	SYN_ART_SPK_01	smooth	GAUSS_15	0.0	12.006718856973212	3	20.0	250.0	230.0	40.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_001	SYN_ART_SPK_01	smooth	GAUSS_25	0.0	12.006718856973212	3	25.0	250.0	225.0	40.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_002	SYN_ART_SPK_01	plateaued	RAW_15	0.0	12.197617000000001	7				165.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_002	SYN_ART_SPK_01	plateaued	RAW_25	0.0	12.197617000000001	5				165.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_002	SYN_ART_SPK_01	plateaued	GAUSS_15	0.0	12.017577627025133	2				160.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_002	SYN_ART_SPK_01	plateaued	GAUSS_25	0.0	12.017577627025133	2				160.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_003	SYN_ART_SPK_01	multi_peaked	RAW_15	0.0	11.185767	10	5.0	335.0	330.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_003	SYN_ART_SPK_01	multi_peaked	RAW_25	0.0	11.185767	8	25.0	335.0	310.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_003	SYN_ART_SPK_01	multi_peaked	GAUSS_15	0.0	11.056627963166248	2	25.0	335.0	310.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_003	SYN_ART_SPK_01	multi_peaked	GAUSS_25	0.0	11.056627963166248	2	30.0	335.0	305.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_004	SYN_ART_SPK_01	noisy	RAW_15	0.0	16.492898	13	0.0	265.0	265.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_004	SYN_ART_SPK_01	noisy	RAW_25	0.0	16.492898	10	0.0	265.0	265.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_004	SYN_ART_SPK_01	noisy	GAUSS_15	0.0	13.548203717108343	8	0.0	262.5	262.5	5.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_004	SYN_ART_SPK_01	noisy	GAUSS_25	0.0	13.548203717108343	6	45.0	262.5	217.5	5.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_005	SYN_ART_SPK_02	missing	RAW_15	0.22772277227722773	11.055459999999998	5				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_005	SYN_ART_SPK_02	missing	RAW_25	0.22772277227722773	11.055459999999998	5				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_005	SYN_ART_SPK_02	missing	GAUSS_15	0.22772277227722773	10.894646645125205	2				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_005	SYN_ART_SPK_02	missing	GAUSS_25	0.22772277227722773	10.894646645125205	1				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_006	SYN_ART_SPK_02	low_excursion	RAW_15	0.0	1.2119550000000001	16				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_006	SYN_ART_SPK_02	low_excursion	RAW_25	0.0	1.2119550000000001	14				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_006	SYN_ART_SPK_02	low_excursion	GAUSS_15	0.0	1.0174024956899694	8				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_006	SYN_ART_SPK_02	low_excursion	GAUSS_25	0.0	1.0174024956899694	6				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_007	SYN_ART_SPK_02	smooth	RAW_15	0.0	12.154761	9	0.0	252.5	252.5	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_007	SYN_ART_SPK_02	smooth	RAW_25	0.0	12.154761	9	0.0	252.5	252.5	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_007	SYN_ART_SPK_02	smooth	GAUSS_15	0.0	11.899970592791863	2	15.0	250.0	235.0	40.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_007	SYN_ART_SPK_02	smooth	GAUSS_25	0.0	11.899970592791863	2	20.0	250.0	230.0	40.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_008	SYN_ART_SPK_02	plateaued	RAW_15	0.0	12.172554	6				175.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_008	SYN_ART_SPK_02	plateaued	RAW_25	0.0	12.172554	4				175.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_008	SYN_ART_SPK_02	plateaued	GAUSS_15	0.0	12.034226810509953	3				170.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_008	SYN_ART_SPK_02	plateaued	GAUSS_25	0.0	12.034226810509953	3				170.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_009	SYN_ART_SPK_03	multi_peaked	RAW_15	0.0	11.282669	7	20.0	335.0	315.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_009	SYN_ART_SPK_03	multi_peaked	RAW_25	0.0	11.282669	7	20.0	335.0	315.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_009	SYN_ART_SPK_03	multi_peaked	GAUSS_15	0.0	11.023106688696068	2	20.0	335.0	315.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_009	SYN_ART_SPK_03	multi_peaked	GAUSS_25	0.0	11.023106688696068	2	35.0	335.0	300.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_010	SYN_ART_SPK_03	noisy	RAW_15	0.0	14.641316999999999	12	10.0	245.0	235.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_010	SYN_ART_SPK_03	noisy	RAW_25	0.0	14.641316999999999	10	10.0	245.0	235.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_010	SYN_ART_SPK_03	noisy	GAUSS_15	0.0	13.239361157839129	8	5.0	275.0	270.0	10.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_010	SYN_ART_SPK_03	noisy	GAUSS_25	0.0	13.239361157839129	6	10.0	275.0	265.0	10.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_011	SYN_ART_SPK_03	missing	RAW_15	0.22772277227722773	10.91738	6				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_011	SYN_ART_SPK_03	missing	RAW_25	0.22772277227722773	10.91738	6				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_011	SYN_ART_SPK_03	missing	GAUSS_15	0.22772277227722773	10.748819121983036	3				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_011	SYN_ART_SPK_03	missing	GAUSS_25	0.22772277227722773	10.748819121983036	3				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_012	SYN_ART_SPK_03	low_excursion	RAW_15	0.0	1.153577	15				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_012	SYN_ART_SPK_03	low_excursion	RAW_25	0.0	1.153577	11				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_012	SYN_ART_SPK_03	low_excursion	GAUSS_15	0.0	0.9748823105290513	7				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_012	SYN_ART_SPK_03	low_excursion	GAUSS_25	0.0	0.9748823105290513	7				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_013	SYN_ART_SPK_04	smooth	RAW_15	0.0	12.062807	7	20.0	247.5	227.5	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_013	SYN_ART_SPK_04	smooth	RAW_25	0.0	12.062807	7	35.0	247.5	212.5	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_013	SYN_ART_SPK_04	smooth	GAUSS_15	0.0	11.958893537596655	4	15.0	250.0	235.0	40.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_013	SYN_ART_SPK_04	smooth	GAUSS_25	0.0	11.958893537596655	4	30.0	250.0	220.0	40.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_014	SYN_ART_SPK_04	plateaued	RAW_15	0.0	12.199843	8				165.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_014	SYN_ART_SPK_04	plateaued	RAW_25	0.0	12.199843	6				165.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_014	SYN_ART_SPK_04	plateaued	GAUSS_15	0.0	12.033264517417042	1				170.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_014	SYN_ART_SPK_04	plateaued	GAUSS_25	0.0	12.033264517417042	1				170.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_015	SYN_ART_SPK_04	multi_peaked	RAW_15	0.0	11.135354	11	0.0	340.0	340.0	30.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_015	SYN_ART_SPK_04	multi_peaked	RAW_25	0.0	11.135354	9	40.0	340.0	300.0	30.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_015	SYN_ART_SPK_04	multi_peaked	GAUSS_15	0.0	10.973215260056024	2	25.0	337.5	312.5	25.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_015	SYN_ART_SPK_04	multi_peaked	GAUSS_25	0.0	10.973215260056024	2	35.0	337.5	302.5	25.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_016	SYN_ART_SPK_04	noisy	RAW_15	0.0	16.700568999999998	14	15.0	230.0	215.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_016	SYN_ART_SPK_04	noisy	RAW_25	0.0	16.700568999999998	12	15.0	230.0	215.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_016	SYN_ART_SPK_04	noisy	GAUSS_15	0.0	13.798461734043983	6	5.0	230.0	225.0	10.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_016	SYN_ART_SPK_04	noisy	GAUSS_25	0.0	13.798461734043983	5	10.0	230.0	220.0	10.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_017	SYN_ART_SPK_05	missing	RAW_15	0.22772277227722773	11.321925	7				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_017	SYN_ART_SPK_05	missing	RAW_25	0.22772277227722773	11.321925	7				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_017	SYN_ART_SPK_05	missing	GAUSS_15	0.22772277227722773	11.096364015269717	4				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_017	SYN_ART_SPK_05	missing	GAUSS_25	0.22772277227722773	11.096364015269717	2				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_018	SYN_ART_SPK_05	low_excursion	RAW_15	0.0	1.197264	18				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_018	SYN_ART_SPK_05	low_excursion	RAW_25	0.0	1.197264	16				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_018	SYN_ART_SPK_05	low_excursion	GAUSS_15	0.0	1.0405489856254078	9				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_018	SYN_ART_SPK_05	low_excursion	GAUSS_25	0.0	1.0405489856254078	7				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_019	SYN_ART_SPK_05	smooth	RAW_15	0.0	12.179354	10	10.0	255.0	245.0	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_019	SYN_ART_SPK_05	smooth	RAW_25	0.0	12.179354	8	25.0	255.0	230.0	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_019	SYN_ART_SPK_05	smooth	GAUSS_15	0.0	12.008265636482577	5	15.0	252.5	237.5	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_019	SYN_ART_SPK_05	smooth	GAUSS_25	0.0	12.008265636482577	5	25.0	252.5	227.5	35.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_020	SYN_ART_SPK_05	plateaued	RAW_15	0.0	12.182659000000001	7				160.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_020	SYN_ART_SPK_05	plateaued	RAW_25	0.0	12.182659000000001	5				160.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_020	SYN_ART_SPK_05	plateaued	GAUSS_15	0.0	12.000510608655224	1				165.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_020	SYN_ART_SPK_05	plateaued	GAUSS_25	0.0	12.000510608655224	1				165.0	phonetic_nonidentifiability	target_plateau_exceeds_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_021	SYN_ART_SPK_06	multi_peaked	RAW_15	0.0	11.195107	10	0.0	337.5	337.5	15.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_021	SYN_ART_SPK_06	multi_peaked	RAW_25	0.0	11.195107	9	40.0	337.5	297.5	15.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_021	SYN_ART_SPK_06	multi_peaked	GAUSS_15	0.0	11.016163402064944	3	20.0	335.0	315.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_021	SYN_ART_SPK_06	multi_peaked	GAUSS_25	0.0	11.016163402064944	3	35.0	335.0	300.0	20.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_022	SYN_ART_SPK_06	noisy	RAW_15	0.0	16.631616	15	10.0	265.0	255.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_022	SYN_ART_SPK_06	noisy	RAW_25	0.0	16.631616	15	10.0	265.0	255.0	0.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_022	SYN_ART_SPK_06	noisy	GAUSS_15	0.0	13.65644883980152	9	5.0	267.5	262.5	5.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_022	SYN_ART_SPK_06	noisy	GAUSS_25	0.0	13.65644883980152	8	5.0	267.5	262.5	5.0	eligible_with_multiple_candidates	all_candidates_retained; earliest_selected_by_rule	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_023	SYN_ART_SPK_06	missing	RAW_15	0.22772277227722773	11.019436	5				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_023	SYN_ART_SPK_06	missing	RAW_25	0.22772277227722773	11.019436	5				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_023	SYN_ART_SPK_06	missing	GAUSS_15	0.22772277227722773	10.905260554476808	3				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_023	SYN_ART_SPK_06	missing	GAUSS_25	0.22772277227722773	10.905260554476808	3				0.0	phonetic_nonidentifiability	missing_fraction_above_limit	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_024	SYN_ART_SPK_06	low_excursion	RAW_15	0.0	1.2139859999999998	16				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_024	SYN_ART_SPK_06	low_excursion	RAW_25	0.0	1.2139859999999998	14				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_024	SYN_ART_SPK_06	low_excursion	GAUSS_15	0.0	0.9963559114084103	10				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE
+SYN_KIN_024	SYN_ART_SPK_06	low_excursion	GAUSS_25	0.0	0.9963559114084103	10				0.0	phonetic_nonidentifiability	excursion_below_profile_minimum	SYNTHETIC_TEACHING_FIXTURE

@@ -1,0 +1,9 @@
+availability_code	observation_process	imputation_permitted	interpretation	data_status
+observed	observed	false	measured value available	SYNTHETIC_TEACHING_FIXTURE
+structural_absence	event_not_defined	false	phonetic event is absent	SYNTHETIC_TEACHING_FIXTURE
+participant_nonresponse	nonresponse	conditional	requires a declared participation model	SYNTHETIC_TEACHING_FIXTURE
+technical_loss	recording_process	conditional	requires multilevel technical-loss model	SYNTHETIC_TEACHING_FIXTURE
+algorithmic_failure	estimation_process	conditional	requires multilevel estimator model	SYNTHETIC_TEACHING_FIXTURE
+quality_rejection	selection_process	conditional	requires reason and sensitivity analysis	SYNTHETIC_TEACHING_FIXTURE
+metadata_missing	design_information	false	design variable cannot be silently imputed	SYNTHETIC_TEACHING_FIXTURE
+censored	thresholded_observation	false	retain bound and use censoring model	SYNTHETIC_TEACHING_FIXTURE

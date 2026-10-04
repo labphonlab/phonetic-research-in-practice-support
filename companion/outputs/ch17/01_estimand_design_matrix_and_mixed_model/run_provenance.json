@@ -1,0 +1,22 @@
+{
+  "tool": "run_estimand_design_and_models",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:57 UTC",
+  "input_hashes": {
+    "companion/data/ch17/synthetic_regression/analysis_data.tsv": "978b4d53f3c8e8fe41be493c69fb0f7c6f7156c2e9d8dff7449f0da16b57d879",
+    "companion/data/ch17/synthetic_regression/analysis_schema.yaml": "25e3c9253e18394345996f3b36d5e469b207a8bd3542405bc94eea88bd719701",
+    "companion/data/ch17/synthetic_regression/regression_analysis_spec.yaml": "80fe38f7e77b70a14adc72b6536626e715f616fd866b2206eb10d64af1fd68e2",
+    "companion/data/ch17/synthetic_regression/condition_contrasts.tsv": "cd066231747815c9e86886db623b431b668f87cbd32ea5000f26685351715c19",
+    "companion/data/ch17/synthetic_regression/adverse_cases.tsv": "008f379bcc0135e3c1264debbb11cb99e9d4b0d5ae888bdf2617d4f51d3bddcd"
+  },
+  "decisions": {
+    "selected_model": "speaker_slope",
+    "successful_models": ["fixed_only", "speaker_intercept", "speaker_slope"],
+    "duplicate_adverse_detected": true,
+    "under_supported_slope_detected": true,
+    "item_scope": "observed_items_only",
+    "significance_voting": false,
+    "source_unchanged": true
+  }
+}

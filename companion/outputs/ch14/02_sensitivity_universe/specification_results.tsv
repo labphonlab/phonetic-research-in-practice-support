@@ -1,0 +1,8 @@
+configuration_id	execution_order	priority	measurement_layer	eligibility_rule	model	changes_estimand	exploratory	estimand	estimate	standard_error	ci_low	ci_high	n	speakers	groups	diagnostic_status	data_status
+primary	1	primary	primary	observed	additive	false	false	additive predictor slope	6.16432014321717	0.329955704541565	5.5176069623157	6.81103332411864	409	24	2	pass	SYNTHETIC_TEACHING_FIXTURE
+reference_layer	2	high	reference	all	additive	false	false	additive predictor slope	7.43834668148524	0.277479154167187	6.89448753931756	7.98220582365293	480	24	2	pass	SYNTHETIC_TEACHING_FIXTURE
+differential_corrected	3	high	bias_corrected	observed	additive	false	false	additive predictor slope	6.16432014321717	0.329955704541565	5.5176069623157	6.81103332411863	409	24	2	pass	SYNTHETIC_TEACHING_FIXTURE
+quality_050	4	high	primary	quality_ge_050	additive	false	false	additive predictor slope	6.10309408145735	0.424946356846007	5.27019922203918	6.93598894087553	240	24	2	pass	SYNTHETIC_TEACHING_FIXTURE
+quality_075	5	secondary	primary	quality_ge_075	additive	false	false	additive predictor slope	5.96594549904856	0.612555409911581	4.76533689562186	7.16655410247526	122	24	2	pass	SYNTHETIC_TEACHING_FIXTURE
+interaction	6	high	primary	observed	interaction	true	false	predictor slope in reference group	6.22138304523116	0.472315238460422	5.29564517784873	7.14712091261359	409	24	2	pass	SYNTHETIC_TEACHING_FIXTURE
+post_result_branch	8	exploratory	reference	quality_ge_075	interaction	true	true	predictor slope in reference group	7.24478647943579	0.764989283750481	5.74540748328484	8.74416547558673	126	24	2	pass	SYNTHETIC_TEACHING_FIXTURE

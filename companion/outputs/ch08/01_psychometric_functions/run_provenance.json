@@ -1,0 +1,22 @@
+{
+  "tool": "run_psychometric_analysis",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:49 UTC",
+  "input_hashes": {
+    "companion/data/ch08/synthetic_perception/perception_trial_manifest.tsv": "b9ba64d1efb6584986fcece189edfb8faf8876c925400071e388a6cc7e64ca1f",
+    "companion/data/ch08/synthetic_perception/stimulus_manifest.tsv": "a736d36f00b80776ad694461b26b302f89b0b51708809cc504db59862e447a31",
+    "companion/data/ch08/synthetic_perception/psychometric_responses.tsv": "1420f89a6c7d236366df886b9f1e3d0b9bf22b7b857d5100716b6cd13ddcac93"
+  },
+  "decisions": {
+    "schema_version": "0.1",
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "probability": "P(binary_response=1 | continuum_step)",
+    "model": "trial-level logistic regression",
+    "pooling": "group descriptive fit plus separate participant fits",
+    "lapse_model": "not estimated in baseline",
+    "continuum_requirement": "at least five distinct steps",
+    "nonmonotonic_rule": "flag slope <= 0; do not force a threshold",
+    "interpretive_limit": "response functions do not by themselves establish categorical perception"
+  }
+}

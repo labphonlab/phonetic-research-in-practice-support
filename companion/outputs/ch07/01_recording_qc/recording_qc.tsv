@@ -1,0 +1,4 @@
+file_id	session_id	data_status	source_path	readable	sample_rate_hz	bit_depth	channels	duration_s	peak_normalized	rms_normalized	clipped_samples	clipped_fraction	qc_status	warnings	usable_for_duration	usable_for_relative_amplitude	usable_for_spectral_measures
+SYN_GOOD	SYN_CH07_SESSION	SYNTHETIC_TEACHING_FIXTURE	companion/data/ch07/synthetic_recordings/synthetic_good.wav	True	16000	16	1	1.0	0.4000061037018952	0.2828410405289212	0	0.0	pass		True	True	True
+SYN_CLIPPED	SYN_CH07_SESSION	SYNTHETIC_TEACHING_FIXTURE	companion/data/ch07/synthetic_recordings/synthetic_clipped.wav	True	16000	16	1	1.0	1.0	0.7831061995386567	6000	0.375	warning	possible_digital_clipping	True	False	False
+SYN_QUIET	SYN_CH07_SESSION	SYNTHETIC_TEACHING_FIXTURE	companion/data/ch07/synthetic_recordings/synthetic_near_silent.wav	True	16000	16	1	1.0	0.0004882961516159551	0.0003526175728107957	0	0.0	warning	near_silent	True	False	False

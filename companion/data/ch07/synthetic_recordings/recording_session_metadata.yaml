@@ -1,0 +1,74 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+session:
+  session_id: SYN_CH07_SESSION
+  participant_code: SYNTHETIC_NO_PARTICIPANT
+  date_local: '2000-01-01'
+  timezone: UTC
+  site_code: SYNTHETIC_SITE
+  room_code: SYNTHETIC_ROOM
+  operator_code: SYNTHETIC_GENERATOR
+  protocol_version: ch07-fixture-0.1
+  consent_scope_code: NOT_APPLICABLE_SYNTHETIC
+claim_requirements:
+  primary_measures:
+  - duration
+  - relative_amplitude
+  - simple_spectrum
+  required_bandwidth_hz: 7000
+  required_timing_precision_ms: 5
+  amplitude_basis: relative
+  synchronization_required: true
+signal_chain:
+  microphone_manufacturer: SYNTHETIC
+  microphone_model: NUMERICAL_SIGNAL_GENERATOR
+  microphone_unit_id: SYNTHETIC_NO_HARDWARE
+  polar_pattern: NOT_APPLICABLE
+  mouth_distance_cm: 0
+  microphone_angle_degrees: 0
+  mounting_method: NOT_APPLICABLE
+  preamplifier_or_interface: NOT_APPLICABLE
+  interface_unit_id: NOT_APPLICABLE
+  input_channel: MONO_SYNTHETIC
+  gain_setting: NUMERIC_AMPLITUDE_IN_GENERATOR
+  recorder_or_device: PYTHON_WAVE_MODULE
+  operating_system: PLATFORM_INDEPENDENT_FIXTURE
+  recording_software: generate_ch07_fixture.py
+  recording_software_version: '0.1'
+  processing_disabled:
+  - all acquisition processing not applicable
+  processing_unavoidable_or_unknown: []
+file_configuration:
+  container: wav
+  encoding: linear_pcm
+  sample_rate_hz: 16000
+  bit_depth: 16
+  channel_count: 1
+  channel_map:
+  - synthetic_mono
+checks:
+  ambient_recording_file_id: NOT_APPLICABLE_SYNTHETIC
+  setup_test_file_id: SYN_GOOD
+  level_calibration_file_id: NOT_CALIBRATED_RELATIVE_AMPLITUDE_ONLY
+  timing_check_file_id: timing_events.tsv
+  synchronization_event_file_id: timing_events.tsv
+  headphones_monitoring_completed: true
+events_and_deviations:
+- event: purposeful teaching defects
+  details: one file is clipped and one is near silent
+post_session:
+  expected_file_count: 3
+  observed_file_count: 3
+  headers_verified: true
+  channel_content_verified: true
+  first_verified_copy: generated fixture directory
+  second_verified_copy: regenerable from source script
+  checksums_manifest: ../MANIFEST.tsv
+measure_specific_decisions:
+- measure: relative_amplitude
+  decision: evaluate clipping and low level before use
+pre_departure_decision:
+  status: restricted_use
+  rationale: Synthetic defects are retained intentionally for instruction.
+  decided_by: fixture_generator
+  decided_at: '2000-01-01T00:00:00Z'

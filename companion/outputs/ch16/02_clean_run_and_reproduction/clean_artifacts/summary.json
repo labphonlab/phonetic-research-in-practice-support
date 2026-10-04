@@ -1,0 +1,8 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "analysis_rows": 11,
+  "mean_analysis_value": 110.02272727272727,
+  "failed_source_rows": 1,
+  "corrections_applied": 1,
+  "interpretive_limit": "software reproduction fixture only"
+}

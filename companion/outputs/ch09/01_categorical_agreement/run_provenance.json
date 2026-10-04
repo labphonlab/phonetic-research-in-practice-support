@@ -1,0 +1,21 @@
+{
+  "tool": "run_categorical_agreement",
+  "tool_version": "0.1.0",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "run_at_utc": "2026-10-04 20:04:51 UTC",
+  "input_hashes": {
+    "companion/data/ch09/synthetic_annotation/annotation_schema.yaml": "e013b2a4e81b782a9a249b2b5ade7be01a68346b579f8659723178cd5963d134",
+    "companion/data/ch09/synthetic_annotation/annotation_assignments.tsv": "bf98ca965c93b49a34974df23e6ac57b9f57167aadf8677185b7fd1b03d27e6a",
+    "companion/data/ch09/synthetic_annotation/categorical_judgments.tsv": "c92a10ef8bb494932237f2c43114f325610b79f124317d2080dbef6a48f30e37"
+  },
+  "decisions": {
+    "schema_version": "0.1",
+    "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+    "primary_statistic": "Cohen kappa",
+    "uncertainty": "speaker-cluster bootstrap",
+    "bootstrap_replicates": 500,
+    "seed": 9092026,
+    "independent_stage": "independent_first_pass",
+    "interpretive_limit": "agreement does not validate the construct"
+  }
+}

@@ -1,0 +1,9 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+exact_reproduction: true
+numerical_reproduction: true
+substantive_reproduction: true
+privacy_allowlist_pass: true
+protected_route_executed: false
+public_route_executed: true
+decision: pass_public_fixture
+scientific_interpretation_warranted_by_run: false

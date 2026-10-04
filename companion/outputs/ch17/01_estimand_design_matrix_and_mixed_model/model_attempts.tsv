@@ -1,0 +1,6 @@
+model_id	attempt_type	formula	status	warning	error	variance_check	inferential_scope	simplification_step	data_status
+fixed_only	candidate_model	outcome ~ condition + speaking_rate_z + item_id	fit			not_applicable	observed speakers and observed items	3	SYNTHETIC_TEACHING_FIXTURE
+speaker_intercept	candidate_model	fixed + (1 | speaker_id)	fit			no_near_zero_variance_detected	new speakers conditional on diagnostics; observed items only	2	SYNTHETIC_TEACHING_FIXTURE
+speaker_slope	candidate_model	fixed + (condition | speaker_id)	fit			no_near_zero_variance_detected	new speakers conditional on diagnostics; observed items only	1	SYNTHETIC_TEACHING_FIXTURE
+adverse_duplicate_key	validation_case	not_fit	failed_as_designed		duplicate_rows=2	not_applicable	none		SYNTHETIC_TEACHING_FIXTURE
+adverse_slope_support	validation_case	condition | speaker_id	failed_as_designed		under_supported_cells=4	not_applicable	none		SYNTHETIC_TEACHING_FIXTURE

@@ -1,0 +1,6 @@
+claim_id	unsupported_clause	reason	required_action	remains_visible	data_status
+C19_002	The SHIFT_A contrast generalizes to unseen lexical items.	new-item generalization is prohibited by the fitted item scope	remove, narrow, or supply independent evidence	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_003	The manipulation causes the phonetic mechanism represented by SHIFT_A.	new-item generalization is prohibited by the fitted item scope	remove, narrow, or supply independent evidence	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_003	The manipulation causes the phonetic mechanism represented by SHIFT_A.	no causal identification or mechanism-discrimination evidence is supplied	remove, narrow, or supply independent evidence	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_005	The classifier is validated for external corpora and recording chains.	new-item generalization is prohibited by the fitted item scope	remove, narrow, or supply independent evidence	TRUE	SYNTHETIC_TEACHING_FIXTURE
+C19_005	The classifier is validated for external corpora and recording chains.	external-corpus validation is absent	remove, narrow, or supply independent evidence	TRUE	SYNTHETIC_TEACHING_FIXTURE

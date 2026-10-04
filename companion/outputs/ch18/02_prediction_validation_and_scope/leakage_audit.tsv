@@ -1,0 +1,19 @@
+scheme	fold	target_unit	speaker_overlap	item_overlap	session_overlap	corpus_overlap	target_leakage	preprocessing_fit_on_training_only	data_status
+row_random	1	row	30	12	2	2		TRUE	SYNTHETIC_TEACHING_FIXTURE
+row_random	2	row	30	12	2	2		TRUE	SYNTHETIC_TEACHING_FIXTURE
+row_random	3	row	30	12	2	2		TRUE	SYNTHETIC_TEACHING_FIXTURE
+row_random	4	row	30	12	2	2		TRUE	SYNTHETIC_TEACHING_FIXTURE
+row_random	5	row	30	12	2	2		TRUE	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	1	speaker_id	0	12	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	2	speaker_id	0	12	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	3	speaker_id	0	12	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	4	speaker_id	0	12	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+speaker_heldout	5	speaker_id	0	12	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+item_heldout	1	item_id	30	0	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+item_heldout	2	item_id	30	0	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+item_heldout	3	item_id	30	0	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+item_heldout	4	item_id	30	0	2	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+session_heldout	1	session_id	30	12	0	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+session_heldout	2	session_id	30	12	0	2	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+corpus_heldout	1	corpus_id	0	12	2	0	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE
+corpus_heldout	2	corpus_id	0	12	2	0	FALSE	TRUE	SYNTHETIC_TEACHING_FIXTURE

@@ -1,0 +1,8 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+primary_statistic: Cohen kappa
+uncertainty: speaker-cluster bootstrap
+bootstrap_replicates: 500
+seed: 9092026
+independent_stage: independent_first_pass
+interpretive_limit: agreement does not validate the construct

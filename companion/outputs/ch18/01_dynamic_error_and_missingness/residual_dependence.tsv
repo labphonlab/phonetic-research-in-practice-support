@@ -1,0 +1,3 @@
+model_id	mean_within_token_lag1	independent_replication_unit	frame_count_is_replication_count	data_status
+linear_trajectory_benchmark	0.784809095710298	token_id	FALSE	SYNTHETIC_TEACHING_FIXTURE
+dynamic_gam	0.184550862944688	token_id	FALSE	SYNTHETIC_TEACHING_FIXTURE

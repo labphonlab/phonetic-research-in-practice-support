@@ -1,0 +1,25 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+claim: method demonstration for a two-corpus target population
+dimensions:
+  region:
+  - north
+  - south
+  - central
+  style:
+  - casual
+  - interview
+  - read
+  era:
+  - 2010s
+  - 2020s
+  condition_id:
+  - SYN_C1
+  - SYN_C2
+minimum_included_per_cell: 10
+higher_level_minimums:
+  speakers: 20
+  conversations: 10
+  items: 15
+interpretive_limit: support categories are generated and cannot establish empirical
+  representativeness

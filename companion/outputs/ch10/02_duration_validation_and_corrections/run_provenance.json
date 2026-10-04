@@ -1,0 +1,14 @@
+{
+  "tool": "phonetic_research_companion.ch10.run_duration_validation",
+  "tool_version": "0.1.0",
+  "run_at_utc": "2026-10-04T20:04:48.409850+00:00",
+  "input_hashes": {
+    "companion/data/ch10/synthetic_acoustics/automatic_landmarks.tsv": "0ec84f97d369b7e882da88c73f91815f2f5131fc7181066b56d259a874976d91",
+    "companion/data/ch10/synthetic_acoustics/reference_landmarks.tsv": "c2aca38e44b30e80d86f6586cc606d993efd6217a2a471711bb0358ca2461fc1",
+    "companion/data/ch10/synthetic_acoustics/duration_validation_manifest.tsv": "c96022a1f8d984504120f3f8c732176d4f7f9bc560810acdcadf4aa626ee1503",
+    "companion/data/ch10/synthetic_acoustics/correction_decisions.tsv": "2a08450293d982e2a4b60751fe54314150fb53ba72c6f63f9b6c90f018f2470b"
+  },
+  "raw_automatic_sha256_before": "0ec84f97d369b7e882da88c73f91815f2f5131fc7181066b56d259a874976d91",
+  "raw_automatic_sha256_after": "0ec84f97d369b7e882da88c73f91815f2f5131fc7181066b56d259a874976d91",
+  "raw_unchanged": true
+}

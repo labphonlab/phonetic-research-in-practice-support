@@ -1,0 +1,14 @@
+data_status: SYNTHETIC_TEACHING_FIXTURE
+decision: restrict
+supported_claim: description of generated measurable tokens in observed north/south,
+  casual/interview, 2010s/2020s cells
+unsupported_claims:
+- central region
+- read speech
+- abstract corpus representativeness
+- causal corpus comparison
+- era or equipment effect
+weighting_permitted: false
+reason: target margins are illustrative rather than authorized population margins;
+  incompatible era and recording domains remain
+synthetic_fixture_is_population_evidence: false

@@ -1,0 +1,66 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+scheme:
+  scheme_id: SYN_VOICE_QUALITY_01
+  title: Synthetic three-category voice-quality judgments
+  manual_version: '0.1'
+  construct: instructional perceptual classification, not a validated voice-quality
+    construct
+  downstream_use: agreement and category-usability exercise only
+unit:
+  unit_type: interval
+  candidate_generation: 120 generated item records in 30 synthetic speaker clusters
+  parent_unit: synthetic utterance
+evidence:
+  audio: false
+  waveform: true
+  spectrogram: true
+  pitch_track: false
+  orthography: false
+  wider_context: false
+  other: []
+display:
+  software: fixture table
+  software_version: '0.1'
+  spectrogram_settings: synthetic only
+  playback_controls: not applicable
+decisions:
+  detection:
+    required: false
+    labels: []
+  boundaries:
+  - onset
+  - offset
+  classification:
+    required: true
+    scale: nominal
+    labels:
+    - modal
+    - breathy
+    - creaky
+    distance_function: identity disagreement
+  links:
+    required: false
+    permitted_targets: ''
+uncertainty:
+  permitted: true
+  codes:
+  - low_confidence
+  confidence_scale: 1-5
+missingness_codes:
+- not_judged
+training:
+  training_set_version: synthetic-training-0.1
+  qualification_rule: not applicable to synthetic fixture
+  recalibration_schedule: after each 40 items
+reliability:
+  sampling_design: two independent first-pass annotators; clustered by synthetic speaker
+  primary_statistic: Cohen kappa with speaker-cluster bootstrap
+  clustering_unit: speaker_id
+  boundary_tolerances_ms:
+  - 5
+  - 10
+  - 20
+adjudication:
+  method: none
+  preserve_independent_labels: true

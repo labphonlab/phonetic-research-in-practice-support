@@ -1,0 +1,12 @@
+args <- commandArgs(trailingOnly = FALSE); file_arg <- grep("^--file=", args, value = TRUE); test_path <- normalizePath(sub("^--file=", "", file_arg[[1]])); repository_root <- normalizePath(file.path(dirname(test_path), "..", "..")); source(file.path(repository_root, "companion", "r", "ch17.R"))
+data_root <- file.path(repository_root, "companion", "data", "ch17", "synthetic_regression")
+manifest <- read_tsv_ch17(file.path(repository_root, "companion", "data", "MANIFEST.tsv")); rows <- manifest[grepl("^CH17_", manifest$artifact_id), ]; stopifnot(nrow(rows)==8,all(rows$data_status==STATUS_CH17),all(rows$contains_human_data=="false"))
+for(i in seq_len(nrow(rows))) stopifnot(sha256_ch17(file.path(repository_root,"companion","data",rows$relative_path[[i]]))==rows$sha256[[i]])
+o1<-tempfile(); a<-run_estimand_design_and_models(file.path(data_root,"analysis_data.tsv"),file.path(data_root,"analysis_schema.yaml"),file.path(data_root,"regression_analysis_spec.yaml"),file.path(data_root,"condition_contrasts.tsv"),file.path(data_root,"adverse_cases.tsv"),o1)
+stopifnot(nrow(a$data)==1296,nrow(a$design_matrix)==3888,a$decisions$duplicate_adverse_detected,a$decisions$under_supported_slope_detected,a$decisions$item_scope=="observed_items_only",file.exists(file.path(o1,paste0(a$selected_model,".rds"))))
+ch14<-file.path(repository_root,"companion","outputs","ch14","02_sensitivity_universe","claim_stability.tsv"); stopifnot(file.exists(ch14))
+o2<-tempfile(); b<-run_diagnostics_predictions_and_gate(file.path(data_root,"analysis_data.tsv"),file.path(data_root,"regression_analysis_spec.yaml"),file.path(data_root,"prediction_grid.tsv"),file.path(data_root,"focal_contrasts.tsv"),o1,ch14,o2)
+stopifnot(b$gate$decision=="restrict",!b$gate$significance_vote_permitted,b$gate$new_unit_scope$items==FALSE,nrow(b$influence)==24,nrow(b$predictions)==15,sum(b$predictions$extrapolated)>=2,nrow(b$contrasts)==2,all(is.finite(b$contrasts$estimate)))
+notebooks<-list.files(file.path(repository_root,"companion","notebooks","ch17"),pattern="\\.ipynb$",full.names=TRUE); stopifnot(length(notebooks)==2)
+for(path in notebooks){p<-jsonlite::read_json(path,simplifyVector=FALSE); stopifnot(p$nbformat==4,p$metadata$kernelspec$language=="R",grepl("SYNTHETIC_TEACHING_FIXTURE",paste(readLines(path,warn=FALSE),collapse="\n"),fixed=TRUE))}
+unlink(c(o1,o2),recursive=TRUE,force=TRUE); cat("PASS companion/tests/test_ch17.R\n")

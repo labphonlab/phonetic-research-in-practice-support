@@ -1,0 +1,58 @@
+schema_version: "0.1"
+claim:
+  claim_id: ""
+  text: ""
+  estimand: ""
+  target_population: ""
+primary_analysis:
+  configuration_id: "primary"
+  measurement_layer: ""
+  eligibility_rule: ""
+  transformation: ""
+  missingness_handling: ""
+  model: ""
+  uncertainty_method: ""
+error_map: []
+error_source_schema:
+  error_id: ""
+  stage: "recording|synchronization|annotation|extraction|normalization|linkage|missingness|model"
+  affected_variable: ""
+  type: "random|systematic|differential|correlated"
+  dependency_level: ""
+  direction: ""
+  validation_source: ""
+  plausible_range: ""
+decision_points: []
+decision_schema:
+  decision_id: ""
+  rationale: ""
+  alternatives: []
+  incompatible_combinations: []
+  changes_estimand: false
+specifications: []
+stability:
+  direction_rule: ""
+  magnitude_region: ""
+  scope_rule: ""
+  diagnostic_rule: ""
+  permitted_outcomes:
+    - stable
+    - stable_with_restricted_scope
+    - measurement_dependent
+    - analysis_dependent
+    - unsupported
+execution:
+  primary_runs_first: true
+  retain_failures: true
+  seeds: []
+  environment_lockfile: ""
+  post_result_branches_label: "exploratory"
+outputs:
+  result_table: "specification_results.tsv"
+  failure_table: "specification_failures.tsv"
+  stability_table: "claim_stability.tsv"
+  conclusion_map: "conclusion_map.yaml"
+provenance:
+  input_hashes_required: true
+  configuration_hashes_required: true
+  overwrite_permitted: false

@@ -1,0 +1,16 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "decision_status": "undecided",
+  "claim_requirements_checked": [
+    "file headers",
+    "file count",
+    "timing residual"
+  ],
+  "limitations": [
+    "no physical microphone",
+    "no calibrated amplitude",
+    "no participant speech"
+  ],
+  "rationale": "Learner response required before assessment.",
+  "warning": "This clean-run record is not an empirical conclusion and must not be reported as one."
+}

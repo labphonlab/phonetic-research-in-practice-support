@@ -1,0 +1,22 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+study:
+  study_id: SYN_CH19
+  primary_estimand: SHIFT_A_minus_BASE
+  analysis_status: teaching_fixture
+meaningful_bounds:
+  record: meaningful_bounds.tsv
+  specified_before_outcome_review: true
+  empirical_bound_claim_permitted: false
+evidence_inputs:
+  result_table: chapter17 focal_contrasts.tsv
+  sampling_gate: chapter15 corpus_inference_gate.yaml
+  diagnostics_gate: chapter17 structured_regression_gate.yaml
+  model_scope_gate: chapter18 model_scope_gate.yaml
+  sensitivity_map: chapter14 conclusion_map.yaml
+reporting:
+  retain_negative_results: true
+  retain_failed_predictions: true
+  prohibit_threshold_generated_claims: true
+  human_scientific_judgment_required: true
+  automatic_claim_prose_permitted: false

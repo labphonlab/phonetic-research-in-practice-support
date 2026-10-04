@@ -1,0 +1,4 @@
+file_id	session_id	source_path	expected_sample_rate_hz	expected_bit_depth	expected_channels	data_status	description
+SYN_GOOD	SYN_CH07_SESSION	synthetic_good.wav	16000	16	1	SYNTHETIC_TEACHING_FIXTURE	clean synthetic reference tone
+SYN_CLIPPED	SYN_CH07_SESSION	synthetic_clipped.wav	16000	16	1	SYNTHETIC_TEACHING_FIXTURE	synthetic tone deliberately clipped for teaching
+SYN_QUIET	SYN_CH07_SESSION	synthetic_near_silent.wav	16000	16	1	SYNTHETIC_TEACHING_FIXTURE	synthetic near-silent tone for teaching

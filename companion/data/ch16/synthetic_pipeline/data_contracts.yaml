@@ -1,0 +1,30 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+source_measurements:
+  required_fields:
+  - token_id
+  - speaker_id
+  - item_id
+  - raw_value
+  - start_ms
+  - end_ms
+  - measurement_status
+  - unicode_label
+  - data_status
+  primary_key:
+  - token_id
+  types:
+    raw_value: number_or_missing
+    start_ms: number
+    end_ms: number
+correction_table:
+  required_fields:
+  - token_id
+  - corrected_value
+  - reason_code
+  - reviewer_code
+  - data_status
+  primary_key:
+  - token_id
+  join: many-to-one source to correction
+  unmatched_policy: fail

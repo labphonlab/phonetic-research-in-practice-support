@@ -1,0 +1,3 @@
+stream_id	modality	role	native_unit	nominal_rate_hz	clock	data_status
+SYN_EMA	ema	primary	mm	100	articulatory	SYNTHETIC_TEACHING_FIXTURE
+SYN_AUDIO_CLOCK	audio	complementary	s	48000	reference	SYNTHETIC_TEACHING_FIXTURE

@@ -1,0 +1,2 @@
+warning_id	message	retained_for_review	data_status
+1	structured: model has repeated 1-d smooths of same variable.	TRUE	SYNTHETIC_TEACHING_FIXTURE

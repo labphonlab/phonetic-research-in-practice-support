@@ -1,0 +1,14 @@
+[
+  {
+    "measure": "f0",
+    "status": "review_required",
+    "scope": "synthetic teaching fixture",
+    "decision_basis": "signal-level flags before outcome analysis"
+  },
+  {
+    "measure": "formant",
+    "status": "review_required",
+    "scope": "synthetic teaching fixture",
+    "decision_basis": "signal-level flags before outcome analysis"
+  }
+]

@@ -1,0 +1,9 @@
+dimension	corpus_a	corpus_b	compatibility	overlap_rule	data_status
+population	synthetic speakers 01-18	synthetic speakers 19-30	restricted	generated adults only	SYNTHETIC_TEACHING_FIXTURE
+era	2010s	2020s	incompatible	no common era	SYNTHETIC_TEACHING_FIXTURE
+style	casual|interview	casual|interview	compatible	casual and interview	SYNTHETIC_TEACHING_FIXTURE
+task	conversation|interview	conversation|interview	compatible	matched task labels only	SYNTHETIC_TEACHING_FIXTURE
+recording	headset_48k	tabletop_44k1	incompatible	no equipment equivalence	SYNTHETIC_TEACHING_FIXTURE
+annotation	manual_words	automatic_words	restricted	independent boundary validation required	SYNTHETIC_TEACHING_FIXTURE
+lexical_coverage	20 generated items	20 generated items	compatible	same 20 items	SYNTHETIC_TEACHING_FIXTURE
+measurement	common synthetic pipeline	common synthetic pipeline	compatible	same versioned procedure	SYNTHETIC_TEACHING_FIXTURE

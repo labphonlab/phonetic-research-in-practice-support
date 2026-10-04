@@ -1,0 +1,9 @@
+{
+  "data_status": "SYNTHETIC_TEACHING_FIXTURE",
+  "decision_status": "undecided",
+  "sensitivity_statement": "Learner response required before assessment.",
+  "criterion_statement": "Learner response required before assessment.",
+  "reaction_time_statement": "Learner response required before assessment.",
+  "timing_scope": "synthetic configuration comparison only",
+  "warning": "This record is an instructional prompt, not an empirical conclusion."
+}

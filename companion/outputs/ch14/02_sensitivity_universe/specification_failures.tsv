@@ -1,0 +1,2 @@
+configuration_id	failure_stage	failure_reason	retained_in_denominator	priority	exploratory	data_status
+invalid_combo	measurement_layer	unknown prespecified measurement layer	TRUE	high	false	SYNTHETIC_TEACHING_FIXTURE

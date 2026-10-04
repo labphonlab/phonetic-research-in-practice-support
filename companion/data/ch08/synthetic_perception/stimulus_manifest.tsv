@@ -1,0 +1,8 @@
+stimulus_id	continuum_id	continuum_step	acoustic_value_hz	asset_path	sha256	license	data_status	interpretive_limit
+SYN_CONT_01	SYN_TONE_FREQUENCY	-3	345	stimuli/SYN_CONT_01.wav	7b28fe045234954bb17886fee6eba064df97082b18e4486c50ccc8a0ae142a8d	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception
+SYN_CONT_02	SYN_TONE_FREQUENCY	-2	380	stimuli/SYN_CONT_02.wav	95858e26dea5df9f116f80eed600a45d071e8c1eb61ee4220a5c8a1458b346dc	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception
+SYN_CONT_03	SYN_TONE_FREQUENCY	-1	415	stimuli/SYN_CONT_03.wav	54036fdad7417fbe81d9fde6ee12339742deb5e5af4c5e3002a4bbc6f1192307	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception
+SYN_CONT_04	SYN_TONE_FREQUENCY	0	450	stimuli/SYN_CONT_04.wav	9b7ed202db27dfd7f1868229b1863b2a2988c7cf9b3f87f7d8c69f555e94f359	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception
+SYN_CONT_05	SYN_TONE_FREQUENCY	1	485	stimuli/SYN_CONT_05.wav	5f920fa1cf09fa6c99e30fdf8d7a7e67aa958eb0b08977a71c633e693b7ad2da	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception
+SYN_CONT_06	SYN_TONE_FREQUENCY	2	520	stimuli/SYN_CONT_06.wav	be4a82f1f5c4dd2d2c32063a85b62f61107197a3aa76199e700c016aca0a8982	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception
+SYN_CONT_07	SYN_TONE_FREQUENCY	3	555	stimuli/SYN_CONT_07.wav	a27fb6494327c92ed2eb840b1083f64331f1aa7151c8bbe77c7b7fb401ab11ac	CC-BY-4.0	SYNTHETIC_TEACHING_FIXTURE	numerical tone; not speech or evidence of categorical perception

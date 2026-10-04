@@ -1,0 +1,96 @@
+schema_version: '0.1'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+measure:
+  measure_id: SYN_F0_FORMANTS
+  construct: instructional periodicity and spectral-resonance estimates
+  measurand: frame F0 and interval spectral peak locations
+  unit: Hz
+  representation: trajectory
+source_requirements:
+  channel: 1
+  minimum_sample_rate_hz: 16000
+  recording_constraints:
+  - mono linear PCM
+  - synthetic fixture only
+annotation_requirements:
+  tier: synthetic_interval
+  included_labels:
+  - synthetic_vowel
+  excluded_labels: []
+window:
+  alignment_event: interval start
+  start_rule: interval_start_s
+  end_rule: interval_end_s
+  window_length_ms: 40
+  frame_step_ms: 10
+preprocessing:
+  operations:
+  - remove frame mean
+  - Hann window for formant spectrum
+estimator:
+  software: phonetic_research_companion.ch10
+  software_version: 0.1.0
+  algorithm: normalized autocorrelation F0; spectral peak teaching estimator
+  settings_profile_id: prespecified_profiles
+  settings: {}
+output:
+  raw_variable: value_hz
+  analysis_variable: not selected in QC notebook
+  confidence_variable: autocorrelation_peak_or_spectral_prominence
+  missingness_codes:
+  - low_energy
+  - no_candidate
+  - insufficient_peaks
+quality_control:
+  admissible_range: profile-specific
+  flags:
+  - missing_frame
+  - near_search_limit
+  - abrupt_jump
+  - insufficient_formants
+  - formant_crossing
+  risk_strata:
+  - teaching_role
+  review_sample_rule: all flagged observations plus deterministic unflagged sample
+  correction_policy: retain raw candidates; amend settings and rerun
+validation:
+  target_domain: synthetic source-filter signals
+  reference_method: known generator parameters for pedagogy only
+  sampling_design: six adverse and reference signals
+  primary_error_summaries:
+  - missing fraction
+  - median absolute F0 error for fixture
+  differential_error_checks:
+  - teaching_role
+  - profile
+  acceptance_rule: profile must not exceed 20% missing frames and must flag search-limit
+    contact
+sensitivity:
+  prespecified_profiles:
+  - profile_id: F0_LOW
+    measure: f0
+    floor_hz: 50
+    ceiling_hz: 200
+  - profile_id: F0_GENERAL
+    measure: f0
+    floor_hz: 70
+    ceiling_hz: 350
+  - profile_id: F0_HIGH
+    measure: f0
+    floor_hz: 120
+    ceiling_hz: 500
+  - profile_id: FORMANT_4500
+    measure: formant
+    maximum_hz: 4500
+    peak_count: 3
+  - profile_id: FORMANT_5500
+    measure: formant
+    maximum_hz: 5500
+    peak_count: 3
+  claim_stability_rule: choose by blinded signal-level quality, not group outcome
+provenance:
+  source_hash_required: true
+  retain_raw_output: true
+  overwrite_permitted: false
+interpretive_limit: teaching estimators and generated signals are not validated human-speech
+  measurements

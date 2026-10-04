@@ -1,0 +1,46 @@
+schema_version: '1.0'
+data_status: SYNTHETIC_TEACHING_FIXTURE
+seed: 18042026
+model_purpose:
+  primary_goal: description and association
+  scientific_quantity: condition difference over normalized trajectory time
+  simple_benchmark: midpoint condition contrast
+  justification_for_complexity: condition B has a generated nonlinear shape difference
+    and within-token dependence
+dynamic_structure:
+  enabled: true
+  series_id: token_id
+  raw_time: time_ms
+  analysis_time: time_normalized
+  population_functions:
+  - condition-specific smooth
+  unit_functions:
+  - speaker random effect
+  - item random effect
+  basis_dimension: 7
+  residual_dependence: diagnosed from within-token lag-one residual correlation
+  series_start_indicator: series_start
+measurement_error:
+  enabled: true
+  evidence_source: measurement_validation.tsv
+  hypothetical_ranges_are_sensitivity_only: true
+missingness:
+  reason_codes:
+  - observed
+  - structural_absence
+  - participant_nonresponse
+  - technical_loss
+  - algorithmic_failure
+  - quality_rejection
+  - metadata_missing
+  - censored
+  target_estimand_under_observation_process: measurable trajectory frames under declared
+    criteria
+  imputation:
+    enabled: false
+    prohibit_structural_absence_imputation: true
+    seed: 18042026
+diagnostics:
+  autocorrelation: true
+  observed_support: true
+interpretive_limit: generated workflow test only
