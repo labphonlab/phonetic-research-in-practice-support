@@ -1,5 +1,5 @@
 # Exercise 3.1: Audit a theoretical variable
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 import math

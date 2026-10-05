@@ -1,7 +1,7 @@
 schema_version: '1.0'
 data_status: SYNTHETIC_TEACHING_FIXTURE
 release:
-  project_id: PHONETIC_RESEARCH_IN_PRACTICE
+  project_id: RESEARCH_METHODS_IN_PHONETICS
   release_version: candidate-0.1.0
   release_date: AUTHOR_INPUT_REQUIRED
   supported_manuscript_or_edition: first substantive English draft

@@ -1,5 +1,5 @@
 # Exercise 14.3: Design a bounded sensitivity universe
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 # --- Part 1 of 2 ---

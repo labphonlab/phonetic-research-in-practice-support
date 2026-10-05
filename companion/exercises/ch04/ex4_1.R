@@ -1,5 +1,5 @@
 # Exercise 4.1: Build a speech-data governance matrix
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 library(tidyverse)

@@ -1,5 +1,5 @@
 # Exercise 18.3: Criticize a fitted model
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 # --- Part 1 of 2 ---
@@ -48,3 +48,8 @@ c(
     focal(fit(droplevels(filter(obs, speaker_id != s))))
   }))
 )
+
+# Step 3: a normal quantile plot of the residuals
+png("residual_qq.png", width = 1200, height = 1200, res = 200)
+qqnorm(r); qqline(r)
+invisible(dev.off())

@@ -2,13 +2,13 @@
   "tool": "ch20.build_candidate",
   "tool_version": "0.1.0",
   "python_version": "3.14.0",
-  "run_at_utc": "2026-10-05T08:58:54.390501+00:00",
+  "run_at_utc": "2026-10-05T21:58:51.011092+00:00",
   "input_hashes": {
-    "companion/data/ch20/release_candidate/release_spec.yaml": "ddd1cec738ed855566bda35d5da6f3c199b51adbd067236475b34a2d62ff9f33",
-    "companion/data/ch20/release_candidate/release_manifest.tsv": "ba65c76c3140eaa1c93d3aac0eb0f01012f4427ce14e2cc37aba80717494d0a2",
+    "companion/data/ch20/release_candidate/release_spec.yaml": "3c85b6212ac2cd791d6dfdd2c557728df5375968b31baddc443203ffa727c333",
+    "companion/data/ch20/release_candidate/release_manifest.tsv": "9390b37d0fcf64452b39ffc7319b95e2cf7e0150a37eec0ccb622eee6d855533",
     "companion/data/ch20/release_candidate/license_matrix.tsv": "5c49121c95a0dfd4659759c367e01f33d3c428946de56a40590feb95eae2d731",
     "companion/data/ch20/release_candidate/governance_decisions.tsv": "880442b8eb870f4834a88d7b2ed47df8e6fdc247446bd7abe3c1f3a92adcd7f4",
-    "companion/data/ch20/release_candidate/citation_metadata.yaml": "4be5bc8fdd8b3814a9e2c75b842288384e5663968240cd84c682302d6169e6dc",
+    "companion/data/ch20/release_candidate/citation_metadata.yaml": "8be1bfb21d719b2d225236c8430ab1f3c43c6798548b1d3d9074004667e15c06",
     "companion/data/ch20/release_candidate/public_profile.yaml": "0ca8ec7cafceefd9db104149971415f38d191995ffce22c170a14d00527039d6",
     "companion/data/ch20/release_candidate/protected_profile.yaml": "5f85c7bc5eaf2170d2119c878f09dab98d1376b75848c923c5c5c942f3e965cf"
   },

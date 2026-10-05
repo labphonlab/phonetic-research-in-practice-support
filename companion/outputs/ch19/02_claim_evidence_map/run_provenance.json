@@ -2,7 +2,7 @@
   "tool": "run_claim_evidence_map",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 08:59:15 UTC",
+  "run_at_utc": "2026-10-05 21:59:06 UTC",
   "input_hashes": {
     "companion/data/ch19/synthetic_claims/claim_evidence_map.yaml": "3ec99ae20bc0fc86c7184d3660db4f029983e7db0f4330b85377f2572ee7cacf",
     "companion/data/ch19/synthetic_claims/draft_claim_registry.tsv": "9f7869c4ba221c616fd169cb8da199e7475455cb07e95b49a2381d1cec3e4352",

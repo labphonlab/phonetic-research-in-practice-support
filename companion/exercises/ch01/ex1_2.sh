@@ -1,6 +1,6 @@
 #!/bin/sh
 # Exercise 1.2: Initialize the capstone record
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 mkdir capstone && cd capstone && git init

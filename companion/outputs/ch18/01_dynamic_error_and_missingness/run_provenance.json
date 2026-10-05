@@ -2,7 +2,7 @@
   "tool": "run_dynamic_error_missingness",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 08:59:14 UTC",
+  "run_at_utc": "2026-10-05 21:59:05 UTC",
   "input_hashes": {
     "companion/data/ch18/synthetic_complex/trajectory_frames.tsv": "ae0b426e1eea820e0567790eb34cd7e59c8799fb4553a1321bc726b72215aaf2",
     "companion/data/ch18/synthetic_complex/series_boundaries.tsv": "b22fdd258b897d02c79942162c67c7e1ae522e64b74b612f8c0d2975f6addf8c",

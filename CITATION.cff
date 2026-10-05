@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this package, please cite it as below."
-title: "Phonetic Research in Practice: Companion materials"
+title: "Research Methods in Phonetics: Companion materials"
 type: software
 authors:
   - family-names: Ishihara
@@ -11,5 +11,5 @@ doi: 10.5281/zenodo.23145707
 repository-code: "https://github.com/labphonlab/phonetic-research-in-practice-support"
 license-url: https://opensource.org/licenses/MIT
 date-released: 2026-10-05
-version: 1.1.1
-abstract: "Synthetic teaching data, notebooks, and tested code for the exercises in Phonetic Research in Practice. Code is MIT-licensed; data and text are CC BY 4.0."
+version: 1.2.0
+abstract: "Synthetic teaching data, notebooks, and tested code for the exercises in Research Methods in Phonetics. Code is MIT-licensed; data and text are CC BY 4.0."

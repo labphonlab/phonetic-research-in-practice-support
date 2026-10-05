@@ -1,5 +1,5 @@
 # Exercise 12.3: Diagnose a dynamic model
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 # This exercise continues Exercise 12.2: builds `fr`, the trajectory table from Exercise 12.2.

@@ -1,8 +1,8 @@
-# Phonetic Research in Practice — companion materials
+# Research Methods in Phonetics — companion materials
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23145707.svg)](https://doi.org/10.5281/zenodo.23145707)
 
-Code, synthetic teaching data, and notebooks for the hands-on exercises in *Phonetic Research in Practice: From Research Questions to Reproducible Evidence* by Takeshi Ishihara.
+Code, synthetic teaching data, and notebooks for the hands-on exercises in *Research Methods in Phonetics: From Question to Reproducible Evidence* by Takeshi Ishihara.
 
 The exercises refer to files by paths that begin with `companion/`, for example `companion/data/ch10/synthetic_acoustics/`. Clone or download this repository and run the exercises from its root directory, so that those paths resolve as printed in the book.
 
@@ -50,4 +50,4 @@ See `companion/NOTICE.md` for the scope of each license. The license covers this
 
 Please cite the version you used. Each tagged release is archived on Zenodo with its own DOI; the concept DOI [10.5281/zenodo.23145707](https://doi.org/10.5281/zenodo.23145707) always resolves to the latest version, version 1.1.1 is [10.5281/zenodo.23169367](https://doi.org/10.5281/zenodo.23169367), version 1.1.0 is [10.5281/zenodo.23150151](https://doi.org/10.5281/zenodo.23150151), and version 1.0.0 is [10.5281/zenodo.23145708](https://doi.org/10.5281/zenodo.23145708). Citation metadata is in `CITATION.cff`.
 
-> Ishihara, T. (2026). *Phonetic Research in Practice: Companion materials* (Version 1.1.1) [Computer software and data]. Zenodo. https://doi.org/10.5281/zenodo.23169367
+> Ishihara, T. (2026). *Research Methods in Phonetics: Companion materials* (Version 1.1.1) [Computer software and data]. Zenodo. https://doi.org/10.5281/zenodo.23169367

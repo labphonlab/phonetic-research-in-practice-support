@@ -1,5 +1,5 @@
 # Exercise 4.2: Repair an inconsistent open research plan
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 library(tidyverse)

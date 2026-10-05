@@ -2,7 +2,7 @@
 
 ## Scope
 
-This guide helps instructors preserve the learning objectives of *Phonetic Research in Practice* when students encounter barriers involving hearing, vision, motor interaction, speech production, attention, language processing, computing access, or laboratory participation. It is a pedagogical design guide, not a certification of compliance with any jurisdictional standard. Instructors remain responsible for consulting the institution's disability-access service, technology policy, and course-specific accommodation process.
+This guide helps instructors preserve the learning objectives of *Research Methods in Phonetics* when students encounter barriers involving hearing, vision, motor interaction, speech production, attention, language processing, computing access, or laboratory participation. It is a pedagogical design guide, not a certification of compliance with any jurisdictional standard. Instructors remain responsible for consulting the institution's disability-access service, technology policy, and course-specific accommodation process.
 
 The book's central learning outcome is decision quality, not performance of a particular sensory or motor action. A student should be able to demonstrate how a research question, measurement, validation result, and claim depend on one another without being required to hear an uncaptioned distinction, produce a target pronunciation, drag a boundary with high motor precision, distinguish colors, or use a hosted service. An alternative should preserve the construct being assessed while changing the access route.
 

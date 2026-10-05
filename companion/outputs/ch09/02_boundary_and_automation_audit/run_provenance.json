@@ -2,7 +2,7 @@
   "tool": "run_boundary_and_automation_audit",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 08:58:56 UTC",
+  "run_at_utc": "2026-10-05 21:58:52 UTC",
   "input_hashes": {
     "companion/data/ch09/synthetic_annotation/annotation_schema.yaml": "e013b2a4e81b782a9a249b2b5ade7be01a68346b579f8659723178cd5963d134",
     "companion/data/ch09/synthetic_annotation/annotation_assignments.tsv": "bf98ca965c93b49a34974df23e6ac57b9f57167aadf8677185b7fd1b03d27e6a",

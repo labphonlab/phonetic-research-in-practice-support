@@ -1,5 +1,5 @@
 # Exercise 3.2: Compare normalization estimands
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 # --- Part 1 of 3 ---
@@ -40,3 +40,25 @@ fits <- map(c("F2", "F2_z", "F2_logmean"), \(v) {
          se = coef(summary(m))["groupB", "Std. Error"])
 })
 print(bind_rows(fits))
+
+# --- Step 4: vowel-space geometry ---
+# Convex-hull (shoelace) area of each speaker's three vowel means,
+# in raw hertz and after z-scoring F1 and F2 within speaker.
+hull_area <- function(x, y) {
+  i <- chull(x, y)
+  x <- x[i]; y <- y[i]
+  abs(sum(x * c(y[-1], y[1]) - c(x[-1], x[1]) * y)) / 2
+}
+means <- d |>
+  group_by(speaker) |>
+  mutate(F1_z = (F1 - mean(F1)) / sd(F1)) |>
+  group_by(speaker, group, vowel) |>
+  summarise(across(c(F1, F2, F1_z, F2_z), mean), .groups = "drop")
+areas <- means |>
+  group_by(speaker, group) |>
+  summarise(raw = hull_area(F2, F1), z = hull_area(F2_z, F1_z),
+            .groups = "drop")
+print(areas |> group_by(group) |> summarise(across(c(raw, z), mean)))
+p <- ggplot(means, aes(F2, F1, colour = group, shape = vowel)) +
+  geom_point() + scale_x_reverse() + scale_y_reverse()
+ggsave("vowel_means_by_group.png", p, width = 5, height = 4)

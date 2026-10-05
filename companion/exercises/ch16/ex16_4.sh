@@ -1,6 +1,6 @@
 #!/bin/sh
 # Exercise 16.4: Perform a clean-room run
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 python3 -m venv .venv && source .venv/bin/activate

@@ -1,3 +1,3 @@
-"""Executable companion support for *Phonetic Research in Practice*."""
+"""Executable companion support for *Research Methods in Phonetics*."""
 
 __version__ = "0.1.0"

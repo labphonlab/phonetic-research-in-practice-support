@@ -1,7 +1,7 @@
 {
   "tool": "phonetic_research_companion.ch15.run_representativeness_and_cross_corpus",
   "tool_version": "0.1.0",
-  "run_at_utc": "2026-10-05T08:58:54.166379+00:00",
+  "run_at_utc": "2026-10-05T21:58:50.842737+00:00",
   "input_hashes": {
     "companion/outputs/ch15/01_query_and_denominator_audit/candidate_manifest.tsv": "7843b09c30b08465d5299fcc18c25da325fe03ba5eac1ba8eed75a0408e95c61",
     "companion/data/ch15/synthetic_corpus/target_population.yaml": "be033073e1331654e12c04e749b9ee53062969db6224c250997f1c5232b20a28",

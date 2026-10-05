@@ -1,5 +1,5 @@
 # Exercise 10.1: Write a measurement specification
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 import yaml, parselmouth as pm, numpy as np

@@ -2,7 +2,7 @@
   "tool": "run_segmental_measure_audit",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 08:58:59 UTC",
+  "run_at_utc": "2026-10-05 21:58:54 UTC",
   "input_hashes": {
     "companion/data/ch11/synthetic_segmental/event_dictionary.yaml": "1c8e5e18d74536fbe035d2bad0b8b70e6dba33d05da8c5ee55063a194f784ab1",
     "companion/data/ch11/synthetic_segmental/annotation_manifest.tsv": "541c695446273f804bb2e8aa222af49afe71b13516c790b04385ab83cc42732c",

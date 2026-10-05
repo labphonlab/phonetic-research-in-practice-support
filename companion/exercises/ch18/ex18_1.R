@@ -1,5 +1,5 @@
 # Exercise 18.1: Preserve or summarize a trajectory
-# Phonetic Research in Practice, companion exercise script (MIT License).
+# Research Methods in Phonetics, companion exercise script (MIT License).
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 library(readr); library(dplyr); library(lmerTest); library(mgcv); library(itsadug)

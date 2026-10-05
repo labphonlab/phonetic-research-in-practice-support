@@ -2,7 +2,7 @@
   "tool": "run_error_propagation",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 08:59:04 UTC",
+  "run_at_utc": "2026-10-05 21:58:58 UTC",
   "input_hashes": {
     "companion/data/ch14/synthetic_error/sensitivity_analysis_spec.yaml": "bb6155038514fcdd4cf51ce57ff1f98c5b11b8a71577d62e876908acf92f03b4",
     "companion/data/ch14/synthetic_error/error_map.tsv": "fc65e9ebc4a0df10201c59f2b3ca0c8374d6233282aeb89419dee6b1e33010ba",
