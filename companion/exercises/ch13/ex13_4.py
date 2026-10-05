@@ -13,12 +13,17 @@ for (ev, shape), g in tr.groupby(["event_id", "shape_class"]):
     y = g.displacement_mm.to_numpy(float)
     ok = np.isfinite(y)
     if ok.mean() < 0.85 or np.ptp(y[ok]) < 2.0:
-        out.append((ev, shape, "all", 0, "nonidentifiable")); continue
+        out.append((ev, shape, "all", 0, "nonidentifiable"))
+        continue
     y = np.interp(np.arange(len(y)), np.flatnonzero(ok), y[ok])
     for p in profiles:
-        s = gaussian_filter1d(y, p["filter_sigma_samples"]) if p["filter"] == "gaussian" else y
+        s = (gaussian_filter1d(y, p["filter_sigma_samples"])
+             if p["filter"] == "gaussian" else y)
         v = np.abs(np.gradient(s, 0.005))
         pk, _ = find_peaks(v, height=p["peak_fraction"] * v.max())
         out.append((ev, shape, p["profile_id"], len(pk), "candidates"))
-res = pd.DataFrame(out, columns=["event", "shape", "profile", "n_candidates", "status"])
-print(res[res.status == "nonidentifiable"].groupby("shape").size())  # low_excursion 4, missing 4
+res = pd.DataFrame(
+    out, columns=["event", "shape", "profile", "n_candidates", "status"]
+)
+# low_excursion 4, missing 4
+print(res[res.status == "nonidentifiable"].groupby("shape").size())

@@ -2,7 +2,7 @@
   "tool": "phonetic_research_companion.ch16.run_clean_reproduction",
   "tool_version": "0.1.0",
   "python": "3.14.0",
-  "run_at_utc": "2026-10-05T03:12:05.239284+00:00",
+  "run_at_utc": "2026-10-05T08:58:54.317103+00:00",
   "input_hashes": {
     "companion/data/ch16/synthetic_pipeline/pipeline_spec.yaml": "1c73239419885642962e2b73035fb154e29b3da9b51e81898146f041befa9dac",
     "companion/outputs/ch16/01_pipeline_graph_and_data_contracts/configuration_resolved.yaml": "c8c022316729aee9398051373f7d3ef2e7e883dae86f7d96ce5c822b5670ebb2",

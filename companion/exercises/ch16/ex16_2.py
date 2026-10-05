@@ -5,11 +5,22 @@
 # --- Part 1 of 2 ---
 import pandas as pd
 def apply_corrections(src, corr):
-    if not corr.token_id.is_unique: raise ValueError("duplicate correction keys")
+    if not corr.token_id.is_unique:
+        raise ValueError("duplicate correction keys")
     unmatched = set(corr.token_id) - set(src.token_id)
-    if unmatched: raise KeyError(f"unmatched correction keys: {sorted(unmatched)}")
-    out = src.merge(corr[["token_id", "corrected_value", "reason_code"]], on="token_id", how="left")
-    out["analysis_value"] = out.corrected_value.fillna(out.raw_value)   # raw_value untouched
+    if unmatched:
+        raise KeyError(
+            f"unmatched correction keys: {sorted(unmatched)}"
+        )
+    out = src.merge(
+        corr[["token_id", "corrected_value", "reason_code"]],
+        on="token_id",
+        how="left",
+    )
+    # raw_value untouched
+    out["analysis_value"] = out.corrected_value.fillna(
+        out.raw_value
+    )
     return out
 d = "companion/data/ch16/synthetic_pipeline/"
 src = pd.read_csv(d + "source_measurements.tsv", sep="\t")

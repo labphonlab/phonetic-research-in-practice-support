@@ -2,7 +2,7 @@
   "tool": "run_estimand_design_and_models",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 03:12:13 UTC",
+  "run_at_utc": "2026-10-05 08:59:05 UTC",
   "input_hashes": {
     "companion/data/ch17/synthetic_regression/analysis_data.tsv": "978b4d53f3c8e8fe41be493c69fb0f7c6f7156c2e9d8dff7449f0da16b57d879",
     "companion/data/ch17/synthetic_regression/analysis_schema.yaml": "25e3c9253e18394345996f3b36d5e469b207a8bd3542405bc94eea88bd719701",

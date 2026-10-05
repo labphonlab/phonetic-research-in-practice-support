@@ -2,7 +2,7 @@
   "tool": "run_psychometric_analysis",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 03:12:05 UTC",
+  "run_at_utc": "2026-10-05 08:58:54 UTC",
   "input_hashes": {
     "companion/data/ch08/synthetic_perception/perception_trial_manifest.tsv": "b9ba64d1efb6584986fcece189edfb8faf8876c925400071e388a6cc7e64ca1f",
     "companion/data/ch08/synthetic_perception/stimulus_manifest.tsv": "a736d36f00b80776ad694461b26b302f89b0b51708809cc504db59862e447a31",

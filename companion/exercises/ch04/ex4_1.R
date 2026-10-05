@@ -4,5 +4,9 @@
 
 library(tidyverse)
 gov <- read_tsv("governance_matrix.tsv", show_col_types = FALSE)
-stopifnot(!anyNA(gov), all(gov$release_tier %in% c("public", "controlled", "closed")))
-gov |> filter(identifying_risk == "high", release_tier == "public")  # must have no rows
+stopifnot(!anyNA(gov),
+          all(gov$release_tier %in%
+                c("public", "controlled", "closed")))
+# must have no rows
+gov |>
+  filter(identifying_risk == "high", release_tier == "public")

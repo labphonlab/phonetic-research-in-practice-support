@@ -2,7 +2,7 @@
   "tool": "run_normalization_comparison",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 03:12:10 UTC",
+  "run_at_utc": "2026-10-05 08:59:01 UTC",
   "input_hashes": {
     "companion/outputs/ch11/01_segmental_measure_audit/segmental_raw_measures.tsv": "693175e2cb0ee58498c8c0e8be5a7c9fa52a43afe58945da58aaec1ef06c6e4c",
     "companion/data/ch11/synthetic_segmental/annotation_manifest.tsv": "541c695446273f804bb2e8aa222af49afe71b13516c790b04385ab83cc42732c",

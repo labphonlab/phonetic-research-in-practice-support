@@ -3,7 +3,7 @@
   "tool_version": "0.1.0",
   "python_version": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
   "numpy_version": "2.4.4",
-  "run_at_utc": "2026-10-05T03:12:04.945034+00:00",
+  "run_at_utc": "2026-10-05T08:58:53.926487+00:00",
   "input_hashes": {
     "companion/data/ch13/synthetic_multimodal/validated_trajectories.tsv": "7f4a43a2220edd2455658139e76b136efeb5717c1f0ea7d5a4cddaf23152b189",
     "companion/data/ch13/synthetic_multimodal/landmark_profiles.yaml": "c1fe94d47acb7270eeb5a65d010389cedf45875f7daf653ea2db589eb19051e4",

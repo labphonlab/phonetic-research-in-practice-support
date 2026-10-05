@@ -9,5 +9,7 @@ def paths(d, p=""):
     for k, v in d.items():
         if isinstance(v, dict): yield from paths(v, p + k + ".")
         else: yield p + k, v
-print("empty:", [k for k, v in paths(mine) if v in ("", None, [])])
-print("missing:", sorted({k for k, _ in paths(tpl)} - {k for k, _ in paths(mine)}))
+print("empty:",
+      [k for k, v in paths(mine) if v in ("", None, [])])
+print("missing:", sorted({k for k, _ in paths(tpl)}
+                         - {k for k, _ in paths(mine)}))

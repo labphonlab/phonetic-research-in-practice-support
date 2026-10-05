@@ -14,12 +14,19 @@ b |> group_by(boundary_type, condition) |>
 ggplot(b, aes(diff)) + geom_histogram(bins = 30) + facet_grid(condition ~ boundary_type)
 
 # --- Part 2 of 2 ---
-tol <- c(strict = 5, loose = 20)   # milliseconds, fixed before looking at the differences
+# milliseconds, fixed before looking at the differences
+tol <- c(strict = 5, loose = 20)
 within <- function(d) d |> group_by(boundary_type, condition) |>
-  summarise(strict = mean(abs(diff) <= tol["strict"]), loose = mean(abs(diff) <= tol["loose"]), .groups = "drop")
+  summarise(strict = mean(abs(diff) <= tol["strict"]),
+            loose = mean(abs(diff) <= tol["loose"]), .groups = "drop")
 set.seed(93); by_spk <- split(b, b$speaker_id)
 boot <- bind_rows(lapply(1:1000, function(i)
-  within(bind_rows(by_spk[sample(names(by_spk), replace = TRUE)]))))
+  within(bind_rows(
+    by_spk[sample(names(by_spk), replace = TRUE)]
+  ))
+))
 ci <- boot |> group_by(boundary_type, condition) |>
-  summarise(across(c(strict, loose), list(lo = ~quantile(.x, .025), hi = ~quantile(.x, .975))), .groups = "drop")
+  summarise(across(c(strict, loose),
+                   list(lo = ~quantile(.x, .025),
+                        hi = ~quantile(.x, .975))), .groups = "drop")
 left_join(within(b), ci, by = c("boundary_type", "condition"))

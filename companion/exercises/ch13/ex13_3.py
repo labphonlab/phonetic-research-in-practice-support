@@ -11,7 +11,9 @@ offset = np.median(a - r)
 res_offset = a - (r + offset)
 slope, intercept = np.polyfit(r, a, 1)
 res_drift = a - (slope * r + intercept)
-print(round(np.abs(res_offset).max() * 1e3, 2), round(np.abs(res_drift).max() * 1e3, 2))  # 22.93 0.98
+# 22.93 0.98
+print(round(np.abs(res_offset).max() * 1e3, 2),
+      round(np.abs(res_drift).max() * 1e3, 2))
 xy = pd.read_csv(d + "native_coordinates.tsv", sep="\t")
 t = xy.native_time_s.unique()
 print(int(round((t.max() - t.min()) / 0.01)) + 1 - len(t))  # 2 dropped frames

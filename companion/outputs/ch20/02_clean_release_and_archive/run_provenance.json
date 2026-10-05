@@ -2,11 +2,11 @@
   "tool": "ch20.clean_verify",
   "tool_version": "0.1.0",
   "python_version": "3.14.0",
-  "run_at_utc": "2026-10-05T03:12:05.347147+00:00",
+  "run_at_utc": "2026-10-05T08:58:54.462958+00:00",
   "input_hashes": {
     "companion/data/ch20/release_candidate/release_spec.yaml": "ddd1cec738ed855566bda35d5da6f3c199b51adbd067236475b34a2d62ff9f33",
-    "companion/data/ch20/release_candidate/release_manifest.tsv": "e9183c39ce0201dc21fa4d2fbfeaa6e1c26f7e8049c8d806dc8ff0b0fd6c4916",
-    "companion/outputs/ch20/01_release_manifest_and_privacy_audit/release_candidate_manifest.tsv": "7a52bfa9a5e10e6e57e471bbb19fed747d64b31ca6d833b1844f442ffbf0cf6a",
+    "companion/data/ch20/release_candidate/release_manifest.tsv": "ba65c76c3140eaa1c93d3aac0eb0f01012f4427ce14e2cc37aba80717494d0a2",
+    "companion/outputs/ch20/01_release_manifest_and_privacy_audit/release_candidate_manifest.tsv": "ff8cf283fda8f35f5f52889f1cf991a5b644c31999fad049fd5e2a0b943e66cf",
     "companion/data/ch20/release_candidate/availability_statement_template.md": "4c314ed34567cba52199be823f63594e341d962ab65128d7f6605d3748938674",
     "companion/data/ch20/release_candidate/maintenance_policy.md": "3507c2818cd156fbd962dd4da779679da2a508109578b48040b5e4ad8a3aec5a",
     "companion/data/ch20/release_candidate/citation_metadata.yaml": "4be5bc8fdd8b3814a9e2c75b842288384e5663968240cd84c682302d6169e6dc"

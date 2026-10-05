@@ -4,5 +4,7 @@
 # Run from the repository root; the excerpts printed in the book are taken from this file.
 
 git log --oneline -- source_measurements.tsv                # find the last unedited version
-git restore --source=HEAD~1 -- source_measurements.tsv      # bring it back
-git diff --stat HEAD~1 -- source_measurements.tsv           # no output: identical to the original
+# bring it back
+git restore --source=HEAD~1 -- source_measurements.tsv
+# no output: identical to the original
+git diff --stat HEAD~1 -- source_measurements.tsv

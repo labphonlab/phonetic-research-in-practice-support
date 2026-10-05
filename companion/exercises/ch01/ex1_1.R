@@ -11,7 +11,10 @@ edges <- read_tsv("edges.tsv", show_col_types = FALSE) |>
 p <- ggplot() +
   geom_segment(data = edges, aes(layer, y, xend = layer_to, yend = y_to),
                arrow = arrow(length = unit(2, "mm"))) +
-  geom_label(data = nodes, aes(layer, y, label = node, fill = status)) +
-  scale_fill_manual(values = c(documented = "white", partial = "grey80", missing = "grey55")) +
+  geom_label(data = nodes,
+             aes(layer, y, label = node, fill = status)) +
+  scale_fill_manual(values = c(documented = "white",
+                               partial = "grey80",
+                               missing = "grey55")) +
   theme_void()
 ggsave("evidential_chain.png", p, width = 7, height = 3.5)

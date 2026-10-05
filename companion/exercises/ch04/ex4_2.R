@@ -4,5 +4,7 @@
 
 library(tidyverse)
 plan <- read_tsv("plan_decisions.tsv", show_col_types = FALSE)
-stopifnot(!any(plan$consent_covers_it == "no" & plan$tier == "public"))
+stopifnot(
+  !any(plan$consent_covers_it == "no" & plan$tier == "public")
+)
 plan |> filter(deviation_to_report == "yes") |> pull(promise)

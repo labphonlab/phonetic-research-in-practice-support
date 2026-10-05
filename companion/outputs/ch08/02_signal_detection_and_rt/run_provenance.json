@@ -2,7 +2,7 @@
   "tool": "run_signal_detection_analysis",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-05 03:12:05 UTC",
+  "run_at_utc": "2026-10-05 08:58:54 UTC",
   "input_hashes": {
     "companion/data/ch08/synthetic_perception/detection_event_log.tsv": "0489565a7b49fa5b5edb317bea96d9115a2acdf3cc0bf9f0bbb3004e8d835072",
     "companion/data/ch08/synthetic_perception/signal_detection_decisions.yaml": "cb5eb2bf7bf2d16d0923f82b9b5df7c7c4634cdaae6092624be21c381f753460",

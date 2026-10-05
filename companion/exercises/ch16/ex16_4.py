@@ -15,11 +15,26 @@ a["analysis_value"] = a.corrected_value.fillna(a.raw_value)
 a["duration_ms"] = (a.end_ms - a.start_ms).astype(float)
 cols = ["token_id", "speaker_id", "item_id", "analysis_value", "duration_ms",
         "measurement_status", "unicode_label", "data_status"]
-a[cols].to_csv(out_dir / "analysis_table.tsv", sep="\t", index=False, lineterminator="\r\n")
+a[cols].to_csv(
+    out_dir / "analysis_table.tsv",
+    sep="\t",
+    index=False,
+    lineterminator="\r\n",
+)
 
 # --- Part 2 of 2 ---
 exp = pd.read_csv(D / "expected_artifacts.tsv", sep="\t").set_index("artifact_path")
-sha = hashlib.sha256((out_dir / "analysis_table.tsv").read_bytes()).hexdigest()
-print(sha == exp.loc["analysis_table.tsv", "expected_sha256"])                           # True
+sha = hashlib.sha256(
+    (out_dir / "analysis_table.tsv").read_bytes()
+).hexdigest()
+# True
+print(sha == exp.loc["analysis_table.tsv", "expected_sha256"])
 ref = json.load(open(D / "expected" / "summary.json"))
-print(math.isclose(a.analysis_value.mean(), ref["mean_analysis_value"], rel_tol=1e-9))  # True
+# True
+print(
+    math.isclose(
+        a.analysis_value.mean(),
+        ref["mean_analysis_value"],
+        rel_tol=1e-9,
+    )
+)

@@ -1,7 +1,7 @@
 {
   "tool": "phonetic_research_companion.ch15.run_query_and_denominator_audit",
   "tool_version": "0.1.0",
-  "run_at_utc": "2026-10-05T03:12:05.079118+00:00",
+  "run_at_utc": "2026-10-05T08:58:54.091821+00:00",
   "input_hashes": {
     "companion/data/ch15/synthetic_corpus/searchable_hits.tsv": "4ce31a063556f2730ed8c02204147cdf38d4cb4d2143aae8f8497da24ccd653e",
     "companion/data/ch15/synthetic_corpus/linkage_table.tsv": "22ab8cdf904758cc4d9618ab211feee21e9f89b19ce34cce6701c35a2abac960",

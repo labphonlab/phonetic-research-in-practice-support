@@ -5,9 +5,13 @@
 # --- Part 1 of 3 ---
 library(lme4)
 sim_data <- function(n_spk = 30, n_item = 20, effect = 10) {
-  d <- expand.grid(spk = factor(1:n_spk), item = factor(1:n_item), cond = c(0, 1))
-  d$y <- 100 + rnorm(n_spk, 0, 12)[d$spk] + rnorm(n_item, 0, 8)[d$item] +
-    (effect + rnorm(n_spk, 0, 5)[d$spk]) * d$cond + rnorm(nrow(d), 0, 20)
+  d <- expand.grid(
+    spk = factor(1:n_spk), item = factor(1:n_item), cond = c(0, 1)
+  )
+  d$y <- 100 + rnorm(n_spk, 0, 12)[d$spk] +
+    rnorm(n_item, 0, 8)[d$item] +
+    (effect + rnorm(n_spk, 0, 5)[d$spk]) * d$cond +
+    rnorm(nrow(d), 0, 20)
   d
 }
 
@@ -16,12 +20,18 @@ sesoi <- 5   # smallest effect of interest, in ms
 sim_once <- function(...) {
   d <- sim_data(...); odd <- FALSE
   m <- withCallingHandlers(
-    tryCatch(suppressMessages(lmer(y ~ cond + (1 + cond | spk) + (1 | item), data = d)),
-             error = function(e) NULL),
+    tryCatch(
+      suppressMessages(
+        lmer(y ~ cond + (1 + cond | spk) + (1 | item),
+             data = d)
+      ),
+      error = function(e) NULL
+    ),
     warning = function(w) { odd <<- TRUE; invokeRestart("muffleWarning") })
   if (is.null(m)) return(c(hit = NA, odd = 1))
   est <- coef(summary(m))["cond", ]
-  c(hit = as.numeric(est[["Estimate"]] - 1.96 * est[["Std. Error"]] > sesoi),
+  c(hit = as.numeric(est[["Estimate"]] -
+                       1.96 * est[["Std. Error"]] > sesoi),
     odd = as.numeric(odd || isSingular(m)))
 }
 
