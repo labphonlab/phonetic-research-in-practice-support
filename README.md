@@ -48,6 +48,6 @@ See `companion/NOTICE.md` for the scope of each license. The license covers this
 
 ## Citation
 
-Please cite the version you used. Each tagged release is archived on Zenodo with its own DOI; the concept DOI [10.5281/zenodo.23145707](https://doi.org/10.5281/zenodo.23145707) always resolves to the latest version, version 1.1.0 is [10.5281/zenodo.23150151](https://doi.org/10.5281/zenodo.23150151), and version 1.0.0 is [10.5281/zenodo.23145708](https://doi.org/10.5281/zenodo.23145708). Citation metadata is in `CITATION.cff`.
+Please cite the version you used. Each tagged release is archived on Zenodo with its own DOI; the concept DOI [10.5281/zenodo.23145707](https://doi.org/10.5281/zenodo.23145707) always resolves to the latest version, version 1.1.1 is [10.5281/zenodo.23169367](https://doi.org/10.5281/zenodo.23169367), version 1.1.0 is [10.5281/zenodo.23150151](https://doi.org/10.5281/zenodo.23150151), and version 1.0.0 is [10.5281/zenodo.23145708](https://doi.org/10.5281/zenodo.23145708). Citation metadata is in `CITATION.cff`.
 
-> Ishihara, T. (2026). *Phonetic Research in Practice: Companion materials* (Version 1.1.0) [Computer software and data]. Zenodo. https://doi.org/10.5281/zenodo.23150151
+> Ishihara, T. (2026). *Phonetic Research in Practice: Companion materials* (Version 1.1.1) [Computer software and data]. Zenodo. https://doi.org/10.5281/zenodo.23169367
