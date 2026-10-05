@@ -2,7 +2,7 @@
   "tool": "run_results_uncertainty",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-04 20:05:04 UTC",
+  "run_at_utc": "2026-10-05 03:12:20 UTC",
   "input_hashes": {
     "companion/outputs/ch17/02_diagnostics_predictions_and_reporting/focal_contrasts.tsv": "94af7e66d8254586d7019a792fc8e9cc4c976eedda0d20a028b14ff12c102622",
     "companion/outputs/ch18/02_prediction_validation_and_scope/model_scope_gate.yaml": "60b04b06289d76aaf43cf47a6fd91835789fc8539d5d22d254a600cd53ccb04d",

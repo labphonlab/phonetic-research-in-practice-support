@@ -11,6 +11,7 @@ The exercises refer to files by paths that begin with `companion/`, for example 
 | Folder | What it holds |
 |---|---|
 | `companion/data/` | Synthetic teaching fixtures for Chapters 7–20 (WAV, TSV, YAML), with `MANIFEST.tsv` recording the source, license, and SHA-256 checksum of every file |
+| `companion/exercises/` | Complete code for the hands-on exercises, one script per exercise and language; the book prints short excerpts from these files. Example inputs for exercises that start from learner-made files are in `examples/` subfolders |
 | `companion/notebooks/` | Twenty-eight notebooks, two per chapter for Chapters 7–20, each with a README that states its inputs, outputs, and checks |
 | `companion/src/`, `companion/r/` | Python and R code used by the notebooks |
 | `companion/scripts/` | Fixture generators, notebook runners, and the validation entry point |
@@ -24,6 +25,8 @@ Every data file is generated numerically by the scripts in `companion/scripts/`.
 ## Requirements and validation
 
 Python 3.12 or later with the packages in `companion/requirements-python.txt`, and R 4.6 with the packages in `companion/requirements-r.txt`. The exercises in the book also use Praat, Parselmouth, the tidyverse, `lme4`, `lmerTest`, `glmmTMB`, `emmeans`, `mgcv`, `itsadug`, `brms`, `irr`, and the Montreal Forced Aligner; install those as each exercise requires.
+
+Run an exercise script from the repository root, for example `python3 companion/exercises/ch10/ex10_2.py`. To run all of them in clean working directories, use `sh companion/scripts/run_exercise_scripts.sh`.
 
 To regenerate the fixtures, run every test, and execute every notebook in a clean process:
 

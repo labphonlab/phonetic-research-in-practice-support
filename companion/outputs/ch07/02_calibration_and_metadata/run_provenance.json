@@ -1,7 +1,7 @@
 {
   "tool": "phonetic_research_companion.ch07.validate_session_metadata",
   "tool_version": "0.1.0",
-  "run_at_utc": "2026-10-04T20:04:47.427545+00:00",
+  "run_at_utc": "2026-10-05T03:12:02.823818+00:00",
   "inputs": {
     "companion/data/ch07/synthetic_recordings/recording_session_metadata.yaml": "51291e007741639b5feef2405cebabba0119727b7b947c13ddb624b5df905385",
     "companion/data/ch07/synthetic_recordings/recording_manifest.tsv": "118bbc1df371a4c4f9673449ac42ae4034f710cd6027de613dc587162b9c1c03",

@@ -2,7 +2,7 @@
   "tool": "phonetic_research_companion.ch16.run_pipeline_graph_and_contracts",
   "tool_version": "0.1.0",
   "python": "3.14.0",
-  "run_at_utc": "2026-10-04T20:04:49.586330+00:00",
+  "run_at_utc": "2026-10-05T03:12:05.185095+00:00",
   "input_hashes": {
     "companion/data/ch16/synthetic_pipeline/pipeline_spec.yaml": "1c73239419885642962e2b73035fb154e29b3da9b51e81898146f041befa9dac",
     "companion/data/ch16/synthetic_pipeline/data_contracts.yaml": "8bb67fc8ff1cc284d5fc47507846c38e012c8ad986bcb27c0218963b0d9ab804",

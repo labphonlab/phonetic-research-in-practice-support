@@ -1,0 +1,5 @@
+object	identifying_risk	release_tier	access_route	consent_basis
+raw_audio	high	closed	protected workstation	consent for research use
+acoustic_table	low	public	repository download	consent for de-identified sharing
+segment_boundaries	medium	controlled	registered access	consent for research use
+transcripts	high	controlled	registered access after redaction	consent for research use

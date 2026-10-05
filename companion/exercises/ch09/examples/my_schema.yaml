@@ -1,0 +1,55 @@
+schema_version: "0.1"
+scheme:
+  scheme_id: ""
+  title: ""
+  manual_version: ""
+  construct: ""
+  downstream_use: ""
+unit:
+  unit_type: "file|utterance|word|segment|interval|point|pair|relation"
+  candidate_generation: ""
+  parent_unit: ""
+evidence:
+  audio: true
+  waveform: false
+  spectrogram: false
+  pitch_track: false
+  orthography: false
+  wider_context: false
+  other: []
+display:
+  software: ""
+  software_version: ""
+  spectrogram_settings: ""
+  playback_controls: ""
+decisions:
+  detection:
+    required: false
+    labels: []
+  boundaries: []
+  classification:
+    required: false
+    scale: "nominal|ordinal|continuous|not_applicable"
+    labels: []
+    distance_function: ""
+  links:
+    required: false
+    permitted_targets: ""
+uncertainty:
+  permitted: true
+  codes: []
+  confidence_scale: ""
+missingness_codes: []
+training:
+  training_set_version: ""
+  qualification_rule: ""
+  recalibration_schedule: ""
+reliability:
+  sampling_design: ""
+  primary_statistic: ""
+  clustering_unit: ""
+  boundary_tolerances_ms: []
+adjudication:
+  method: "consensus|majority|expert_override|none"
+  preserve_independent_labels: true
+

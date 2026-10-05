@@ -2,10 +2,10 @@
   "tool": "ch20.build_candidate",
   "tool_version": "0.1.0",
   "python_version": "3.14.0",
-  "run_at_utc": "2026-10-04T20:04:49.684829+00:00",
+  "run_at_utc": "2026-10-05T03:12:05.293708+00:00",
   "input_hashes": {
     "companion/data/ch20/release_candidate/release_spec.yaml": "ddd1cec738ed855566bda35d5da6f3c199b51adbd067236475b34a2d62ff9f33",
-    "companion/data/ch20/release_candidate/release_manifest.tsv": "d756fd5944f683479a6ebf552976aaaca112ef548395f6f2694435d8738520bf",
+    "companion/data/ch20/release_candidate/release_manifest.tsv": "e9183c39ce0201dc21fa4d2fbfeaa6e1c26f7e8049c8d806dc8ff0b0fd6c4916",
     "companion/data/ch20/release_candidate/license_matrix.tsv": "5c49121c95a0dfd4659759c367e01f33d3c428946de56a40590feb95eae2d731",
     "companion/data/ch20/release_candidate/governance_decisions.tsv": "880442b8eb870f4834a88d7b2ed47df8e6fdc247446bd7abe3c1f3a92adcd7f4",
     "companion/data/ch20/release_candidate/citation_metadata.yaml": "4be5bc8fdd8b3814a9e2c75b842288384e5663968240cd84c682302d6169e6dc",

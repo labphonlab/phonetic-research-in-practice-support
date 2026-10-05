@@ -2,7 +2,7 @@
   "tool": "run_dynamic_models_and_rhythm",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-04 20:04:56 UTC",
+  "run_at_utc": "2026-10-05 03:12:12 UTC",
   "input_hashes": {
     "companion/outputs/ch12/01_pitch_trajectory_preparation/trajectory_preprocessing.tsv": "5b35b360cd376bb3ec4951ddec888a6161cf579cf75d9810c0319f0f79606383",
     "companion/data/ch12/synthetic_prosody/segmented_intervals.tsv": "7372e03df3d5de29c9af7dd721a7f03fbf13a3c166752be7bf41b9fca6f104c7",

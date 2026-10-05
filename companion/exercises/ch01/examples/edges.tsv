@@ -1,0 +1,7 @@
+from	to
+claim	result
+result	model
+model	measure
+model	annotation
+measure	recordings
+annotation	recordings

@@ -1,0 +1,4 @@
+gate	evidence_checked	decision_controlled	consequence_of_failure
+G1	pilot clipping and noise-floor summary	keep, re-record, or drop the acoustic measure	measure removed from target claim
+G2	double-coded boundary sample	accept, revise, or exclude the duration measure	duration claim restricted to stable segments
+G3	speaker-level sensitivity runs	retain or narrow the speaker-population claim	claim limited to the sampled speakers

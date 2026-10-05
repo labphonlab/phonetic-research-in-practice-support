@@ -2,7 +2,7 @@
   "tool": "run_diagnostics_predictions_and_gate",
   "tool_version": "0.1.0",
   "r_version": "R version 4.6.1 (2026-06-24)",
-  "run_at_utc": "2026-10-04 20:04:59 UTC",
+  "run_at_utc": "2026-10-05 03:12:15 UTC",
   "input_hashes": {
     "companion/data/ch17/synthetic_regression/analysis_data.tsv": "978b4d53f3c8e8fe41be493c69fb0f7c6f7156c2e9d8dff7449f0da16b57d879",
     "companion/data/ch17/synthetic_regression/regression_analysis_spec.yaml": "80fe38f7e77b70a14adc72b6536626e715f616fd866b2206eb10d64af1fd68e2",

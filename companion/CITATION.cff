@@ -10,5 +10,5 @@ license: MIT
 repository-code: "https://github.com/labphonlab/phonetic-research-in-practice-support"
 license-url: https://opensource.org/licenses/MIT
 date-released: 2026-10-05
-version: 1.0.0
+version: 1.1.0
 abstract: "Synthetic teaching data, notebooks, and tested code for the exercises in Phonetic Research in Practice. Code is MIT-licensed; data and text are CC BY 4.0."

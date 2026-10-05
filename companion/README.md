@@ -16,6 +16,10 @@ Every notebook states a learning objective, estimated completion time, prerequis
 
 Notebooks fail clearly when an input violates its schema. They do not download restricted audio, embed credentials, or silently replace missing data with examples. Demonstration values are visibly synthetic at the point of use. Outputs include version, input hashes, settings, and warnings sufficient to reconstruct the run; time-dependent execution records are kept separate from canonical source notebooks.
 
+## Exercise scripts
+
+`exercises/chNN/` holds the complete code for the hands-on exercises, one script per exercise and language (for example `exercises/ch10/ex10_2.py` for Exercise 10.2). The book prints short excerpts taken verbatim from these scripts. Run a script from the repository root so that its `companion/...` paths resolve. Exercises that start from files a learner creates (Chapters 1, 4, and 9) include example inputs in `exercises/chNN/examples/`; copy them to the working directory or replace them with your own. Exercise 20.2 takes the access route as its argument (`public` or `protected`). `scripts/run_exercise_scripts.sh` runs every Python and R exercise script in a clean working directory; shell steps that need Git, Quarto, or the Montreal Forced Aligner are not run automatically.
+
 ## Licensing and free distribution
 
 The package is distributed free of charge. Code is released under the MIT License (`LICENSE`); data, templates, and written material are released under Creative Commons Attribution 4.0 International (`LICENSE-DATA.txt`). `NOTICE.md` states the scope and the citation form, and `CITATION.cff` carries the machine-readable citation. Every data object is a synthetic teaching fixture, so the package contains no human-subject data and no restricted-corpus material, and `data/MANIFEST.tsv` records the license and checksum of each object.
